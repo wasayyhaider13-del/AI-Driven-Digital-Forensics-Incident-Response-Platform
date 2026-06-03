@@ -1,0 +1,16 @@
+URL,Title,Date/Time,Visit Count
+https://google.com,Google Search,4/29/2026 9:00,5
+https://github.com,GitHub,4/29/2026 9:15,3
+http://evil-c2.onion/panel,C2 Panel,4/29/2026 2:30,15
+https://phish-bank.ru/login,Banking Login,4/29/2026 2:45,3
+https://malware-drop.xyz/payload.exe,Payload Download,4/29/2026 2:50,1
+https://stackoverflow.com,Stack Overflow,4/29/2026 10:00,8
+http://botnet.cc/cmd,Botnet Command,4/29/2026 3:00,22
+https://youtube.com,YouTube,4/29/2026 11:00,4
+https://cred-steal.tk/harvest,Credential Harvester,4/29/2026 3:15,7
+https://mail.google.com,Gmail,4/29/2026 12:00,6
+https://grabify.link/abc123,IP Logger,4/29/2026 3:30,2
+https://docs.python.org,Python Docs,4/29/2026 13:00,9
+http://ransomware-c2.io/beacon,Ransomware C2,4/29/2026 3:45,45
+https://reddit.com,Reddit,4/29/2026 14:00,11
+http://iplogger.org/track,IP Logger,4/29/2026 4:00,3

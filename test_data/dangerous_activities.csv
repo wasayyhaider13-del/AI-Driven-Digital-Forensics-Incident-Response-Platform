@@ -1,0 +1,26 @@
+url,title,visit_time,visit_count,severity,reason
+http://malware-c2-server.ru/beacon.exe,C2 Beacon Download,2026-05-15 02:30:00,3,HIGH,Known C2 server communication — executable payload download
+https://evil-phishing.tk/login/microsoft365.html,Microsoft 365 Login,2026-05-15 03:12:00,2,HIGH,Phishing page impersonating Microsoft 365 on suspicious TLD .tk
+ftp://192.168.1.50/exfil/credentials_dump.zip,Credential Dump Exfiltration,2026-05-15 03:45:00,1,HIGH,FTP-based data exfiltration of credential dumps
+http://darknet-market.onion/listings/ransomware-kit,Ransomware Kit Darknet,2026-05-14 23:15:00,1,HIGH,Darknet marketplace — ransomware toolkit listing
+https://pastebin.com/raw/xK9mZp2v,Base64 Encoded Payload,2026-05-15 01:20:00,5,HIGH,Encoded payload distribution via paste service
+http://45.33.32.156/shell.php?cmd=whoami,Remote Web Shell,2026-05-15 04:05:00,1,HIGH,Remote code execution via PHP webshell
+https://mega.nz/file/aB1cDE#encrypted_stolen_data,Stolen Data Upload MEGA,2026-05-15 02:55:00,2,HIGH,Cloud storage exfiltration of encrypted stolen data
+http://keylogger-panel.xyz/admin/logs,Keylogger Admin Panel,2026-05-14 22:30:00,4,HIGH,Keylogger command-and-control admin dashboard
+https://drive.google.com/uc?export=download&id=1xMalwareDropper,Malware Dropper via GDrive,2026-05-15 03:30:00,1,HIGH,Google Drive abused for malware payload delivery
+http://cryptominer-pool.cc/stratum,Cryptominer Pool Connection,2026-05-15 00:45:00,8,MEDIUM,Unauthorized cryptomining pool stratum connection
+https://github.com/hacker-tools/mimikatz/releases,Mimikatz Download,2026-05-15 01:50:00,2,HIGH,Credential dumping tool download — Mimikatz
+http://botnet-controller.cn/api/register?id=VICTIM-PC,Botnet Registration,2026-05-15 02:10:00,1,HIGH,Botnet command-and-control node registration
+https://temp-mail.org/en/view/abc123,Temp Email for Account Takeover,2026-05-15 03:00:00,3,MEDIUM,Disposable email service used for anonymous operations
+http://exploit-db.com/exploits/50299,CVE-2021-44228 Log4Shell Exploit,2026-05-14 21:00:00,2,HIGH,Active exploitation research — Log4Shell RCE payload
+https://shodan.io/search?query=port:3389+country:PK,RDP Scan via Shodan,2026-05-15 01:15:00,1,MEDIUM,Open RDP port scanning targeting Pakistan
+http://192.168.1.1/cgi-bin/admin.cgi?cmd=reboot,Router Admin Exploit,2026-05-15 04:30:00,1,HIGH,Unauthenticated router command injection attempt
+https://discord.com/api/webhooks/123456/token,Discord Webhook Exfil,2026-05-15 02:40:00,6,MEDIUM,Discord webhook abuse for data exfiltration
+http://cobalt-strike-teamserver.net:50050/beacon,Cobalt Strike Beacon,2026-05-15 03:55:00,2,HIGH,Cobalt Strike team server beacon communication
+https://anonfiles.com/upload/stolen_database.sql,Database Exfiltration,2026-05-15 01:30:00,1,HIGH,SQL database dump uploaded to anonymous file sharing
+http://reverse-shell.xyz:4444/connect,Reverse Shell Connection,2026-05-15 04:15:00,1,HIGH,Active reverse shell connection to attacker-controlled server
+https://haveibeenpwned.com/api/v3/breachedaccount/admin@company.com,Breach Lookup — Admin,2026-05-15 00:30:00,2,MEDIUM,Checking if admin credentials are in data breaches
+http://fast-flux-dns.su/update?bot=active,Fast-Flux DNS C2,2026-05-14 23:45:00,3,HIGH,Fast-flux DNS technique for C2 evasion
+https://protonmail.com/login,Anonymous Email Login,2026-05-15 02:00:00,4,MEDIUM,Encrypted email service — potential anonymous communication
+http://tor-exit-node.de/proxy?target=internal-server,Tor Exit Node Proxy,2026-05-15 03:20:00,1,HIGH,Traffic proxied through Tor exit node to internal server
+https://0day.today/exploit/39281,Zero-Day Exploit Market,2026-05-15 01:05:00,1,HIGH,Zero-day exploit marketplace browsing

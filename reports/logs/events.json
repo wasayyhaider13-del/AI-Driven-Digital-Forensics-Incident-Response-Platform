@@ -1,0 +1,1951 @@
+[
+    {
+        "url": "https://chatlyai.app/chat?utm_model=vgpt-g4-1-fr&utm_source=google&utm_medium=cpc&utm_campaign=G_C_Web_CDGE_GF_4.1_7813&utm_source=google&utm_medium=ppc&utm_campaign=&utm_term=grok+ai&hsa_acc=7531877813&hsa_cam=23288920753&hsa_grp=189427973216&hsa_ad=785021258063&hsa_src=g&hsa_tgt=kwd-938935742057&hsa_kw=grok+ai&hsa_mt=b&device=c&placement=&assetgroupid=&networkid=%7Bnetworkid%7D&adtype=&gad_source=1&gad_campaignid=23288920753&gbraid=0AAAAApeVMdiX4pzgp2CzCHQtezeDUM0b2&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWUreloTu688GOyT-iePMAIn-EbjX48HcIISn1VFHDgLAQgKET73JGEaArVdEALw_wcB&referral=false",
+        "title": "Chatly: The AI Workspace",
+        "visit_time": "2026-05-08 01:23:16",
+        "visit_time_dt": "2026-05-08T01:23:16.591786",
+        "visit_count": 1,
+        "raw_ts": 13422676996591786,
+        "_hash": "1a0e64fc7db97ee36f55b9ed4ff05bc17e95aae72e4bc7720baf2c937331c627",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:23 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:23 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatlyai.app/chat?utm_model=vgpt-cl1-3&utm_source=google&utm_medium=cpc&utm_campaign=G_C_Web_CDGE_GF_4.1_7813&utm_source=google&utm_medium=ppc&utm_campaign=&utm_term=grok+ai&hsa_acc=7531877813&hsa_cam=23288920753&hsa_grp=189427973216&hsa_ad=785021258063&hsa_src=g&hsa_tgt=kwd-938935742057&hsa_kw=grok+ai&hsa_mt=b&device=c&placement=&assetgroupid=&networkid={networkid}&adtype=&gad_source=1&gad_campaignid=23288920753&gbraid=0AAAAApeVMdiX4pzgp2CzCHQtezeDUM0b2&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWUreloTu688GOyT-iePMAIn-EbjX48HcIISn1VFHDgLAQgKET73JGEaArVdEALw_wcB&referral=false",
+        "title": "Chatly: The AI Workspace",
+        "visit_time": "2026-05-08 01:24:57",
+        "visit_time_dt": "2026-05-08T01:24:57.703761",
+        "visit_count": 2,
+        "raw_ts": 13422677097703761,
+        "_hash": "86d48bb3270fb057ec9df258b8aae05962b9c6b2f099dcf9b03f0192caa6b57b",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:24 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:24 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatlyai.app/chat?utm_model=vgpt-g4-3&utm_source=google&utm_medium=cpc&utm_campaign=G_C_Web_CDGE_GF_4.1_7813&utm_source=google&utm_medium=ppc&utm_campaign=&utm_term=grok+ai&hsa_acc=7531877813&hsa_cam=23288920753&hsa_grp=189427973216&hsa_ad=785021258063&hsa_src=g&hsa_tgt=kwd-938935742057&hsa_kw=grok+ai&hsa_mt=b&device=c&placement=&assetgroupid=&networkid={networkid}&adtype=&gad_source=1&gad_campaignid=23288920753&gbraid=0AAAAApeVMdiX4pzgp2CzCHQtezeDUM0b2&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWUreloTu688GOyT-iePMAIn-EbjX48HcIISn1VFHDgLAQgKET73JGEaArVdEALw_wcB&referral=false",
+        "title": "Chatly: The AI Workspace",
+        "visit_time": "2026-05-08 01:27:24",
+        "visit_time_dt": "2026-05-08T01:27:24.222523",
+        "visit_count": 2,
+        "raw_ts": 13422677244222523,
+        "_hash": "08030e0f7592735e015eb46867975b4df7a24aa32f3b654c73099abf866b9b40",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:27 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:27 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwiX9tvcw6iUAxVaqIMHHQrPANoYACICCAEQABoCZWY&co=1&ase=2&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWWg4jP6MCaWBvNVFVsC8xyHVpDLSnB9_oXtf8_66tZenpXU542j8VwaAllcEALw_wcB&cid=CAASuwHkaMzzhNEM0IWePNhUHHjpSy3OaGM5D9JWuRf93yjl9tDLVHtaFzOQTxs0nHzkdmLhHc2lx_K07pLBedBZKbligWcISAM-tfh0VwqvoCU8CGnZdbus8UnRlKVGTYjbDAAKtGjsk9Qze-yvNOtl2bati-pzNLsxpPzBSlzvgk6SPwED7Le7zEF1NwuHslez6v7R2HpfTQV9lS_D7_5Nl0iv6UC6fi8xnwWi-gtrzOXMsf0w6hZj2B4YJDsm&cce=2&category=acrcp_v1_32&sig=AOD64_1TrUpf4oDGejeApZVcxnSowCOJAg&q&nis=6&ch=1&adurl=https://www.kimi.com/?utm_campaign%3DKTR_google10%26utm_content%3D%26utm_medium%3D%25E8%25B0%25B7%25E6%25AD%258C%26utm_source%3Dgoogle%26utm_account%3D2266966647%26utm_term%3Dkimi%26utm_content%3D%26utm_medium%3D%25E8%25B0%25B7%25E6%25AD%258C%26utm_source%3Dgoogle%26utm_account%3D8425566174%26utm_term%3Dkimi%26campaignid%3D23674764401%26groupid%3D194545388157%26adid%3D801206588080%26network%3Dg%26gad_source%3D1%26gad_campaignid%3D23674764401%26gbraid%3D0AAAABAsUyXg-XQIUFARpqb4X1ZM1-gNpD%26gclid%3DCj0KCQjw8PDPBhCeARIsAOJwmWWg4jP6MCaWBvNVFVsC8xyHVpDLSnB9_oXtf8_66tZenpXU542j8VwaAllcEALw_wcB&ved=2ahUKEwiupdXcw6iUAxWd9rsIHSWxIhAQ0Qx6BAgLEAE",
+        "title": "Kimi AI with K2.6 | Better Coding, Smarter Agents",
+        "visit_time": "2026-05-08 01:39:59",
+        "visit_time_dt": "2026-05-08T01:39:59.618049",
+        "visit_count": 1,
+        "raw_ts": 13422677999618049,
+        "_hash": "8a6ff710c9bca91c3de3d12b8e6d611869e419e619db51cd98916996c4ac3633",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'c2' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'c2' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            },
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:39 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/?utm_campaign=KTR_google10&utm_content=&utm_medium=%E8%B0%B7%E6%AD%8C&utm_source=google&utm_account=2266966647&utm_term=kimi&utm_content=&utm_medium=%E8%B0%B7%E6%AD%8C&utm_source=google&utm_account=8425566174&utm_term=kimi&campaignid=23674764401&groupid=194545388157&adid=801206588080&network=g&gad_source=1&gad_campaignid=23674764401&gbraid=0AAAABAsUyXg-XQIUFARpqb4X1ZM1-gNpD&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWWg4jP6MCaWBvNVFVsC8xyHVpDLSnB9_oXtf8_66tZenpXU542j8VwaAllcEALw_wcB",
+        "title": "Kimi AI with K2.6 | Better Coding, Smarter Agents",
+        "visit_time": "2026-05-08 01:39:59",
+        "visit_time_dt": "2026-05-08T01:39:59.618049",
+        "visit_count": 1,
+        "raw_ts": 13422677999618049,
+        "_hash": "896eacc245daf94282053afda4eb08da3eb0a46fb77160a8a1b22301996ab830",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:39 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:39 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/?utm_campaign=KTR_google10&utm_content=&utm_content=&utm_medium=%E8%B0%B7%E6%AD%8C&utm_medium=%E8%B0%B7%E6%AD%8C&utm_source=google&utm_source=google&utm_account=2266966647&utm_account=8425566174&utm_term=kimi&utm_term=kimi&campaignid=23674764401&groupid=194545388157&adid=801206588080&network=g&gad_source=1&gad_campaignid=23674764401&gbraid=0AAAABAsUyXg-XQIUFARpqb4X1ZM1-gNpD&gclid=Cj0KCQjw8PDPBhCeARIsAOJwmWWg4jP6MCaWBvNVFVsC8xyHVpDLSnB9_oXtf8_66tZenpXU542j8VwaAllcEALw_wcB",
+        "title": "Kimi AI with K2.6 | Better Coding, Smarter Agents",
+        "visit_time": "2026-05-08 01:40:06",
+        "visit_time_dt": "2026-05-08T01:40:06.516898",
+        "visit_count": 1,
+        "raw_ts": 13422678006516898,
+        "_hash": "99f6c62c28d010b9492e47f6c7f941ae17caa9a5843240c93db27eae091b2ce8",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/agent",
+        "title": "Kimi Agent for Websites, Documents, Slides, Sheets & Report",
+        "visit_time": "2026-05-08 01:40:18",
+        "visit_time_dt": "2026-05-08T01:40:18.261294",
+        "visit_count": 1,
+        "raw_ts": 13422678018261294,
+        "_hash": "e7baf2b7c6dfe0ecc0e8c71a8f12e958b97171914571e3e3938458bec7ca4feb",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Downloads/viewer.html",
+        "title": "PDF.js viewer",
+        "visit_time": "2026-05-08 02:10:20",
+        "visit_time_dt": "2026-05-08T02:10:20.504581",
+        "visit_count": 2,
+        "raw_ts": 13422679820504581,
+        "_hash": "5f157da506486e7f5047a8843529f6d0c503fe505405daab17eac0bd9ddb6cd1",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 02:10 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 02:10 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Downloads/viewer%20(1).html",
+        "title": "PDF.js viewer",
+        "visit_time": "2026-05-08 02:14:32",
+        "visit_time_dt": "2026-05-08T02:14:32.506562",
+        "visit_count": 1,
+        "raw_ts": 13422680072506562,
+        "_hash": "216febcd598b36993639eec507827f5e33cd36f9d7b16842baa5788fa72ca283",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 02:14 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 02:14 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.google.com/search?q=sandbox%3A%2F%2F%2Fmnt%2Fagents%2Foutput%2FDCCN_Complete_Exam_Guide.pdf&oq=sandbox%3A%2F%2F%2Fmnt%2Fagents%2Foutput%2FDCCN_Complete_Exam_Guide.pdf&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNzA2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
+        "title": "sandbox:///mnt/agents/output/DCCN_Complete_Exam_Guide.pdf - Google Search",
+        "visit_time": "2026-05-08 02:21:39",
+        "visit_time_dt": "2026-05-08T02:21:39.731679",
+        "visit_count": 1,
+        "raw_ts": 13422680499731679,
+        "_hash": "2efdeaeed93e79dd110447a239359a995bf0b85c59a7412d7bed1be79e5049a4",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 02:21 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 02:21 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/chat/19e0542d-1202-84f4-8000-097901058048?chat_enter_method=change_model",
+        "title": "Exam Prep Quick Guide - Kimi",
+        "visit_time": "2026-05-08 02:22:38",
+        "visit_time_dt": "2026-05-08T02:22:38.291111",
+        "visit_count": 4,
+        "raw_ts": 13422680558291111,
+        "_hash": "edd9dfa78b6283131005f42a6acc3969f1ee1ddb4c2b9597797c9eea9fc2e207",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 02:22 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 02:22 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/agent?chat_enter_method=change_model",
+        "title": "Kimi Agent for Websites, Documents, Slides, Sheets & Report",
+        "visit_time": "2026-05-08 02:22:45",
+        "visit_time_dt": "2026-05-08T02:22:45.055494",
+        "visit_count": 8,
+        "raw_ts": 13422680565055494,
+        "_hash": "c84143f56f57e9d73a786a9d93bdd49f487d9452e476cda317aa7c4fb446f878",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 02:22 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 02:22 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Downloads/DCCN_Solved_Notes%20(1).pdf",
+        "title": "(anonymous)",
+        "visit_time": "2026-05-09 19:10:44",
+        "visit_time_dt": "2026-05-09T19:10:44.327116",
+        "visit_count": 2,
+        "raw_ts": 13422827444327116,
+        "_hash": "753238ed33c206af7ac10b5e68ce8b4b30168e54593e797224d141937bf0d47b",
+        "severity": "MEDIUM",
+        "reason": "URL targets dangerous file type: '.pdf'",
+        "matched_rule": "DOWNLOAD_DETECTED",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "URL targets dangerous file type: '.pdf'",
+                "rule": "DOWNLOAD_DETECTED"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Downloads/DCCN_Easy_English_Notes.pdf",
+        "title": "(anonymous)",
+        "visit_time": "2026-05-09 19:10:49",
+        "visit_time_dt": "2026-05-09T19:10:49.473074",
+        "visit_count": 1,
+        "raw_ts": 13422827449473074,
+        "_hash": "f638935454bee49f84dba84982e0b830729e97f6bd21933093ff33d4f97d0b57",
+        "severity": "MEDIUM",
+        "reason": "URL targets dangerous file type: '.pdf'",
+        "matched_rule": "DOWNLOAD_DETECTED",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "URL targets dangerous file type: '.pdf'",
+                "rule": "DOWNLOAD_DETECTED"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Downloads/DCCN_Solved_Notes.pdf",
+        "title": "(anonymous)",
+        "visit_time": "2026-05-09 19:10:52",
+        "visit_time_dt": "2026-05-09T19:10:52.486179",
+        "visit_count": 1,
+        "raw_ts": 13422827452486179,
+        "_hash": "6c607e43db7a62a8b322cda6e8df04154343ce180673c785ed4376d85dbba9d1",
+        "severity": "MEDIUM",
+        "reason": "URL targets dangerous file type: '.pdf'",
+        "matched_rule": "DOWNLOAD_DETECTED",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "URL targets dangerous file type: '.pdf'",
+                "rule": "DOWNLOAD_DETECTED"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatgpt.com/g/g-p-69f280d83ee48191ab8c7a4541359660-ai-agent/project?tab=sources",
+        "title": "ChatGPT - AI agent",
+        "visit_time": "2026-05-09 19:26:12",
+        "visit_time_dt": "2026-05-09T19:26:12.261909",
+        "visit_count": 2,
+        "raw_ts": 13422828372261909,
+        "_hash": "088446fa4bfb03d1a8601507f89e09d167a750ffbc6eac99d78feddc949eabb4",
+        "severity": "LOW",
+        "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+        "matched_rule": "HEX_PATTERN",
+        "all_matches": [
+            {
+                "severity": "LOW",
+                "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+                "rule": "HEX_PATTERN"
+            }
+        ],
+        "llm": {
+            "classification": "BENIGN",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatgpt.com/g/g-p-69f280d83ee48191ab8c7a4541359660-ai-agent/project?tab=chats",
+        "title": "ChatGPT - AI agent",
+        "visit_time": "2026-05-09 19:26:45",
+        "visit_time_dt": "2026-05-09T19:26:45.673995",
+        "visit_count": 2,
+        "raw_ts": 13422828405673995,
+        "_hash": "710fa7436bb125f3102072a3e5c4210d40e87104abe8b8d4f3c308bebda983b8",
+        "severity": "LOW",
+        "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+        "matched_rule": "HEX_PATTERN",
+        "all_matches": [
+            {
+                "severity": "LOW",
+                "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+                "rule": "HEX_PATTERN"
+            }
+        ],
+        "llm": {
+            "classification": "BENIGN",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatgpt.com/g/g-p-69f280d83ee48191ab8c7a4541359660-ai-agent/project",
+        "title": "ChatGPT - AI agent",
+        "visit_time": "2026-05-09 19:38:48",
+        "visit_time_dt": "2026-05-09T19:38:48.717362",
+        "visit_count": 5,
+        "raw_ts": 13422829128717362,
+        "_hash": "65864818d69837c864268f38c6c33c768156cf3175536f890d772c8b62aa9564",
+        "severity": "LOW",
+        "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+        "matched_rule": "HEX_PATTERN",
+        "all_matches": [
+            {
+                "severity": "LOW",
+                "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+                "rule": "HEX_PATTERN"
+            }
+        ],
+        "llm": {
+            "classification": "BENIGN",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://chatgpt.com/g/g-p-69f280d83ee48191ab8c7a4541359660-ai-agent/c/69f28226-f0b4-8322-b246-c2ccac7e4065",
+        "title": "AI agent - Upgrade Recommendations and Phases",
+        "visit_time": "2026-05-09 19:38:51",
+        "visit_time_dt": "2026-05-09T19:38:51.692245",
+        "visit_count": 6,
+        "raw_ts": 13422829131692245,
+        "_hash": "d78d0be8232fd969fee8135b404968f5796a6ebda3562a347f0903fe647d128a",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'c2' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'c2' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            },
+            {
+                "severity": "LOW",
+                "reason": "Hex-encoded string detected in URL \u2014 possible obfuscation",
+                "rule": "HEX_PATTERN"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=0HXZCyLAqAg",
+        "title": "(114) Joseph The Prophet Episode 7 | Urdu Dubbed | Prophet Yousuf - YouTube",
+        "visit_time": "2026-05-10 03:43:25",
+        "visit_time_dt": "2026-05-10T03:43:25.363988",
+        "visit_count": 1,
+        "raw_ts": 13422858205363988,
+        "_hash": "90b8bab7bc566ee3a770a1e99380a6ff2df07756cb96180a5ffe1107b46c7d88",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 03:43 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 03:43 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=untAH5MblCA",
+        "title": "(114) \ud83d\udca5 NEW YEAR, SAME WARRIOR \ud83d\udca5 | IP MAN | Martial Arts Fights | Best Action Scenes | \u202a@ActionReload\u202c - YouTube",
+        "visit_time": "2026-05-10 04:05:11",
+        "visit_time_dt": "2026-05-10T04:05:11.316246",
+        "visit_count": 1,
+        "raw_ts": 13422859511316246,
+        "_hash": "a2191d97b2ef3441147060c03041cc83bf8919edbcf76df2238191667695a62a",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:05 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:05 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=CrbNDPRMAaumVMpy-t_gP3p60kA3ouor-hgHpt8ayoBSwkB8QASAAYMsEggEXY2EtcHViLTYyMTk4MTE3NDcwNDkzNzGgAYL55qMCqAMEyAMKqgSwAk_Qf8x4kekAfhS-pUs8uuDM-kfpvUfvh8QqQbrOlGFIghs50gkhtxBwCQTPF7ZAvFk6WEGurIdSI6KFuY9b5QEJrVrE1Y3fOsUlHn8Zgxq5qjSwUzc4CSphZAAG8cUUZ_vf6iKTActojHiIHqmNCQtSyF5k7LngaAfmdOohclKwxo6VklZSMGXDrrPr_QfUESMlDUJ60jLrdR-M1_zVLDO3QxQC4gxAcxakb6mdvUmnHJvMak3tTeOEuMe1A7w3Bp9gDXYsJDsXoS_1q3warzz_JRh22056zWoLHrJSrVPPZxwmc6V_pmSpXucSz2ldcrvE642quEoxOBlY1ykCOdbsHkr_S-JxSwxEhcLHOiSBCGblDyDx0C6tExJbTGInpz3AQFvcYjVzntgpimok5oGIBZe8rJlVkgUICBN4qbOm-gGgBqEBgAf7mL7ZAYgHAZAHAqgH8sCxAqgHuMSxAqgH4baxAqgHpc-xAqgH552xAqgH6J2xAqgH77WxAqgH8LWxAqgH-dOxAqgHydqxAqgHqeCxAqgHhAioB6bUsQKoB6jSG6gHtgeoB7HcG6gHsJuxAqgHrrGxAqgH5ryxAqgH_bKxAqgH97ixAqgH-LixAqgHyM-xAqgHyc-xAqgHzcexAqgH8dGxAqgH_NWxAqgH-9WxAqgHjNaxAqgHi9axAqgHmuKxAqgHm-KxAqgHmuGxAqgHndexAqgHndSxAqgHgcYbqAf8r7ECqAfVzhuoB6vFG6gHnNwbqAe3obECqAfVqbECqAfn2rECqAfetbECqAfqsbECqAe-t7ECqAeZtbECqAeFwbECqAfrpbECqAfKqbECkggLa09qZ0xQUXExN2eoCAHSCDcIgBEQAhhaMgiCgISAgICAIDoUj9yAgICABIDAgICAgICAAqqAiBBI2aDSNVAUWOCY6Kz6rZQDmgkiaHR0cHM6Ly9jbGlja3VwLmNvbS9scC9nZXQtc3RhcnRlZLEJ0V28ydVkaOHICRfICY8ByAnCAZgLAboLZggDEAUYBCAHKAEwHEABSABQAVh9YABoAHABiAEAmAEBogEuCh4gA9q4BBgyFjoUChIoMEiE2_7qyxSYF4GNpz2YGQAQAYABAdABAagCBcACAtgBAYACAYgCCboDCXZpYnJ1emFiYdALEqIMKSABSAFqHgocY28ubWFuZ290ZWNobm9sb2dpZXMuY2xpY2t1cHgBiAEB0gwCEAHaDCUKChCQkNqJkqe_9F4SAgEDGg0Yl7ysmVUggrDMta8FQAFKAhAfmg0BEqoNAlBLyA0B0g2vBGh0dHBzOi8vY2xpY2t1cC5jb20vbHAvZ2V0LXN0YXJ0ZWQ_dXRtX3NvdXJjZT15b3V0dWJlJnV0bV9tZWRpdW09Y3BtJnV0bV9jYW1wYWlnbj15dF9jcG1fYXBhY19ubmNfcHJvX3RyaWFsX2FsbC1kZXZpY2VzX3Ryb2FzX2xwX3hfYWxsLWRlcGFydG1lbnRzX3hfYWxsLWN1c3RvbS1jb21iaW5hdGlvbnMmdXRtX2NvbnRlbnQ9YXBhY19hZmZpbml0eV9ydmFfYWxsLWluZHVzdHJpZXNfYWxsLWZlYXR1cmVzX2FsbC11c2UtY2FzZXNfZGVwYXJ0bWVudC1wcm9mZXNzaW9uYWwtc2VydmljZXMmdXRtX3Rlcm09YWYtdmlkZW9fcy1pbnRlcm5hbHZpZGVvX2xlbi0zMHNlY19hci0xNng5X2N0YS1jcmVhdGV3b3Jrc3BhY2VfaWNwLWFsbF9wLWV2ZXJ5dGhpbmdhcHBfbHAtaHAtcGFpZF90di14X2FzLUJlZm9yZUFmdGVyX3N0LW1vdGlvbmdyYXBoaWNfaC13b3JraXNicm9rZW5faS14X0FELTE5ODAyLUNvbnZlcmdlbmNlX2F2LXYyLW5vY29tcGV0aXRvcmxvZ29zX2N2LXYxLWNvbnN1bWVycGF5b2ZmX2QtMjAyNS0wNC0xNSZnYWRfc291cmNlPTImZ2FkX2NhbXBhaWduaWQ9MjI4NzAxNzExNTm4E____________wGIFASwFAPAFYGAgEDQFQHYFQGYFgHiFgIIAYAXAYoXFggDGAEgASgBMAE4AUABSAFQAVgBYAKgFwGpF5iTryTtX4KuuhcGKAAwADgB0BgB8BgBwhkCCAE&ase=2&gclid=CjwKCAjwtvvPBhBuEiwAPMijr412H2qZXoEGpgk2Wx-kPBE1d0JNhosZ0_Y0IetJWA4VOijOFp5YJxoCzscQAvD_BwE&num=1&cid=CAESpQHg9qkOy4Ki2FmZXCYsqAYJgLHMRXH8VOVBtuX61VB2unv-w_nGBUqYdwYOusGL-UfG5uWT_Jpoz4MhLT02_GuFeK7YXBV-WRs_lS3NhYAA3LOp53pyUlA79FGKHC2SrbhrKq1cVVq0WNx90pSWNUgVdvU2t4lpsRIoaYpzWKYng9WUFODG8qn1NuUekCmcHlEBD6MPDEuIxb2xL9zNFK-ZbyvujE8&ad_cpn=%5BCPN%5D&sig=AOD64_1tUq2eE_9jhgfivIJ90WOaRRDAIA&ctype=110&video_id=kOjgLPQq17g&label=video_click_to_advertiser_site&ms=%5BCLICK_MS%5D&nb=21&nx=%5BNX%5D&ny=%5BNY%5D&dim=%5BDIM%5D&nis=6",
+        "title": "Sign up for ClickUp\u2122",
+        "visit_time": "2026-05-10 05:10:31",
+        "visit_time_dt": "2026-05-10T05:10:31.542646",
+        "visit_count": 1,
+        "raw_ts": 13422863431542646,
+        "_hash": "08a81900f02422246981e0d41c72ee1b8f672a48bc4b7746775dcd544ff9f15b",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'c2' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'c2' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            },
+            {
+                "severity": "HIGH",
+                "reason": "Possible Base64-encoded payload in URL: '9F4SAgEDGg0Yl7ysmVUggrDMta8FQAFKAhAfmg0B...'",
+                "rule": "ENCODED_PAYLOAD"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://lms.dsu.edu.pk/course/view.php?id=9932",
+        "title": "Course: Artificial Intelligence Lab(BS-CS-6E)",
+        "visit_time": "2026-05-12 04:55:43",
+        "visit_time_dt": "2026-05-12T04:55:43.457757",
+        "visit_count": 20,
+        "raw_ts": 13423035343457757,
+        "_hash": "c64a057247e5ca6467d25c32853da5bb7180288312e588001281f24ca2bf0580",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=249564",
+        "title": "CS-3103L-CS-252-BS-CS-6E: Mid Term",
+        "visit_time": "2026-05-12 04:55:49",
+        "visit_time_dt": "2026-05-12T04:55:49.858555",
+        "visit_count": 1,
+        "raw_ts": 13423035349858555,
+        "_hash": "d03b01b3a23f77bf6c4c79a2003414b2660a4d8d77b7e3dc5e9eee5fe845247b",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=249564&action=editsubmission",
+        "title": "CS-3103L-CS-252-BS-CS-6E: Mid Term - Edit submission",
+        "visit_time": "2026-05-12 04:55:54",
+        "visit_time_dt": "2026-05-12T04:55:54.231417",
+        "visit_count": 1,
+        "raw_ts": 13423035354231417,
+        "_hash": "0ca3d70d5b22cb6b9591fd08dff258861877091a556e638799a3362c842d9b4b",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=249564&action=view",
+        "title": "CS-3103L-CS-252-BS-CS-6E: Mid Term",
+        "visit_time": "2026-05-12 04:56:43",
+        "visit_time_dt": "2026-05-12T04:56:43.015678",
+        "visit_count": 1,
+        "raw_ts": 13423035403015678,
+        "_hash": "3a05bb1915c0dcee53160eaacb75488cbc7f7a8924c94bc6e1ede1c2cbe56c30",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:56 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:56 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=Lwk1xKzV29I",
+        "title": "(116) Full Highlights | Day 5 | Bangladesh vs Pakistan | tapmad | PKBD26 - YouTube",
+        "visit_time": "2026-05-13 03:40:54",
+        "visit_time_dt": "2026-05-13T03:40:54.566701",
+        "visit_count": 1,
+        "raw_ts": 13423117254566701,
+        "_hash": "7630925749ab2d7864b1af47378e0df5c45f2135ba83f8c1e1da6a3ac3a19808",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 03:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 03:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=cyWiTZxhgck",
+        "title": "(116) Sunny Deol - New Blockbuster Bollywood Action Full Movie | Preity Zinta Romantic Love Story Movie - YouTube",
+        "visit_time": "2026-05-13 04:10:03",
+        "visit_time_dt": "2026-05-13T04:10:03.946233",
+        "visit_count": 1,
+        "raw_ts": 13423119003946233,
+        "_hash": "ca4ad2cfbc9282abc663251415e7e32bd271cd679ea48747ee2b2915ee961dd1",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:10 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:10 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/shorts/UJOP5XEMZrI",
+        "title": "(117) New Petrol Prices Announced | Latest Fuel Rates Update| Hum News | Pakistan - YouTube",
+        "visit_time": "2026-05-13 21:17:53",
+        "visit_time_dt": "2026-05-13T21:17:53.416850",
+        "visit_count": 1,
+        "raw_ts": 13423180673416850,
+        "_hash": "3a07bc990de030c376364eaf77b7aef7e3233ac945a5d62bedce18a2f0f538d4",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'rat' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'rat' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=vKURgdiYm4c",
+        "title": "\u0939\u093e\u0930\u093e \u0939\u0941\u0906 \u092e\u0941\u0958\u0926\u092e\u093e \u0915\u0948\u0938\u0947 \u092a\u0932\u091f\u093e? - \u092e\u0947\u0930\u0940 \u091c\u0902\u0917 \u0915\u094d\u0932\u093e\u0907\u092e\u0947\u0915\u094d\u0938 | Meri Jung Court Scene | Anil Kapoor | Amrish Puri - YouTube",
+        "visit_time": "2026-05-14 00:27:41",
+        "visit_time_dt": "2026-05-14T00:27:41.995963",
+        "visit_count": 1,
+        "raw_ts": 13423192061995963,
+        "_hash": "f0d5a4ee87f0a7347704391a6f1cc58062e38d314c0df7d12c5f686d08ac25a6",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:27 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:27 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=BMWQUpkyrGQ",
+        "title": "PAKISTAN vs INDIA Extended Highlights \ud83d\udd25 Asia Cup 2014 Last Over Thriller - YouTube",
+        "visit_time": "2026-05-14 00:40:46",
+        "visit_time_dt": "2026-05-14T00:40:46.896664",
+        "visit_count": 1,
+        "raw_ts": 13423192846896664,
+        "_hash": "81c36413d957173a1fd4df66d8a781cc362ef14069c07949037df7ed5fb0dbb3",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/shorts/Pk5UmzagNaU",
+        "title": "Pak vs India | Historical win #cricket #cricketlover #cricketfans #cricketshorts #crickethighlights - YouTube",
+        "visit_time": "2026-05-14 00:50:12",
+        "visit_time_dt": "2026-05-14T00:50:12.636705",
+        "visit_count": 1,
+        "raw_ts": 13423193412636705,
+        "_hash": "feeb356c717b6c481e4c59e8eed177d96a53f70209fff3c3523d95015aa2f055",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:50 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:50 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=bmtAYSsmd9A",
+        "title": "Full Highlights | India A vs Pakistan A | Match 06 | Asia Cup Rising Stars 2025 | ZH1K - YouTube",
+        "visit_time": "2026-05-14 00:55:36",
+        "visit_time_dt": "2026-05-14T00:55:36.785660",
+        "visit_count": 1,
+        "raw_ts": 13423193736785660,
+        "_hash": "917b3113dc80f7fefcf576541d25793fd631feefa6d192abc22412e612da0635",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=jCXnaOOlF-Y",
+        "title": "Pakistan Vs India 2nd Odi 2013 | Highlights Match | Historic Match You Can't Forget !\ud83c\uddf5\ud83c\uddf0\ud83c\uddee\ud83c\uddf3 - YouTube",
+        "visit_time": "2026-05-14 01:08:35",
+        "visit_time_dt": "2026-05-14T01:08:35.666845",
+        "visit_count": 2,
+        "raw_ts": 13423194515666845,
+        "_hash": "93a7a1d7f52ee1e876f8bda0e5f5dc45c372df7b80fd1eb330c3221bf6ec9e36",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:08 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:08 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=AZ6zqg1vqKQ",
+        "title": "\u0915\u094c\u0928 \u0939\u0948 \u092f\u0947 \u091a\u092a\u0921\u093c\u0917\u0902\u091c\u0942? \ud83d\ude06 \u0936\u0915\u0932 \u0938\u0947 2 \u092c\u091a\u094d\u091a\u094b \u0915\u093e \u092c\u093e\u092a \u0932\u0917\u0924\u093e \u0939\u0948 - Akshay Kumar \u092e\u091c\u0947\u0926\u093e\u0930 \u0915\u0949\u092e\u0947\u0921\u0940 | Singh Is Kinng - YouTube",
+        "visit_time": "2026-05-14 04:39:55",
+        "visit_time_dt": "2026-05-14T04:39:55.367176",
+        "visit_count": 2,
+        "raw_ts": 13423207195367176,
+        "_hash": "3d3c955f305d71f2e5412ea319f753b5ad14014bbd7857b546ddbbe75bb41a88",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:39 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:39 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/results?search_query=happy+singh+movie+akshay+kumar",
+        "title": "happy singh movie akshay kumar - YouTube",
+        "visit_time": "2026-05-14 04:59:49",
+        "visit_time_dt": "2026-05-14T04:59:49.373539",
+        "visit_count": 1,
+        "raw_ts": 13423208389373539,
+        "_hash": "afaec4084d32dc9d75631fb4007046ed6b1d87794e86881c8abd946f28ccdc99",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:59 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:59 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=5O7awO4zJmo",
+        "title": "Singh Is Kinng Full Movie | Akshay Kumar, Katrina Kaif, Sonu Sood | Romantic Comedy Movie - YouTube",
+        "visit_time": "2026-05-14 04:59:58",
+        "visit_time_dt": "2026-05-14T04:59:58.061039",
+        "visit_count": 1,
+        "raw_ts": 13423208398061039,
+        "_hash": "d77315dfaae856b6b648e64a5e039c44d7a124b885b672cf70199f64b683f1dc",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:59 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:59 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=cDyEnzg8JmI",
+        "title": "Pakistan Need 23 Runs in Last 2 Overs & Shahid Afridi Changed The Whole Game | PCB | MA2A - YouTube",
+        "visit_time": "2026-05-15 04:09:18",
+        "visit_time_dt": "2026-05-15T04:09:18.795045",
+        "visit_count": 1,
+        "raw_ts": 13423291758795045,
+        "_hash": "907016559187f931526771c460f00d8f952131eb51d7b0164fac98dc6906d9de",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:09 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:09 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=x6Vzp3CLbx4",
+        "title": "(118) When ANATOLY PRANKS\ud83d\ude05 went too far AGAIN | Bodybuilders get humbled Part-3 - YouTube",
+        "visit_time": "2026-05-15 04:20:59",
+        "visit_time_dt": "2026-05-15T04:20:59.747998",
+        "visit_count": 2,
+        "raw_ts": 13423292459747998,
+        "_hash": "fceb0a73f228a60bb1994ea9eca8f3186cf318e757caa82709ff33068e44b6cd",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 04:20 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 04:20 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Desktop/ASSIGNMENT%202-wasay.pdf",
+        "title": "ASSIGNMENT 2-wasay.pdf",
+        "visit_time": "2026-05-15 06:57:11",
+        "visit_time_dt": "2026-05-15T06:57:11.369914",
+        "visit_count": 1,
+        "raw_ts": 13423301831369914,
+        "_hash": "cd65fa403c49173f9262a0ee1bf5d06e16582adf5c7bab22ddeb738b8eef21b0",
+        "severity": "MEDIUM",
+        "reason": "URL targets dangerous file type: '.pdf'",
+        "matched_rule": "DOWNLOAD_DETECTED",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "URL targets dangerous file type: '.pdf'",
+                "rule": "DOWNLOAD_DETECTED"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=diFOfc56iRo",
+        "title": "(119) Sarkar Raj (2008) Full Hindi Movie (4K) Amitabh Bachchan, Abhishek Bachchan & Aishwarya Rai Bachchan - YouTube",
+        "visit_time": "2026-05-16 00:06:57",
+        "visit_time_dt": "2026-05-16T00:06:57.362545",
+        "visit_count": 2,
+        "raw_ts": 13423363617362545,
+        "_hash": "9778b84b5adb5d303f8c2314c448b4f22582a6eb8ceccbdd9ca0bc3ab9bd5d7e",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:06 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:06 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=IWTIeaJWh6U",
+        "title": "(119) IND vs PAK 1st ODI 2012 \ud83c\udfcf Classic Rivalry Match - YouTube",
+        "visit_time": "2026-05-16 00:28:44",
+        "visit_time_dt": "2026-05-16T00:28:44.238252",
+        "visit_count": 1,
+        "raw_ts": 13423364924238252,
+        "_hash": "7efc100248aec1f78c2c7b454a4df06f017f2baaf8208ec667fe653552c9790b",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:28 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:28 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=tiJGSSxD0pc",
+        "title": "(119) Sultan Full Movie Hindi | Salman Khan | Anushka Sharma | Sports Drama Secrets & Box Office Facts - YouTube",
+        "visit_time": "2026-05-16 00:34:14",
+        "visit_time_dt": "2026-05-16T00:34:14.168059",
+        "visit_count": 1,
+        "raw_ts": 13423365254168059,
+        "_hash": "5533ca5046bcb7edb6eb423210eeed4e34b35aff3c79da9cfa6f76240a6bf911",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:34 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:34 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=6Vq8MtIbAJM",
+        "title": "(119) Sultan Full Movie Hindi Facts | Salman Khan | Anushka Sharma | Randeep Hooda - YouTube",
+        "visit_time": "2026-05-16 00:35:38",
+        "visit_time_dt": "2026-05-16T00:35:38.607251",
+        "visit_count": 2,
+        "raw_ts": 13423365338607251,
+        "_hash": "0a63340f8e128638898b7d54c62e8917493ba24f71e4741d642c1dbef3c449a8",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:35 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:35 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=JV04Q1g6T3U",
+        "title": "(119) Sultan Full Movie 2016 | Salman Khan | Anushka Sharma | Randeep Hooda | Review & Facts - YouTube",
+        "visit_time": "2026-05-16 00:36:54",
+        "visit_time_dt": "2026-05-16T00:36:54.854579",
+        "visit_count": 1,
+        "raw_ts": 13423365414854579,
+        "_hash": "5543c8d2a3716b2945cbac15c336d55ea64041b94b67539daac15ed0152da970",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:36 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:36 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=jbCy_PVnCSc",
+        "title": "(119) Sultan Full Movie 2016 | Sultan Hindi Full Movie 2025 | Salman Khan And Anushka Sharma - YouTube",
+        "visit_time": "2026-05-16 00:38:45",
+        "visit_time_dt": "2026-05-16T00:38:45.418060",
+        "visit_count": 4,
+        "raw_ts": 13423365525418060,
+        "_hash": "3388aa00ddec4fed4964d2b477a0338f9078a4935c24cc68190cc59a38eb1dda",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:38 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:38 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/results?search_query=sultan+movie+hindi",
+        "title": "(119) sultan movie hindi - YouTube",
+        "visit_time": "2026-05-16 00:39:37",
+        "visit_time_dt": "2026-05-16T00:39:37.416507",
+        "visit_count": 5,
+        "raw_ts": 13423365577416507,
+        "_hash": "8c429da771ca87146aaa718dda736ea565d4edd8a3d26300712839e9b6bb6aba",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:39 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:39 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=MSel4mcAVbc&list=PLhYcmiCvwM6QjxOCh1UjxkX2MXt2vgABh",
+        "title": "(119) 1 second part 2 - YouTube",
+        "visit_time": "2026-05-16 00:40:01",
+        "visit_time_dt": "2026-05-16T00:40:01.467425",
+        "visit_count": 1,
+        "raw_ts": 13423365601467425,
+        "_hash": "3f184b79430687232d831baefd0dd64d1f2dc99d59b53d4122b200c8d3b8c21f",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=bXqWFXbcVVU&list=PLhYcmiCvwM6QjxOCh1UjxkX2MXt2vgABh&index=2",
+        "title": "(119) Heeriye By Saim Bhat | Fab Entertainment | Latest Song 2026 - YouTube",
+        "visit_time": "2026-05-16 00:40:09",
+        "visit_time_dt": "2026-05-16T00:40:09.679677",
+        "visit_count": 1,
+        "raw_ts": 13423365609679677,
+        "_hash": "c5e3b05d1e5d287f4a17b7b6df81ce31244bce29e6b84296747b066bdd3dae9a",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:40 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=Xrma7eq6QNQ",
+        "title": "(119) Full Highlights | Pakistan vs South Africa | Tri-Nation Series ODI, 2025 | PCB | MR1K - YouTube",
+        "visit_time": "2026-05-16 00:44:11",
+        "visit_time_dt": "2026-05-16T00:44:11.481430",
+        "visit_count": 2,
+        "raw_ts": 13423365851481430,
+        "_hash": "d0b2a5059c58dc0dc51cf3bec4019c7a8488f8fc0e034ec0d8c972a203957f69",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:44 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:44 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=Yh67kMA-pWU",
+        "title": "(119) \u0906\u0926\u0930\u0923\u0940\u092f FRI \u092e\u0939\u094b\u0926\u092f, \u0939\u092e\u093e\u0930\u0947 \u0939\u094b\u0924\u0947 \u0939\u0941\u090f \u0907\u0924\u0928\u093e \u0938\u092c \u0915\u0941\u091b \u0939\u094b \u0917\u092f\u093e : \u0927\u092e\u093e\u0915\u0947\u0926\u093e\u0930 \u090f\u0915\u094d\u0936\u0928 \u0915\u0949\u092e\u0947\u0921\u0940 \u0938\u0940\u0928 - Dabangg 2 - YouTube",
+        "visit_time": "2026-05-16 03:23:44",
+        "visit_time_dt": "2026-05-16T03:23:44.384789",
+        "visit_count": 1,
+        "raw_ts": 13423375424384789,
+        "_hash": "ad26afd257225c7fa99c7b59bec5af5c0a27228e10be8484747bb84415d1c019",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 03:23 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 03:23 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=UIEqT06z-JI",
+        "title": "(119) \u091a\u093f\u0932\u094d\u0932\u093e \u0938\u093e\u0932\u0947 \u0909\u0938 \u0926\u093f\u0928 \u0909\u0938 \u092c\u0947\u092c\u0938 \u0932\u095c\u0915\u0940 \u0915\u0940 \u0906\u0935\u093e\u091c \u0915\u093f\u0938\u0940 \u0928\u0947 \u0928\u0939\u0940\u0902 \u0938\u0941\u0928\u0940 \u0914\u0930 \u0906\u091c \u0924\u0947\u0930\u0940 \u092d\u0940 \u0915\u094b\u0908 \u0928\u0939\u0940\u0902 \u0938\u0941\u0928\u0947\u0917\u093e| Sanjay Dutt - YouTube",
+        "visit_time": "2026-05-16 03:55:43",
+        "visit_time_dt": "2026-05-16T03:55:43.925138",
+        "visit_count": 1,
+        "raw_ts": 13423377343925138,
+        "_hash": "043799ce42ed3943accf54c39f2a607318dcd5a6a8bb9d80a2e29a1e7eee0082",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 03:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 03:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=TZhXhFVdNmI",
+        "title": "(119) Daag The Firen | Bollywood Movie | Sanjay Dutt | Mahima Chaudhry - YouTube",
+        "visit_time": "2026-05-16 03:55:46",
+        "visit_time_dt": "2026-05-16T03:55:46.388968",
+        "visit_count": 1,
+        "raw_ts": 13423377346388968,
+        "_hash": "e6d8057a52edf507a16917288bec14c3c67d7fc020e1ccec0a531f2496c55fb8",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 03:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 03:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=hZ8Sg8cCj6o",
+        "title": "(121) Full Highlights | Bangladesh vs Pakistan | 2nd Test, Day 3 | ICC World Test Championship | M9I1K - YouTube",
+        "visit_time": "2026-05-19 00:15:38",
+        "visit_time_dt": "2026-05-19T00:15:38.317211",
+        "visit_count": 1,
+        "raw_ts": 13423623338317211,
+        "_hash": "cc4f53d8596e8a36de1470a9261c604214faf306fb5801dc38fcce12a93002ac",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:15 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:15 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=PpGQ5X8Gtek",
+        "title": "(121) Indian Reacts To SHANZAIB RIND vs RANA SINGH *Full Fight* | Pakistan vs India | Karate Combat - YouTube",
+        "visit_time": "2026-05-19 00:31:41",
+        "visit_time_dt": "2026-05-19T00:31:41.477065",
+        "visit_count": 1,
+        "raw_ts": 13423624301477065,
+        "_hash": "1d9c515bb6151f46b948aa79cd1fca3e0e04d50afcd342412737e23931bfb618",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'rat' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'rat' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            },
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:31 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=H3SJEvshNEM",
+        "title": "(121) \u0905\u0930\u094d\u091c\u0941\u0928 \u0930\u0923\u093e\u0935\u0924 \u0928\u093e\u092e \u0939\u0948 \u092e\u0947\u0930\u093e , \u092e\u0948\u0902 \u092e\u094c\u0924 \u0915\u094b \u0924\u0915\u093f\u092f\u093e \u0914\u0930 \u0915\u095e\u0928 \u0915\u094b \u091a\u093e\u0926\u0930 \u092c\u0928\u093e \u0915\u0930 \u0913\u095d\u0924\u093e \u0939\u0942\u0901 | Salman Khan | GARV - YouTube",
+        "visit_time": "2026-05-19 00:45:35",
+        "visit_time_dt": "2026-05-19T00:45:35.514171",
+        "visit_count": 1,
+        "raw_ts": 13423625135514171,
+        "_hash": "447770b81a58fa893c3856ba740a71700b073a31a180f65aedee98e1e3001619",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:45 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:45 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=bf_l28wUQaw",
+        "title": "(121) \u0939\u092e\u093e\u0930\u093e \u0915\u0939\u093e \u0915\u093e\u0928\u0942\u0928 \u0939\u0948 \u0914\u0930 \u0939\u092e \u0907\u0938 \u092a\u094d\u0930\u0926\u0947\u0936 \u0915\u0940 \u0905\u0926\u093e\u0932\u0924 \u0939\u0948 - \u091c\u092c\u0930\u0926\u0938\u094d\u0924 \u0938\u0940\u0928 - YouTube",
+        "visit_time": "2026-05-19 00:55:08",
+        "visit_time_dt": "2026-05-19T00:55:08.971870",
+        "visit_count": 2,
+        "raw_ts": 13423625708971870,
+        "_hash": "ffab60d9245652cd950deb5ed551f1f73a9f16feea62c6a744b0c920c2ab137f",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:55 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:55 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=tggu5TE8MBc",
+        "title": "(121) The School No One Could Fix \u2014 One Man Took Control | Denzel Washington - YouTube",
+        "visit_time": "2026-05-19 01:19:42",
+        "visit_time_dt": "2026-05-19T01:19:42.001357",
+        "visit_count": 1,
+        "raw_ts": 13423627182001357,
+        "_hash": "0ed7af727cf95d0a2c0e24b36963a73ca0cb111e6e7490f217f39a5fd9882912",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:19 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:19 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=aLJEM2ait8M",
+        "title": "(121) \u0939\u092e \u0938\u0947 \u0926\u0941\u0936\u094d\u092e\u0928\u0940 \u0915\u0940 \u092c\u093e\u095b\u0940 \u0916\u0947\u0932\u093f\u090f\u0917\u093e \u0924\u094b \u092a\u0924\u094d\u0924\u093e \u0938\u094d\u091f\u094d\u0930\u093e\u0902\u0917 \u0930\u0916\u094b, \u092f\u0947 \u0925\u093e\u0928\u093e \u0938\u0930\u0915\u093e\u0930\u0940 \u0939\u0948 \u0914\u0930 \u0939\u092e \u091c\u0928\u0924\u093e \u091c\u092c \u091a\u093e\u0939\u0947 \u092b\u0947\u0916 \u0926\u0947\u0902\u0917\u0947 - YouTube",
+        "visit_time": "2026-05-19 01:24:20",
+        "visit_time_dt": "2026-05-19T01:24:20.327954",
+        "visit_count": 1,
+        "raw_ts": 13423627460327954,
+        "_hash": "ee5305cf5dd4af696baabf6927e37bc4585b31892087b0d024b2d8e8c6ef78c2",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:24 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:24 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/results?search_query=movie+lal+badshah+amitabh+bachchan",
+        "title": "(121) movie lal badshah amitabh bachchan - YouTube",
+        "visit_time": "2026-05-19 01:49:35",
+        "visit_time_dt": "2026-05-19T01:49:35.897795",
+        "visit_count": 1,
+        "raw_ts": 13423628975897795,
+        "_hash": "d892c86247ba722673cb58204316f54847af4dfefdf96ddff1ae2d0f6d96ba4e",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:49 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:49 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=1s_JC2YIMgY",
+        "title": "(121) Lal Baadshah(1999)Full Movie | Amitabh Bachchan | Manisha Koirala | Amrish Puri | Hindi Action Movie - YouTube",
+        "visit_time": "2026-05-19 01:49:58",
+        "visit_time_dt": "2026-05-19T01:49:58.229544",
+        "visit_count": 1,
+        "raw_ts": 13423628998229544,
+        "_hash": "40730fc752f1473abf6ba331c2fad291ead13b762a3f67d34f5cae2b7fec0e46",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'c2' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'c2' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            },
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:49 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.kimi.com/chat/19e34c28-30a2-89b7-8000-0979ca75d33e?chat_enter_method=history",
+        "title": "Chrome\u5386\u53f2\u4eea\u8868\u76d8\u5347\u7ea7 - Kimi",
+        "visit_time": "2026-05-21 23:40:17",
+        "visit_time_dt": "2026-05-21T23:40:17.333720",
+        "visit_count": 2,
+        "raw_ts": 13423880417333720,
+        "_hash": "785bba446397a716212e59598e4a77f33650ba440248dcf3187c5ba7b7cbfb75",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'c2' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'c2' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=UEpJfam6_LY",
+        "title": "(124) \u0938\u0902\u091c\u092f \u0926\u0924\u094d\u0924 \u0915\u0940 \u0927\u092e\u093e\u0915\u0947\u0926\u093e\u0930 \u090f\u0915\u094d\u0936\u0928 \u092b\u093f\u0932\u094d\u092e | Vaastav (HD) | Namrata Shirodkar, Paresh Rawal, Mohnish Bahl - YouTube",
+        "visit_time": "2026-05-22 17:02:58",
+        "visit_time_dt": "2026-05-22T17:02:58.002608",
+        "visit_count": 3,
+        "raw_ts": 13423942978002608,
+        "_hash": "2b7d5938740f5e227909e6998b3ca6abc839164e79f18bb970c277be39be15da",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'rat' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'rat' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=n5pnplWPMvQ",
+        "title": "(124) Virat \u0928\u0947 \u092c\u091a\u093e\u092f\u093e \u0905\u092a\u0928\u0940 \u092c\u0939\u0928 \u0915\u094b Sleeper Cells \u0938\u0947 - Holiday Action Thriller Scene | Akshay Kumar Scene - YouTube",
+        "visit_time": "2026-05-22 18:15:58",
+        "visit_time_dt": "2026-05-22T18:15:58.350977",
+        "visit_count": 2,
+        "raw_ts": 13423947358350977,
+        "_hash": "d14e0f4de0aed7f29fd61f12ccb1e4922df4991f05c0d5507055e68a6732a09f",
+        "severity": "HIGH",
+        "reason": "Suspicious keyword 'rat' found in URL/title",
+        "matched_rule": "KEYWORD_MATCH",
+        "all_matches": [
+            {
+                "severity": "HIGH",
+                "reason": "Suspicious keyword 'rat' found in URL/title",
+                "rule": "KEYWORD_MATCH"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=Bj_3Mbvpvvo",
+        "title": "(125) ENG VS PAK 1ST ODI MATCH 2010 | FULL HIGHLIGHTS - YouTube",
+        "visit_time": "2026-05-23 00:16:00",
+        "visit_time_dt": "2026-05-23T00:16:00.178323",
+        "visit_count": 1,
+        "raw_ts": 13423968960178323,
+        "_hash": "085b62e83d8b33f07361b2d1e355abbf6ee3b6bdcbc9618abd559445818fa96e",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:16 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:16 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=R6CogofnsY8",
+        "title": "(125) Shoaib Akhtar Super Fast & Wasim Akram's Top Batting | Chanderpaul Fights Back WC 1999 | Pak vs WI - YouTube",
+        "visit_time": "2026-05-23 00:49:31",
+        "visit_time_dt": "2026-05-23T00:49:31.335691",
+        "visit_count": 1,
+        "raw_ts": 13423970971335691,
+        "_hash": "3e462acfa1ca73a555547d61cefec97ea043de565925490dac4f5fff12baf25a",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:49 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:49 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=e9DLKy3hyEA",
+        "title": "(125) KBC S13 EP 71 Full Episode | \u092c\u091a\u094d\u091a\u094b\u0902 \u0915\u0947 \u0938\u0935\u093e\u0932\u094b\u0902 \u0938\u0947 BIG B \u0939\u094b \u0917\u090f \u0924\u0902\u0917 | Amitabh Bachchan - YouTube",
+        "visit_time": "2026-05-23 01:11:31",
+        "visit_time_dt": "2026-05-23T01:11:31.592074",
+        "visit_count": 1,
+        "raw_ts": 13423972291592074,
+        "_hash": "2d693942ae47a142b173b2ef7ab387a679c8175984b4ccb2d2847a97eb2ad8bf",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:11 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:11 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=UyqQnHG39cU",
+        "title": "(125) Full Highlights | Pakistan U-19 vs India U-19 | Final | Asia Cup Men's U-19 | ZI1S - YouTube",
+        "visit_time": "2026-05-23 01:14:29",
+        "visit_time_dt": "2026-05-23T01:14:29.228039",
+        "visit_count": 2,
+        "raw_ts": 13423972469228039,
+        "_hash": "7e11a11b8abe17d44f9d81f6b1054794220d7ffc2fe4d8320112c95d608ef0a4",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:14 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:14 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=7wzKf8WPBKY",
+        "title": "(126) Pakistan Openers Sharjeel Khan & Khalid Latif Attack England Bowlers! - YouTube",
+        "visit_time": "2026-05-24 00:12:15",
+        "visit_time_dt": "2026-05-24T00:12:15.501553",
+        "visit_count": 1,
+        "raw_ts": 13424055135501553,
+        "_hash": "079576620770d0ad5416e9aeb7bcca75bac4dc84fbd2cc9fdd79e23ae3f1fdc5",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:12 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:12 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/shorts/hPPJvApGXP0",
+        "title": "(126) Navi Mumbai International Airport \u2708\ufe0f | India\u2019s Biggest Aviation Hub 2026 \ud83d\udd25 NMIA Mega Project - YouTube",
+        "visit_time": "2026-05-24 00:31:29",
+        "visit_time_dt": "2026-05-24T00:31:29.839536",
+        "visit_count": 1,
+        "raw_ts": 13424056289839536,
+        "_hash": "8622612146fd58885a954e4dd99dea9fb53ca61f25c1ea79cf885e122c3de7dc",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:31 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:31 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=J7oriMGIhdI",
+        "title": "(126) Pakistan vs Bangladesh - Asia Cup 2014 | Highlights - YouTube",
+        "visit_time": "2026-05-24 00:32:45",
+        "visit_time_dt": "2026-05-24T00:32:45.441951",
+        "visit_count": 3,
+        "raw_ts": 13424056365441951,
+        "_hash": "792d82a8e0a3e51453a9a489695e1c27da2d99d7c4c594ac1a9b4d25478a3c2b",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:32 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:32 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=q9-80oU7R5g",
+        "title": "(126) \u091c\u094b \u0909\u0938\u0942\u0932\u094b\u0902 \u0915\u0947 \u0930\u093e\u0938\u094d\u0924\u0947 \u092a\u0930 \u091a\u0932\u0924\u0947 \u0939\u0948\u0902\u2026\u0909\u0928\u0915\u0947 \u0926\u094b\u0938\u094d\u0924 \u0915\u092e \u0939\u094b\u0924\u0947 \u0939\u0948\u0902 | Sarkar 3 | Amitabh Bachchan, Yami Gautam HD - YouTube",
+        "visit_time": "2026-05-24 00:48:16",
+        "visit_time_dt": "2026-05-24T00:48:16.139799",
+        "visit_count": 1,
+        "raw_ts": 13424057296139799,
+        "_hash": "7954cb6d0210c0a9ff51015d22ed02b3142643ed48fb7e50e89b1aa316d582b9",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 00:48 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 00:48 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "https://www.youtube.com/watch?v=rbLgf2AQku0",
+        "title": "(126) YouTube",
+        "visit_time": "2026-05-24 01:26:57",
+        "visit_time_dt": "2026-05-24T01:26:57.957856",
+        "visit_count": 4,
+        "raw_ts": 13424059617957856,
+        "_hash": "80b087290a73694569f1f03c94203e4b906ead4af3de4521bf31279f149325b3",
+        "severity": "MEDIUM",
+        "reason": "Off-hours activity at 01:26 UTC (window: 00:00\u201305:00 UTC)",
+        "matched_rule": "OFF_HOURS_ACCESS",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "Off-hours activity at 01:26 UTC (window: 00:00\u201305:00 UTC)",
+                "rule": "OFF_HOURS_ACCESS"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    },
+    {
+        "url": "file:///C:/Users/786%20COMPUTERS/Desktop/INFORMATION%20AND%20SYSTEM%20AUDIT/CISAExamPrepDomain2-2019%20(1)%20(1).pdf",
+        "title": "Microsoft PowerPoint - CISA Exam Prep Domain 2-2019.pptx",
+        "visit_time": "2026-05-24 14:15:36",
+        "visit_time_dt": "2026-05-24T14:15:36.026784",
+        "visit_count": 1,
+        "raw_ts": 13424105736026784,
+        "_hash": "05bb4079a1a9dcde344e8922673dc2d784fdb466a9393802eee20c4bb0ca9fcc",
+        "severity": "MEDIUM",
+        "reason": "URL targets dangerous file type: '.pdf'",
+        "matched_rule": "DOWNLOAD_DETECTED",
+        "all_matches": [
+            {
+                "severity": "MEDIUM",
+                "reason": "URL targets dangerous file type: '.pdf'",
+                "rule": "DOWNLOAD_DETECTED"
+            }
+        ],
+        "llm": {
+            "classification": "SUSPICIOUS",
+            "confidence": 0,
+            "threat_type": "Unclassified",
+            "explanation": "LLM classification failed \u2014 manual review recommended.",
+            "recommended_action": "Investigate manually."
+        }
+    }
+]

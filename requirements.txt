@@ -1,0 +1,15 @@
+streamlit
+plotly
+pandas
+numpy
+networkx
+pydeck
+requests
+scikit-learn
+pyshark
+volatility3
+sqlalchemy
+openai
+python-dotenv
+yara-python
+geoip2

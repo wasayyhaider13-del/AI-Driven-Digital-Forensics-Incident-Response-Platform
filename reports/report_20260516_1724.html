@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DFIR Sentinel — Incident Report</title>
+    <style>
+        body   { font-family: Arial, sans-serif; background: #f5f5f5; padding: 24px; }
+        h1     { color: #1a237e; }
+        h2     { color: #333; border-bottom: 2px solid #ddd; padding-bottom: 6px; }
+        .badge { display:inline-block; padding:4px 12px; border-radius:4px;
+                  font-weight:bold; color:#fff; background:#b71c1c; font-size:1.1rem; }
+        table  { border-collapse: collapse; width: 100%; background: #fff;
+                  border-radius:6px; overflow:hidden; margin-bottom:24px; }
+        th, td { padding: 10px 14px; border: 1px solid #e0e0e0; font-size:.9rem; }
+        th     { background: #1a237e; color: #fff; text-align:left; }
+        .meta  { background:#fff; border-radius:6px; padding:16px; margin-bottom:20px;
+                  border-left:4px solid #b71c1c; }
+    </style>
+</head>
+<body>
+    <h1>🔍 DFIR Sentinel — Incident Report</h1>
+    <div class="meta">
+        <p><b>Generated:</b> 2026-05-16 17:24:06</p>
+        <p><b>Total Events:</b> 18 &nbsp;|&nbsp;
+           <b>Alerts Sent:</b> 0</p>
+        <p><b>Overall Risk Score:</b>
+           <span class="badge">100 / 100 — CRITICAL</span></p>
+    </div>
+
+    <h2>📋 Flagged Events</h2>
+    <table>
+        <tr>
+            <th>Time (UTC)</th><th>URL</th><th>Severity</th>
+            <th>Rule</th><th>Classification</th><th>Confidence</th>
+        </tr>
+        
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://malware-c2-server.ru/beacon.exe</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff8e1">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://evil-phishing.tk/login/microsoft365.html</td>
+            <td><b>MEDIUM</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">ftp://192.168.1.50/exfil/credentials_dump.zip</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff8e1">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://darknet-market.onion/listings/ransomware-kit</td>
+            <td><b>MEDIUM</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://pastebin.com/raw/xK9mZp2v</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://45.33.32.156/shell.php?cmd=whoami</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://keylogger-panel.xyz/admin/logs</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff8e1">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://drive.google.com/uc?export=download&id=1xMalwareDropper</td>
+            <td><b>MEDIUM</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://cryptominer-pool.cc/stratum</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff8e1">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://github.com/hacker-tools/mimikatz/releases</td>
+            <td><b>MEDIUM</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://botnet-controller.cn/api/register?id=VICTIM-PC</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://exploit-db.com/exploits/50299</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://192.168.1.1/cgi-bin/admin.cgi?cmd=reboot</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff8e1">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://cobalt-strike-teamserver.net:50050/beacon</td>
+            <td><b>MEDIUM</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://anonfiles.com/upload/stolen_database.sql</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://reverse-shell.xyz:4444/connect</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">http://fast-flux-dns.su/update?bot=active</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+        <tr style="background:#fff3f3">
+            <td>2026-05-16 12:06:59</td>
+            <td style="word-break:break-all">https://0day.today/exploit/39281</td>
+            <td><b>HIGH</b></td>
+            <td>KEYWORD_MATCH</td>
+            <td>N/A</td>
+            <td>N/A%</td>
+        </tr>
+    </table>
+
+    <h2>🚨 Alert History</h2>
+    <table>
+        <tr><th>Sent At</th><th>URL</th><th>Severity</th><th>Classification</th></tr>
+        <tr><td colspan="4">No alerts sent.</td></tr>
+    </table>
+
+    <p style="color:#999;font-size:.8rem;margin-top:30px">
+        Generated by DFIR Sentinel v2.0 · Automated report — verify independently.
+    </p>
+</body>
+</html>
