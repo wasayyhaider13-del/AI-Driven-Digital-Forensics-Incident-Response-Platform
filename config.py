@@ -28,7 +28,10 @@ DB_URL:      str = f"sqlite:///{DB_FILE}"
 for folder in [LOGS_DIR, REPORTS_DIR, CASES_DIR, YARA_RULES_DIR, SIGMA_RULES_DIR, MEM_DUMPS_DIR, PCAPS_DIR, DATABASE_DIR]:
     os.makedirs(folder, exist_ok=True)
 
-# ── OpenAI ───────────────────────────────────────────────────
+# ── LLM Providers (priority: Groq → Ollama → OpenAI) ─────────
+GROQ_API_KEY:  str = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL:    str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+
 OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
 LLM_MODEL:      str = os.getenv("LLM_MODEL", "gpt-4o-mini")
 

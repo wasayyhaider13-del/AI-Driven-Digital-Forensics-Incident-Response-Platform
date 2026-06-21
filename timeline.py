@@ -11,6 +11,7 @@ IOC analysis.
 """
 
 import os
+import sys
 import json
 import hashlib
 import datetime
@@ -19,6 +20,13 @@ from typing import List, Dict
 from colorama import init, Fore, Style
 
 import config
+
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
 
 # Initialise colorama (autoreset saves us writing Style.RESET_ALL every line)
 init(autoreset=True)
@@ -137,7 +145,7 @@ def reconstruct_timeline(records: List[Dict]) -> List[Dict]:
     duplicates_removed = len(records) - len(timeline)
     print(
         f"{Fore.CYAN}[TIMELINE]{Style.RESET_ALL} "
-        f"Processed {len(records)} records → "
+        f"Processed {len(records)} records -> "
         f"{Fore.GREEN}{len(timeline)} unique events{Style.RESET_ALL} "
         f"({Fore.YELLOW}{duplicates_removed} duplicates removed{Style.RESET_ALL})"
     )
@@ -180,7 +188,7 @@ def reconstruct_timeline(records: List[Dict]) -> List[Dict]:
             )
         print(
             f"{Fore.GREEN}[TIMELINE]{Style.RESET_ALL} "
-            f"Timeline saved → {log_path}"
+            f"Timeline saved -> {log_path}"
         )
     except IOError as exc:
         print(f"{Fore.RED}[TIMELINE ERROR]{Style.RESET_ALL} Could not write log: {exc}")

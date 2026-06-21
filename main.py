@@ -3,6 +3,7 @@ main.py — DFIR Sentinel Entry Point
 Modes: scan | live | report | network | autopsy | logs | monitor-files
 """
 
+import os
 import sys
 import argparse
 import datetime
@@ -175,7 +176,6 @@ def run_monitor_files(path: str = ".") -> None:
             if not event.is_directory:
                 print(f"{Fore.YELLOW}[WATCHDOG] Modified: {event.src_path}{Style.RESET_ALL}")
 
-    import os
     print(f"{Fore.CYAN}[MAIN] Mode: FILE MONITOR — watching: {path}{Style.RESET_ALL}")
     print("Press Ctrl+C to stop.\n")
 
@@ -218,7 +218,7 @@ def _build_parser() -> argparse.ArgumentParser:
     return p
 
 
-import os  # needed by monitor-files handler above
+# os imported at top of file
 
 def main() -> None:
     _print_banner()

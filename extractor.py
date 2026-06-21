@@ -1,11 +1,6 @@
 """
-extractor.py — Chrome History Extractor
-=========================================
-DFIR Module 2: Reads the SQLite browser history database from Chrome
-and returns raw visit records for downstream timeline reconstruction.
-
-Handles the locked-DB problem by copying to a temp file before reading.
-Works on Windows, macOS, and Linux.
+extractor.py — Chromium Browser History Extractor
+Reads SQLite history from Chrome or Edge (whichever is available).
 """
 
 import os
@@ -14,67 +9,51 @@ import shutil
 import sqlite3
 import datetime
 import tempfile
-from typing import List, Dict
+from typing import List, Dict, Tuple
+
 import config
 
 
-def _chrome_history_path() -> str:
-    """Return the OS-specific path to Chrome's History SQLite file."""
+def _browser_history_paths() -> List[Tuple[str, str]]:
+    """Return (path, browser_name) pairs to try, in priority order."""
     if sys.platform == "win32":
-        return os.path.expandvars(
-            r"%LOCALAPPDATA%\Google\Chrome\User Data\Default\History"
-        )
-    elif sys.platform == "darwin":
-        return os.path.expanduser(
-            "~/Library/Application Support/Google/Chrome/Default/History"
-        )
-    else:  # Linux
-        return os.path.expanduser(
-            "~/.config/google-chrome/Default/History"
-        )
+        return [
+            (os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\User Data\Default\History"), "Chrome"),
+            (os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\History"), "Edge"),
+        ]
+    if sys.platform == "darwin":
+        return [
+            (os.path.expanduser("~/Library/Application Support/Google/Chrome/Default/History"), "Chrome"),
+            (os.path.expanduser("~/Library/Application Support/Microsoft Edge/Default/History"), "Edge"),
+        ]
+    return [
+        (os.path.expanduser("~/.config/google-chrome/Default/History"), "Chrome"),
+        (os.path.expanduser("~/.config/microsoft-edge/Default/History"), "Edge"),
+    ]
+
+
+def _chrome_history_path() -> str:
+    """Return first available browser History SQLite path."""
+    for path, _ in _browser_history_paths():
+        if os.path.exists(path):
+            return path
+    return _browser_history_paths()[0][0]
 
 
 def _chrome_ts_to_dt(chrome_ts: int) -> datetime.datetime:
-    """
-    Convert a Chrome microsecond timestamp to a UTC datetime.
-
-    Chrome stores timestamps as microseconds since 1601-01-01.
-    Python's datetime epoch is 1970-01-01, so we subtract the delta.
-    """
-    epoch_delta = datetime.timedelta(microseconds=chrome_ts)
-    chrome_epoch = datetime.datetime(1601, 1, 1)
-    return chrome_epoch + epoch_delta
+    """Convert Chromium microsecond timestamp (since 1601) to datetime."""
+    return datetime.datetime(1601, 1, 1) + datetime.timedelta(microseconds=chrome_ts)
 
 
-def extract_chrome_history(limit: int = None) -> List[Dict]: # type: ignore
-    """
-    Extract browser history from Chrome's SQLite database.
-
-    Args:
-        limit: Max number of rows to return. Falls back to config.CHROME_HISTORY_LIMIT.
-
-    Returns:
-        List of record dicts with keys:
-          url, title, visit_time, visit_time_dt, visit_count, raw_ts
-    """
-    limit = limit or getattr(config, "CHROME_HISTORY_LIMIT", 200)
-
-    db_path = _chrome_history_path()
-
-    if not os.path.exists(db_path):
-        print(f"[EXTRACTOR] Chrome history not found at: {db_path}")
-        return []
-
-    # Copy to a temp file to avoid SQLite "database is locked" errors
+def _read_history_db(db_path: str, browser: str, limit: int) -> List[Dict]:
+    """Read history records from a copied SQLite database."""
     with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as tmp:
         tmp_path = tmp.name
 
     try:
         shutil.copy2(db_path, tmp_path)
-
-        conn   = sqlite3.connect(tmp_path)
+        conn = sqlite3.connect(tmp_path)
         cursor = conn.cursor()
-
         cursor.execute("""
             SELECT url, title, last_visit_time, visit_count
             FROM   urls
@@ -87,7 +66,7 @@ def extract_chrome_history(limit: int = None) -> List[Dict]: # type: ignore
             try:
                 dt = _chrome_ts_to_dt(raw_ts)
             except (OverflowError, OSError, ValueError):
-                dt = datetime.datetime.utcnow()
+                dt = datetime.datetime.now(datetime.timezone.utc)
 
             records.append({
                 "url":           url or "",
@@ -96,14 +75,15 @@ def extract_chrome_history(limit: int = None) -> List[Dict]: # type: ignore
                 "visit_time_dt": dt,
                 "visit_count":   visit_count or 1,
                 "raw_ts":        raw_ts,
+                "browser":       browser,
             })
 
         conn.close()
-        print(f"[EXTRACTOR] Extracted {len(records)} records from Chrome history.")
+        print(f"[EXTRACTOR] Extracted {len(records)} records from {browser} history.")
         return records
 
     except sqlite3.Error as exc:
-        print(f"[EXTRACTOR ERROR] SQLite error: {exc}")
+        print(f"[EXTRACTOR ERROR] SQLite error ({browser}): {exc}")
         return []
 
     finally:
@@ -113,10 +93,29 @@ def extract_chrome_history(limit: int = None) -> List[Dict]: # type: ignore
             pass
 
 
-# ── CLI self-test ──────────────────────────────────────────────────────────────
+def extract_chrome_history(limit: int = None) -> List[Dict]:  # type: ignore
+    """
+    Extract browser history from Chrome or Edge SQLite database.
+
+    Returns list of record dicts with keys:
+      url, title, visit_time, visit_time_dt, visit_count, raw_ts, browser
+    """
+    limit = limit or getattr(config, "CHROME_HISTORY_LIMIT", 200)
+
+    for db_path, browser in _browser_history_paths():
+        if not os.path.exists(db_path):
+            continue
+        records = _read_history_db(db_path, browser, limit)
+        if records:
+            return records
+
+    tried = ", ".join(p for p, _ in _browser_history_paths())
+    print(f"[EXTRACTOR] No browser history found. Checked: {tried}")
+    return []
+
+
 if __name__ == "__main__":
     rows = extract_chrome_history(limit=10)
     for r in rows:
-        print(r["visit_time"], r["url"][:80])
+        print(r["visit_time"], r.get("browser", "?"), r["url"][:80])
     print(f"\nTotal: {len(rows)}")
-    print("Import test successful")

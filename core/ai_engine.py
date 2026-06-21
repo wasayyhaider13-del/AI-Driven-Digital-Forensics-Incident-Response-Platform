@@ -8,10 +8,11 @@ explaining threats, scoring confidence, and suggesting immediate response triage
 import json
 import time
 import re
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import config
 from colorama import Fore, Style
+from core.llm_client import build_llm_client, active_llm_model, get_llm_provider, llm_configured
 
 # ── Local Backup Engine (Static Analysis) ──────────────────────────────────────
 
@@ -56,23 +57,12 @@ def _get_static_analysis(event: Dict) -> Dict[str, Any]:
 # ── Client Builder ─────────────────────────────────────────────────────────────
 
 def _build_client():
-    """Create standard OpenAI/Ollama client wrapper."""
-    try:
-        from openai import OpenAI
-    except ImportError:
-        return None
-
-    if config.USE_OLLAMA:
-        return OpenAI(api_key="ollama", base_url=config.OLLAMA_BASE_URL)
-
-    if not config.OPENAI_API_KEY:
-        return None
-
-    return OpenAI(api_key=config.OPENAI_API_KEY)
+    client, _ = build_llm_client()
+    return client
 
 
 def _active_model() -> str:
-    return config.OLLAMA_MODEL if config.USE_OLLAMA else config.LLM_MODEL
+    return active_llm_model()
 
 
 def _build_prompt(event: Dict) -> str:
@@ -139,6 +129,7 @@ def classify_event(event: Dict) -> Dict:
             result.setdefault("threat_type", event.get("matched_rule", "Generic"))
             result.setdefault("explanation", "Forensic match analyzed via active AI models.")
             result.setdefault("recommended_action", "Audit via administrative channels.")
+            result["source"] = get_llm_provider()
             
             event["llm"] = result
             return event
@@ -171,13 +162,14 @@ def run_ai_consultation(prompt: str) -> str:
     """Allows an investigator to ask arbitrary questions regarding incidents/cases."""
     global _api_auth_failed
     
-    if _api_auth_failed or not config.OPENAI_API_KEY:
+    if _api_auth_failed or not llm_configured():
         return ("**[AI ENGINE] Local Mode Active**\n\n"
-                "I am currently operating in **Local Heuristics Mode** because no valid `OPENAI_API_KEY` was found in the `.env` settings.\n\n"
-                "Here are standard triage recommendations for active investigations:\n"
-                "1. **Host Isolation:** Isolate endpoints expressing C2 beaconing on port 4444 or Tor exit nodes immediately.\n"
-                "2. **Memory Analysis:** Run `windows.malfind` and `windows.pslist` on system memory dumps via Volatility to track code injections.\n"
-                "3. **Hash Reputation:** Check SHA256 file hashes against VirusTotal or AbuseIPDB blocklists.")
+                "Operating in **Local Heuristics Mode** because no valid `GROQ_API_KEY` "
+                "(or other LLM provider) was found in `.env`.\n\n"
+                "Standard triage recommendations:\n"
+                "1. **Host Isolation:** Isolate endpoints with C2 beaconing immediately.\n"
+                "2. **Memory Analysis:** Run Volatility plugins on memory dumps.\n"
+                "3. **Hash Reputation:** Check file hashes against VirusTotal or AbuseIPDB.")
 
     client = _build_client()
     if not client:

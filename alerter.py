@@ -174,6 +174,12 @@ def send_alerts(classified_events: List[Dict]) -> int:
     alerts_sent = 0
     trigger     = {"SUSPICIOUS", "MALICIOUS"}
 
+    gmail_ready = all([config.GMAIL_SENDER, config.GMAIL_APP_PASSWORD, config.GMAIL_RECIPIENT])
+    if not gmail_ready and any(
+        e.get("llm", {}).get("classification") in trigger for e in classified_events
+    ):
+        print(f"{Fore.YELLOW}[ALERTER] Gmail not configured — alerts logged locally only.{Style.RESET_ALL}")
+
     for event in classified_events:
         llm    = event.get("llm", {})
         cls    = llm.get("classification", "UNKNOWN")
@@ -185,6 +191,10 @@ def send_alerts(classified_events: List[Dict]) -> int:
 
         if _is_duplicate(url, sent_hashes):
             print(f"{Fore.CYAN}[ALERTER] Dedup skip: {url[:60]}{Style.RESET_ALL}")
+            continue
+
+        if not gmail_ready:
+            _record_sent_alert(url, event)  # audit trail even without SMTP
             continue
 
         subject = f"🚨 [{sev}] DFIR Alert — {cls} Threat on {hostname}"

@@ -136,9 +136,9 @@ def _extract_field(text: str, pattern: str, multiline: bool = False) -> Optional
 
 # Apache / Nginx combined log format
 _APACHE_RE = re.compile(
-    r'(?P<<ip>[\d\.]+)\s+-\s+-\s+\[(?P<<time>[^\]]+)\]\s+'
-    r'"(?P<<method>\w+)\s+(?P<<url>\S+)\s+[^"]*"\s+'
-    r'(?P<<status>\d+)\s+(?P<size>\d+)'
+    r'(?P<ip>[\d\.]+)\s+-\s+-\s+\[(?P<time>[^\]]+)\]\s+'
+    r'"(?P<method>\w+)\s+(?P<url>\S+)\s+[^"]*"\s+'
+    r'(?P<status>\d+)\s+(?P<size>\d+)'
 )
 
 SUSPICIOUS_STATUS = {"400", "401", "403", "404", "500", "503"}

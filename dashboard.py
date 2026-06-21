@@ -20,10 +20,17 @@ try:
     from autopsy_ingestor import load_autopsy_data
     from network_analyzer import tshark_installed, get_tshark_version, capture_traffic, load_network_data
     from log_ingestor     import load_logs as load_system_logs
+    from ui.components.graphs import render_process_tree
+    from ui.components.charts import render_sankey_diagram, render_threat_heatmap
     import config
     REAL_MODE = True
-except Exception:
+    _IMPORT_ERROR = None
+except Exception as _e:
     REAL_MODE = False
+    _IMPORT_ERROR = str(_e)
+    render_process_tree = None
+    render_sankey_diagram = None
+    render_threat_heatmap = None
 
 st.set_page_config(page_title="DFIR SENTINEL v3.0", page_icon="🛡️",
                    layout="wide", initial_sidebar_state="expanded")
@@ -31,7 +38,7 @@ st.set_page_config(page_title="DFIR SENTINEL v3.0", page_icon="🛡️",
 # ── SESSION STATE INITIALIZATION ──────────────────────────────────────────────
 for k, v in [
     ("scan_count", 0),
-    ("last_scan", datetime.datetime.utcnow()),
+    ("last_scan", datetime.datetime.now(datetime.timezone.utc)),
     ("auto_refresh", False),
     ("refresh_secs", 30),
     ("file_events", []),
@@ -585,7 +592,7 @@ _ORIGINS = [
 ]
 
 def _demo(n=50):
-    now = datetime.datetime.utcnow()
+    now = datetime.datetime.now(datetime.timezone.utc)
     out = []
     for i in range(n):
         bad = random.random() < 0.35
@@ -622,8 +629,10 @@ def _enrich(e):
     if not e.get("domain"):
         try: e["domain"] = urlparse(e.get("url","")).hostname or "unknown"
         except: e["domain"] = "unknown"
-    if not e.get("threat_score"):
+    if e.get("threat_score") is None:
         e["threat_score"] = {"HIGH":85,"MEDIUM":50,"LOW":20}.get(e.get("severity","LOW"),20)
+    if not e.get("event_type"):
+        e["event_type"] = "Browser"
     if not e.get("mitre"):
         mitre_map = {"KEYWORD_MATCH":"T1071.001","SUSPICIOUS_TLD":"T1566.002",
             "MALICIOUS_DOMAIN":"T1071.001","DOWNLOAD_DETECTED":"T1105",
@@ -633,7 +642,7 @@ def _enrich(e):
     if not e.get("llm"):
         sev = e.get("severity","LOW")
         e["llm"] = {"classification":"SUSPICIOUS" if sev in ("HIGH","MEDIUM") else "BENIGN",
-            "confidence":0,"threat_type":"Rule-based","explanation":"Add OPENAI_API_KEY to .env.",
+            "confidence":0,"threat_type":"Rule-based","explanation":"Add GROQ_API_KEY to .env for AI analysis.",
             "recommended_action":"Review manually."}
     if not e.get("origin_lat"):
         dom = e.get("domain","")
@@ -646,7 +655,7 @@ def _enrich(e):
     return e
 
 def get_profile_data(profile):
-    now = datetime.datetime.utcnow()
+    now = datetime.datetime.now(datetime.timezone.utc)
     if "Ransomware" in profile:
         return [
             {
@@ -762,14 +771,18 @@ def load_base_data():
     if REAL_MODE:
         try:
             saved = load_logs()
-            if saved: return [_enrich(e) for e in saved]
+            if saved:
+                return [_enrich(e) for e in saved]
             records = extract_chrome_history()
             if records:
                 tl = reconstruct_timeline(records)
                 fl = detect_iocs(tl)
-                return [_enrich(e) for e in fl] if fl else _demo(50)
-        except Exception:
-            pass
+                if fl:
+                    return [_enrich(e) for e in fl]
+                # No IOC hits — still show real browsing history (not demo data)
+                return [_enrich(e) for e in tl]
+        except Exception as ex:
+            st.sidebar.warning(f"Live data load failed: {ex}")
     return _demo(50)
 
 def load_data():
@@ -867,7 +880,7 @@ def ev_card(e, idx):
         if btn_cols[0].button("Isolate Node", key=f"iso_{idx}"):
             st.session_state.isolated_nodes.add(domain)
             st.session_state.isolated_nodes.add(url)
-            log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Domain/Host '{domain}' isolated. Firewall blocked."
+            log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Domain/Host '{domain}' isolated. Firewall blocked."
             st.session_state.containment_terminal_logs.append(log_msg)
             st.success(f"✓ Isolated {domain}")
             st.rerun()
@@ -875,7 +888,7 @@ def ev_card(e, idx):
         if btn_cols[0].button("Reconnect", key=f"rec_{idx}"):
             st.session_state.isolated_nodes.discard(domain)
             st.session_state.isolated_nodes.discard(url)
-            log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Reconnected Host/Domain '{domain}' to active directory."
+            log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Reconnected Host/Domain '{domain}' to active directory."
             st.session_state.containment_terminal_logs.append(log_msg)
             st.success(f"✓ Reconnected {domain}")
             st.rerun()
@@ -884,14 +897,14 @@ def ev_card(e, idx):
     if not is_quarantined:
         if btn_cols[1].button("Quarantine File", key=f"quar_{idx}"):
             st.session_state.quarantined_files.add(url)
-            log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: File at '{url[:40]}...' quarantined and hash isolated."
+            log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: File at '{url[:40]}...' quarantined and hash isolated."
             st.session_state.containment_terminal_logs.append(log_msg)
             st.success("✓ File Quarantined")
             st.rerun()
     else:
         if btn_cols[1].button("Restore File", key=f"rest_{idx}"):
             st.session_state.quarantined_files.discard(url)
-            log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Restored file '{url[:40]}...' from quarantine."
+            log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Restored file '{url[:40]}...' from quarantine."
             st.session_state.containment_terminal_logs.append(log_msg)
             st.success("✓ File Restored")
             st.rerun()
@@ -956,10 +969,10 @@ with st.sidebar:
     rs = st.select_slider("Scan Speed (s)", [10, 30, 60, 120, 300], value=30, key="rs_slider")
     st.session_state.refresh_secs = rs
 
-    if st.button("⟳  EXECUTE HOST AGENT SCAN", use_container_width=True):
+    if st.button("⟳  EXECUTE HOST AGENT SCAN", width="stretch"):
         st.cache_data.clear()
         st.session_state.scan_count += 1
-        st.session_state.last_scan = datetime.datetime.utcnow()
+        st.session_state.last_scan = datetime.datetime.now(datetime.timezone.utc)
         st.rerun()
 
     st.markdown('<div class="sh" style="margin-top:14px">SECURITY INTEL FILTERS</div>', unsafe_allow_html=True)
@@ -979,7 +992,7 @@ with st.sidebar:
         🖥️ SENTINEL-NODE-01 CLIENT TELEMETRY
       </div>
       <div style="display:flex;justify-content:space-between"><span>EDR AGENT CPU</span><span style="color:var(--neon-cyan)!important">{cpu_val}%</span></div>
-      <div style="display:flex;justify-content:space-between"><span>MEMORY USAGE</span><span style="color:var(--neon-cyan)!important">{ram_val}%</span></div>
+      <div style="display:flex;justify-content:space-between"><span>MEMORY USAGE</span><span style="color:var(--neon-ram)!important">{ram_val}%</span></div>
       <div style="display:flex;justify-content:space-between"><span>PING LATENCY</span><span style="color:var(--neon-cyan)!important">{lat_val}ms</span></div>
       <div style="display:flex;justify-content:space-between"><span>ACTIVE HOST IPS</span><span style="color:var(--neon-cyan)!important">192.168.1.45</span></div>
       <div style="display:flex;justify-content:space-between"><span>FIREWALL BLOCKS</span><span style="color:var(--neon-purple)!important">{len(st.session_state.isolated_nodes)} active</span></div>
@@ -990,6 +1003,21 @@ with st.sidebar:
     if "None" not in st.session_state.incident_profile:
         cls_ = "pill sim"
         lbl_ = "SIMULATOR ACTIVE"
+
+    # ── Import Diagnostics Panel ──────────────────────────────────────────────
+    if not REAL_MODE and _IMPORT_ERROR:
+        st.markdown(f"""
+        <div class="sb-box" style="margin-top:10px;border-color:rgba(255,157,0,0.3)">
+          <div style="font-family:var(--font-mono);font-size:.6rem;color:#ff9d00!important;font-weight:bold;margin-bottom:6px">
+            ⚠ IMPORT DIAGNOSTICS
+          </div>
+          <div style="font-family:var(--font-mono);font-size:.55rem;color:#8fa3b7!important;word-break:break-all;line-height:1.6">
+            {_IMPORT_ERROR[:200]}
+          </div>
+          <div style="font-family:var(--font-mono);font-size:.55rem;color:#8fa3b7!important;margin-top:6px">
+            Run: pip install -r requirements.txt
+          </div>
+        </div>""", unsafe_allow_html=True)
         
     st.markdown(f"""
     <div class="sb-box" style="margin-top:10px">
@@ -1017,7 +1045,7 @@ for col in ["severity", "threat_score", "domain", "visit_time", "url", "matched_
         df[col] = 0 if col == "threat_score" else "N/A"
 
 # ── CYBER INTEL BULLETIN TICKER ───────────────────────────────────────────────
-now_s = datetime.datetime.utcnow().strftime("%Y-%m-%d  %H:%M:%S")
+now_s = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d  %H:%M:%S")
 p_cls = "pill live" if REAL_MODE else "pill demo"
 p_lbl = "LIVE ENVIRONMENT CONNECTED" if REAL_MODE else "DEMO SANDBOX"
 if "None" not in st.session_state.incident_profile:
@@ -1115,7 +1143,7 @@ def page_overview():
             height=160,
             margin=dict(l=10, r=10, t=10, b=10)
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
         st.markdown(f"<div style='text-align:center;font-family:var(--font-mono);font-size:0.7rem;color:{rc}!important;font-weight:bold'>{rl}</div>", unsafe_allow_html=True)
         
     with cb:
@@ -1136,10 +1164,10 @@ def page_overview():
                     fig.add_trace(go.Scatter(x=s["hr"], y=s["n"], name=sev, fill="tozeroy",
                         line=dict(color=col, width=2, shape="spline"), fillcolor=fill,
                         hovertemplate=f"<b>{sev}</b><br>%{{x}}<br>%{{y}} events<extra></extra>"))
-           fig.update_layout(**layout_config) **PL, height=180, showlegend=True,
+            fig.update_layout(**PL, height=180, showlegend=True,
                 legend=dict(bgcolor="rgba(0,0,0,0)", orientation="h", yanchor="bottom", y=1.02),
                 xaxis=dict(**GRD), yaxis=dict(**GRD))
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig, width="stretch")
             
     with cc:
         sh("AI threat CLASSIFICATION SPECTRUM")
@@ -1154,7 +1182,7 @@ def page_overview():
                 legend=dict(bgcolor="rgba(0,0,0,0)", orientation="h", yanchor="bottom", y=1.02),
                 annotations=[dict(text=f"<b>{total}</b>", x=.5, y=.5,
                     font=dict(size=18, color="#e6f3ff", family="Space Grotesk"), showarrow=False)])
-            st.plotly_chart(fig2, use_container_width=True)
+            st.plotly_chart(fig2, width="stretch")
 
     c3, c4 = st.columns(2)
     with c3:
@@ -1169,7 +1197,7 @@ def page_overview():
                 hovertemplate="<b>%{y}</b><br>%{x} transactions<extra></extra>"))
             fig3.update_layout(**PL, height=220)
             fig3.update_layout(yaxis=dict(**GRD, tickfont=dict(size=9)), xaxis=dict(**GRD))
-            st.plotly_chart(fig3, use_container_width=True)
+            st.plotly_chart(fig3, width="stretch")
             
     with c4:
         sh("IOC CRITERIA TRIGGER DENSITY")
@@ -1182,7 +1210,7 @@ def page_overview():
                     marker_line_width=0, hovertemplate="<b>%{x}</b><br>%{y} matches<extra></extra>"))
                 fig4.update_layout(**PL, height=220)
                 fig4.update_layout(xaxis=dict(**GRD, tickangle=-25, tickfont=dict(size=8)), yaxis=dict(**GRD))
-                st.plotly_chart(fig4, use_container_width=True)
+                st.plotly_chart(fig4, width="stretch")
 
     sh("TACTICAL ACTION CENTER — HIGH-SEVERITY EVENTS PRIORITY QUEUE")
     hi_ev = [e for e in events if e.get("severity") in ("HIGH", "MEDIUM")][:12]
@@ -1314,7 +1342,7 @@ def page_world_map():
             name="Your Local System Node",
         ))
 
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     with dossier_col:
         st.markdown("""
@@ -1362,13 +1390,15 @@ def page_world_map():
             {"Country":k,"Threats":v["count"],"Max Score":v["max_scr"],"Severity":v["sev"]}
             for k,v in sorted(countries_seen.items(),key=lambda x:-x[1]["count"])
         ])
-        st.dataframe(orig_df, use_container_width=True, hide_index=True,
+        st.dataframe(orig_df, width="stretch", hide_index=True,
             column_config={"Max Score":st.column_config.ProgressColumn("Max Score",min_value=0,max_value=100)})
 
 
 def page_domain_graph():
     sh("🌐 BEHAVIORAL GRAPH — DOMAIN RELATIONSHIP NETWORK")
-    if df.empty: st.info("No network data to construct behavioral graph."); return
+    if not raw:
+        st.info("No network data to construct behavioral graph.")
+        return
 
     # Left-hand network graph column, right-hand node details inspector panel
     graph_col, inspector_col = st.columns([3, 1.2])
@@ -1376,11 +1406,12 @@ def page_domain_graph():
     with graph_col:
         G = nx.Graph()
         G.add_node("SENTINEL-NODE-01", kind="host", score=0)
-        for e in events[:90]:
+        graph_events = raw[:90]
+        for e in graph_events:
             dom=e.get("domain","?"); scr=e.get("threat_score",0)
             if not G.has_node(dom): G.add_node(dom,kind="domain",score=scr)
             G.add_edge("SENTINEL-NODE-01",dom)
-            for e2 in events[:90]:
+            for e2 in graph_events:
                 if e2 is e: continue
                 m1,m2=e.get("mitre",""),e2.get("mitre","")
                 if m1==m2 and m1 not in ("N/A",""):
@@ -1410,7 +1441,7 @@ def page_domain_graph():
         fig.update_layout(**PL,height=480,showlegend=False)
         fig.update_layout(xaxis=dict(showgrid=False,zeroline=False,showticklabels=False),
                           yaxis=dict(showgrid=False,zeroline=False,showticklabels=False))
-        st.plotly_chart(fig,use_container_width=True)
+        st.plotly_chart(fig,width="stretch")
 
     with inspector_col:
         st.markdown("""
@@ -1454,16 +1485,16 @@ def page_domain_graph():
             # Live isolation button inside the inspector
             is_node_blocked = select_node in st.session_state.isolated_nodes
             if not is_node_blocked:
-                if st.button("BLOCK DOMAIN AT WAN GATEWAY", key="block_ins_btn", use_container_width=True):
+                if st.button("BLOCK DOMAIN AT WAN GATEWAY", key="block_ins_btn", width="stretch"):
                     st.session_state.isolated_nodes.add(select_node)
-                    log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Domain '{select_node}' blocked at corporate firewall."
+                    log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Domain '{select_node}' blocked at corporate firewall."
                     st.session_state.containment_terminal_logs.append(log_msg)
                     st.success("✓ Domain Blocked")
                     st.rerun()
             else:
-                if st.button("RESTORE DOMAIN WAN ACCESS", key="unblock_ins_btn", use_container_width=True):
+                if st.button("RESTORE DOMAIN WAN ACCESS", key="unblock_ins_btn", width="stretch"):
                     st.session_state.isolated_nodes.discard(select_node)
-                    log_msg = f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Restored access to domain '{select_node}'."
+                    log_msg = f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] SYSTEM EDR ACTION: Restored access to domain '{select_node}'."
                     st.session_state.containment_terminal_logs.append(log_msg)
                     st.success("✓ Domain Access Restored")
                     st.rerun()
@@ -1472,7 +1503,15 @@ def page_domain_graph():
 
 def page_ioc():
     sh("🔬 INDICATORS OF COMPROMISE — THREAT MATRICES & CRITERIA")
-    if df.empty: st.info("No logged events matched current matrix parameters."); return
+    if df.empty:
+        st.info("No logged events matched current matrix parameters.")
+        return
+
+    if render_sankey_diagram:
+        sh("ATTACK PIPELINE FLOW (SOURCE → RULE → SEVERITY → CLASSIFICATION)")
+        sankey_events = [{**e, "event_type": e.get("event_type", "Browser")} for e in events]
+        st.plotly_chart(render_sankey_diagram(sankey_events), width="stretch")
+        st.markdown("<br>", unsafe_allow_html=True)
     
     rules=df["matched_rule"].value_counts() if "matched_rule" in df.columns else {}
     ioc_df=df[df["matched_rule"]!="NONE"] if "matched_rule" in df.columns else pd.DataFrame()
@@ -1495,7 +1534,7 @@ def page_ioc():
                 marker_color=["#ff0055","#ff9d00","#00f0ff","#bd5af2","#39ff14","#ffe600"][:len(rd)],marker_line_width=0))
             fig.update_layout(**PL,height=220)
             fig.update_layout(xaxis=dict(**GRD),yaxis=dict(**GRD,tickfont=dict(size=9)))
-            st.plotly_chart(fig,use_container_width=True)
+            st.plotly_chart(fig,width="stretch")
     with cm:
         sh("MITRE ATT&CK TACTICS INDEX DENSITY")
         if "mitre" in df.columns:
@@ -1506,13 +1545,13 @@ def page_ioc():
                     marker_color="#bd5af2",marker_line_width=0))
                 fig.update_layout(**PL,height=220)
                 fig.update_layout(xaxis=dict(**GRD,tickangle=-25,tickfont=dict(size=9)),yaxis=dict(**GRD))
-                st.plotly_chart(fig,use_container_width=True)
+                st.plotly_chart(fig,width="stretch")
                 
     sh("COMPREHENSIVE INDICATORS AUDIT LOG")
     cols=[c for c in ["visit_time","url","severity","matched_rule","mitre","threat_score","reason"] if c in df.columns]
     show=df[cols].copy()
     show.columns=[c.replace("_"," ").upper() for c in cols]
-    st.dataframe(show,use_container_width=True,hide_index=True,
+    st.dataframe(show,width="stretch",hide_index=True,
         column_config={"THREAT SCORE":st.column_config.ProgressColumn("THREAT SCORE",min_value=0,max_value=100,format="%d")})
 
 
@@ -1533,7 +1572,7 @@ def page_timeline():
             showscale=True,colorbar=dict(thickness=10,tickfont=dict(size=9,color="#8fa3b7"))))
         fig.update_layout(**PL,height=180,xaxis_title="Hour of Day (UTC)")
         fig.update_layout(xaxis=dict(**GRD,tickmode="linear",dtick=2))
-        st.plotly_chart(fig,use_container_width=True)
+        st.plotly_chart(fig,width="stretch")
         
     sh("CHRONOLOGICAL WATERFALL METRIC SCAN")
     smap={"HIGH":3,"MEDIUM":2,"LOW":1}
@@ -1551,13 +1590,13 @@ def page_timeline():
     fig2.update_layout(**PL,height=160,showlegend=True)
     fig2.update_layout(yaxis=dict(tickvals=[1,2,3],ticktext=["LOW","MED","HIGH"],**GRD),xaxis=dict(**GRD),
         legend=dict(bgcolor="rgba(0,0,0,0)",orientation="h"))
-    st.plotly_chart(fig2,use_container_width=True)
+    st.plotly_chart(fig2,width="stretch")
     
     sh("HISTORICAL AUDIT CHRONOLOGY TIMELINE")
     tc=[c for c in ["visit_time","url","domain","severity","threat_score","matched_rule","mitre"] if c in _df.columns]
     tl=_df[tc].sort_values("visit_time",ascending=False).copy()
     tl.columns=[c.replace("_"," ").upper() for c in tc]
-    st.dataframe(tl,use_container_width=True,hide_index=True,
+    st.dataframe(tl,width="stretch",hide_index=True,
         column_config={"THREAT SCORE":st.column_config.ProgressColumn("THREAT SCORE",min_value=0,max_value=100)})
 
 
@@ -1572,7 +1611,7 @@ def page_ai():
         
         # Display simulated AI reasoning chain step log
         thinking_log = [
-            f"[{datetime.datetime.utcnow().strftime('%H:%M:%S')}] [INITIATING SIGNAL SCAN] Evaluating host event buffer.",
+            f"[{datetime.datetime.now(datetime.timezone.utc).strftime('%H:%M:%S')}] [INITIATING SIGNAL SCAN] Evaluating host event buffer.",
             "  - [COMPLIANCE DATA] Threat Profile Override active: " + st.session_state.incident_profile,
             "  - [DNS BEACON CHECK] Querying threat intelligence rep databases for active domains...",
             "  - [CVE CROSS REF] Mapping observed URLs with high-priority vulnerability list...",
@@ -1594,11 +1633,15 @@ def page_ai():
         """, unsafe_allow_html=True)
         
         # Dynamic policy override
-        target_rule_url = st.selectbox("Select Target URL to Override Profile", [e.get("url") for e in events[:8]], key="ai_override_target")
+        target_rule_url = st.selectbox(
+            "Select Target URL to Override Profile",
+            [e.get("url") for e in events[:8]] or ["No events loaded"],
+            key="ai_override_target",
+        )
         override_classification = st.selectbox("Override Intelligence Profile class", ["MALICIOUS", "SUSPICIOUS", "BENIGN"], key="ai_override_val")
         
-        if st.button("💾 SAVE ADVISORY POLICY RULE", key="ai_override_btn", use_container_width=True):
-            if target_rule_url:
+        if st.button("💾 SAVE ADVISORY POLICY RULE", key="ai_override_btn", width="stretch"):
+            if target_rule_url and target_rule_url != "No events loaded":
                 st.session_state.ai_override_rules[target_rule_url] = override_classification
                 # update active events dict in session memory
                 for e in raw:
@@ -1619,7 +1662,7 @@ def page_ai():
     c3.metric("Benign Transactions",len(ben_ev))
     c4.metric("Unclassified Items",len(unk_ev))
     
-    if unk_ev: st.info("ℹ️ Add `OPENAI_API_KEY=sk-...` to your .env file to activate full external AI reasoning.")
+    if unk_ev: st.info("ℹ️ Add `GROQ_API_KEY=gsk_...` to your `.env` file to activate Groq AI reasoning.")
     if not cls_ev: st.success("✅ Clean system telemetry. No active threat indicators matched."); return
     
     confs=[e.get("llm",{}).get("confidence",0) for e in cls_ev]
@@ -1629,7 +1672,7 @@ def page_ai():
         fig=go.Figure(go.Histogram(x=confs,nbinsx=12,marker=dict(color="#bd5af2",line=dict(color="#030814",width=1))))
         fig.update_layout(**PL,height=180,xaxis_title="Confidence Percentage (%)")
         fig.update_layout(xaxis=dict(**GRD),yaxis=dict(**GRD))
-        st.plotly_chart(fig,use_container_width=True)
+        st.plotly_chart(fig,width="stretch")
     with ch2:
         sh("INCIDENT CATEGORIES INDEX")
         tt=Counter(e.get("llm",{}).get("threat_type","None") for e in cls_ev if e.get("llm",{}).get("threat_type") not in (None,"None"))
@@ -1638,7 +1681,7 @@ def page_ai():
             fig=go.Figure(go.Bar(x=tt_df["count"],y=tt_df["type"],orientation="h",marker_color="#ff9d00",marker_line_width=0))
             fig.update_layout(**PL,height=180)
             fig.update_layout(xaxis=dict(**GRD),yaxis=dict(**GRD,tickfont=dict(size=10)))
-            st.plotly_chart(fig,use_container_width=True)
+            st.plotly_chart(fig,width="stretch")
             
     sh(f"DETAILED INTEL CLASSIFICATIONS ({len(cls_ev)} Events)")
     for idx, e in enumerate(cls_ev[:20]):
@@ -1740,7 +1783,7 @@ def page_cve():
                 legend=dict(bgcolor="rgba(0,0,0,0)"),
                 annotations=[dict(text=f"<b>{len(all_cves)}</b>",x=.5,y=.5,
                     font=dict(size=18,color="#e6f3ff",family="Space Grotesk"),showarrow=False)])
-            st.plotly_chart(fig,use_container_width=True)
+            st.plotly_chart(fig,width="stretch")
     with ch2:
         sh("CVE CVSS BASE SCORE TELEMETRY")
         if all_cves:
@@ -1752,7 +1795,7 @@ def page_cve():
             fig.update_layout(**PL,height=180)
             fig.update_layout(yaxis=dict(**GRD,range=[0,11]),
                 xaxis=dict(**GRD,tickangle=-40,tickfont=dict(size=8)))
-            st.plotly_chart(fig,use_container_width=True)
+            st.plotly_chart(fig,width="stretch")
             
     sh(f"OBSERVED EVENTS → VULNERABILITY CVE MATCHES ({len(ev_map)} Matches)")
     for ev,cves in ev_map[:12]:
@@ -1772,7 +1815,7 @@ def page_cve():
         
     sh("VULNERABILITY CVE DATABASE KNOWLEDGE REPOSITORY")
     ref=pd.DataFrame([{"ID":c["id"],"Severity":c["sev"],"CVSS Score":c["cvss"],"Product Target":c["product"],"MITRE Code":c["mitre"]} for c in CVE_DB])
-    st.dataframe(ref,use_container_width=True,hide_index=True,
+    st.dataframe(ref,width="stretch",hide_index=True,
         column_config={"CVSS Score":st.column_config.ProgressColumn("CVSS Score",min_value=0,max_value=10,format="%.1f")})
 
 
@@ -1839,7 +1882,7 @@ def page_network():
         
         capture_duration = st.slider("Interception Frame (s)", 5, 60, 15, key="net_tshark_dur")
         
-        if st.button("▶ START TSHARK CAPTURE", key="start_net_cap_btn", use_container_width=True):
+        if st.button("▶ START TSHARK CAPTURE", key="start_net_cap_btn", width="stretch"):
             st.session_state.packet_simulation_active = True
             
             # If real mode, initiate backend script
@@ -1849,7 +1892,7 @@ def page_network():
                     st.session_state.net_data=load_network_data()
             st.rerun()
             
-        if st.button("🗑️ CLEAR INTERCEPT BUFFER", key="clear_net_cap_btn", use_container_width=True):
+        if st.button("🗑️ CLEAR INTERCEPT BUFFER", key="clear_net_cap_btn", width="stretch"):
             st.session_state.net_data = []
             st.success("Buffer cleared.")
             st.rerun()
@@ -1869,7 +1912,7 @@ def page_network():
         ndf=pd.DataFrame(net)
         sc2=[c for c in ["url","severity","dst_ip","dst_port","dns_query","http_host","reason"] if c in ndf.columns]
         if sc2:
-            st.dataframe(ndf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),use_container_width=True,hide_index=True)
+            st.dataframe(ndf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),width="stretch",hide_index=True)
 
 
 def page_autopsy():
@@ -1885,7 +1928,7 @@ def page_autopsy():
         up=st.file_uploader("Drop Autopsy SQLite/Excel/CSV exports here",type=["csv","xlsx"])
     with col2:
         st.markdown("<br>",unsafe_allow_html=True)
-        demo_btn=st.button("📊 LOAD CASE DEMO FILE DATA", use_container_width=True)
+        demo_btn=st.button("📊 LOAD CASE DEMO FILE DATA", width="stretch")
         
     recs=st.session_state.get("autopsy_data",[])
     if up:
@@ -1914,7 +1957,7 @@ def page_autopsy():
         adf=pd.DataFrame(recs)
         sc2=[c for c in ["visit_time","url","title","severity","matched_rule","reason"] if c in adf.columns]
         if sc2:
-            st.dataframe(adf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),use_container_width=True,hide_index=True)
+            st.dataframe(adf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),width="stretch",hide_index=True)
 
 
 def page_windows():
@@ -1929,7 +1972,7 @@ def page_windows():
     c1,c2,c3=st.columns(3)
     sources=c1.multiselect("Select Logs Channels",["Security","System","Application"],default=["Security","System"])
     max_evs=c2.slider("Max Event Count Threshold",10,500,100)
-    run_btn=c3.button("📋 READ LOCAL WINDOWS EVENT LOGS",use_container_width=True)
+    run_btn=c3.button("📋 READ LOCAL WINDOWS EVENT LOGS",width="stretch")
     
     log_recs=[]
     if run_btn:
@@ -1966,7 +2009,7 @@ def page_windows():
         ldf=pd.DataFrame(log_recs)
         sc2=[c for c in ["visit_time","url","severity","matched_rule","reason"] if c in ldf.columns]
         if sc2:
-            st.dataframe(ldf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),use_container_width=True,hide_index=True)
+            st.dataframe(ldf[sc2].rename(columns={c:c.replace("_"," ").upper() for c in sc2}),width="stretch",hide_index=True)
 
 
 def page_file_monitor():
@@ -1988,7 +2031,7 @@ def page_file_monitor():
     fev=st.session_state.get("file_events",[])
     c1,c2=st.columns(2)
     
-    if c1.button("🔬 EMULATE EDR MALWARE ACTIONS", use_container_width=True):
+    if c1.button("🔬 EMULATE EDR MALWARE ACTIONS", width="stretch"):
         now=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         fev=[
             {"url":"C:/Users/User/Downloads/cryptor.exe","severity":"HIGH","reason":"Host downloaded unauthorized unsigned executable to user spaces","matched_rule":"FILE_MONITOR","visit_time":now,"threat_score":92,"llm":{"classification":"MALICIOUS","confidence":89,"threat_type":"Ransomware Stager","explanation":"Unsigned Cryptor stager in public folder matching LockBit dropper behaviors.","recommended_action":"Isolate host node sentinel-node-01 immediately."}},
@@ -1998,7 +2041,7 @@ def page_file_monitor():
         st.session_state.file_events=fev
         st.success(f"✓ Simulated {len(fev)} malware alerts.")
         
-    if c2.button("🗑️ PURGE MONITOR LOGS", use_container_width=True):
+    if c2.button("🗑️ PURGE MONITOR LOGS", width="stretch"):
         st.session_state.file_events=[]
         fev=[]
         st.success("Monitor log cleared.")
@@ -2007,6 +2050,33 @@ def page_file_monitor():
         sh(f"EDR OBSERVED INTELLIGENCE ALERTS ({len(fev)})")
         for idx, e in enumerate(fev):
             ev_card(e, idx)
+
+    # ── LIVE PROCESS TREE (NetworkX) ──────────────────────────────────────────
+    st.markdown("<br>", unsafe_allow_html=True)
+    sh("🌳 LIVE PROCESS RELATIONSHIP TREE")
+    if REAL_MODE and render_process_tree:
+        try:
+            from collectors.process_monitor import ProcessMonitor
+            procs = ProcessMonitor().get_active_processes()
+            proc_rows = [
+                {
+                    "PID": p.get("process_id"),
+                    "PPID": p.get("parent_process_id"),
+                    "ImageFileName": p.get("process_name"),
+                    "cmdline": p.get("cmdline"),
+                }
+                for p in procs[:80]
+            ]
+            pt_fig = render_process_tree(proc_rows)
+            if pt_fig:
+                st.plotly_chart(pt_fig, width="stretch")
+                st.caption(f"Showing {len(proc_rows)} live processes from this host.")
+            else:
+                st.info("No process data available from the host agent.")
+        except Exception as ex:
+            st.warning(f"Process tree unavailable: {ex}")
+    else:
+        st.info("Install dependencies and restart dashboard to enable live process tree.")
 
     # ── ADVANCED EDR CONTAINMENT CONSOLE SHELL ────────────────────────────────
     st.markdown("<br>", unsafe_allow_html=True)
@@ -2032,7 +2102,7 @@ def page_file_monitor():
         <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:12px;height:250px;display:flex;flex-direction:column;gap:8px">
         """, unsafe_allow_html=True)
         
-        if st.button("Isolate Agent", key="btn_cmd_iso", use_container_width=True):
+        if st.button("Isolate Agent", key="btn_cmd_iso", width="stretch"):
             st.session_state.containment_terminal_logs.append("SENTINEL-NODE-01 > isolate-host")
             st.session_state.containment_terminal_logs.append("[*] AGENT STATE: Executing host firewall quarantine loops.")
             st.session_state.containment_terminal_logs.append("[✓] SUCCESS: Host 192.168.1.45 isolated. WAN gateway block implemented.")
@@ -2040,7 +2110,7 @@ def page_file_monitor():
             st.session_state.isolated_nodes.add("local-endpoint")
             st.rerun()
             
-        if st.button("Reconnect Agent", key="btn_cmd_rec", use_container_width=True):
+        if st.button("Reconnect Agent", key="btn_cmd_rec", width="stretch"):
             st.session_state.containment_terminal_logs.append("SENTINEL-NODE-01 > reconnect-host")
             st.session_state.containment_terminal_logs.append("[*] AGENT STATE: Disabling host quarantine firewalls.")
             st.session_state.containment_terminal_logs.append("[✓] SUCCESS: Sentinel Node 01 reconnected to active directory.")
@@ -2048,13 +2118,13 @@ def page_file_monitor():
             st.session_state.isolated_nodes.discard("local-endpoint")
             st.rerun()
             
-        if st.button("Trigger Mem Dump", key="btn_cmd_mem", use_container_width=True):
+        if st.button("Trigger Mem Dump", key="btn_cmd_mem", width="stretch"):
             st.session_state.containment_terminal_logs.append("SENTINEL-NODE-01 > dump-memory")
             st.session_state.containment_terminal_logs.append("[*] AGENT STATE: Compressing active kernel RAM allocations.")
             st.session_state.containment_terminal_logs.append("[✓] SUCCESS: Raw dump written to C:/Sentinel/dumps/mem_dmp_01.bin (4.1GB).")
             st.rerun()
             
-        if st.button("Purge EDR Terminal Logs", key="btn_cmd_clr", use_container_width=True):
+        if st.button("Purge EDR Terminal Logs", key="btn_cmd_clr", width="stretch"):
             st.session_state.containment_terminal_logs = [
                 "🛡️ DFIR Sentinel EDR Shell v3.0 - Terminal Established.",
                 "System Agent [SENTINEL-NODE-01] linked via secure websocket.",
@@ -2105,7 +2175,7 @@ def page_report():
         st.markdown("<br>",unsafe_allow_html=True)
         b1,b2,b3=st.columns(3)
         
-        if b1.button("📄 GENERATE EXECUTIVE REPORT HTML", use_container_width=True):
+        if b1.button("📄 GENERATE EXECUTIVE REPORT HTML", width="stretch"):
             if REAL_MODE:
                 try:
                     from reporter import generate_report
@@ -2118,7 +2188,7 @@ def page_report():
         if reps:
             b2.success(f"✓ Available: {reps[0].name}")
             with open(reps[0],"rb") as f:
-                b3.download_button("⬇ DOWNLOAD HTML FILE",f.read(),reps[0].name,"text/html",use_container_width=True)
+                b3.download_button("⬇ DOWNLOAD HTML FILE",f.read(),reps[0].name,"text/html",width="stretch")
                 
     sh("TOP COMPROMISED SYSTEM ALERTS BY RISK WEIGHT")
     top=sorted(events,key=lambda e:e.get("threat_score",0),reverse=True)[:20]
@@ -2127,7 +2197,7 @@ def page_report():
             "Host domain":e.get("domain",""),"Severity Level":e.get("severity",""),
             "AI Classification":e.get("llm",{}).get("classification",""),
             "Threat Score":e.get("threat_score",0),"MITRE Technique":e.get("mitre","N/A")} for e in top])
-        st.dataframe(prev,use_container_width=True,hide_index=True,
+        st.dataframe(prev,width="stretch",hide_index=True,
             column_config={"Threat Score":st.column_config.ProgressColumn("Threat Score",min_value=0,max_value=100,format="%d")})
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -2168,5 +2238,5 @@ if st.session_state.auto_refresh:
     time.sleep(st.session_state.refresh_secs)
     st.cache_data.clear()
     st.session_state.scan_count += 1
-    st.session_state.last_scan = datetime.datetime.utcnow()
+    st.session_state.last_scan = datetime.datetime.now(datetime.timezone.utc)
     st.rerun()

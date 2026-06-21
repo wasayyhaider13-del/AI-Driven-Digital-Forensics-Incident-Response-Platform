@@ -20,10 +20,18 @@ Install dependency: pip install openpyxl
 """
 
 import os
+import sys
 import io
 import datetime
 from typing import List, Dict, Optional
 from urllib.parse import urlparse
+
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
 
 try:
     import pandas as pd
@@ -227,7 +235,7 @@ def load_autopsy_data(file_path: str = "autopsy_data.csv") -> List[Dict]:
 
     if not os.path.exists(file_path):
         print(f"[AUTOPSY] File not found: {file_path}")
-        print("[AUTOPSY] Export from Autopsy: Tools → Generate Report → Excel/CSV → Web History")
+        print("[AUTOPSY] Export from Autopsy: Tools -> Generate Report -> Excel/CSV -> Web History")
         return []
 
     if not _HAS_PANDAS:

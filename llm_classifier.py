@@ -1,40 +1,95 @@
 """
 llm_classifier.py — AI Threat Classification
-Classifies browser events using OpenAI or Ollama.
-Gracefully skips if no API key configured.
+Priority: Groq → Ollama → OpenAI → rule-based fallback.
 """
 import json
 import time
 import re
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from colorama import Fore, Style
 import config
+from core.llm_client import build_llm_client, active_llm_model, get_llm_provider
+
+_MALICIOUS_RULES = {
+    "MALICIOUS_DOMAIN", "ENCODED_PAYLOAD", "DOWNLOAD_DETECTED",
+}
+_SUSPICIOUS_RULES = {
+    "KEYWORD_MATCH", "SUSPICIOUS_TLD", "OFF_HOURS_ACCESS",
+    "RAPID_REVISIT", "HEX_PATTERN", "FILE_MONITOR",
+}
+
+
+def _rule_based_classify(event: Dict) -> Dict:
+    """Deterministic classification when LLM is unavailable or fails."""
+    sev = event.get("severity", "LOW")
+    rule = event.get("matched_rule", "NONE")
+    reason = event.get("reason", "")
+
+    if rule in _MALICIOUS_RULES or sev == "HIGH":
+        classification = "MALICIOUS" if rule in _MALICIOUS_RULES else "SUSPICIOUS"
+        confidence = 88 if classification == "MALICIOUS" else 72
+        threat_type = {
+            "MALICIOUS_DOMAIN": "Known Malicious Infrastructure",
+            "ENCODED_PAYLOAD": "Obfuscated Payload",
+            "DOWNLOAD_DETECTED": "Malware Download",
+            "KEYWORD_MATCH": "Suspicious Keyword Match",
+            "SUSPICIOUS_TLD": "Suspicious Top-Level Domain",
+            "OFF_HOURS_ACCESS": "Off-Hours Activity",
+            "RAPID_REVISIT": "Automated Beaconing Pattern",
+            "FILE_MONITOR": "Suspicious File Activity",
+        }.get(rule, "Suspicious Network Activity")
+        explanation = reason or f"Rule {rule} triggered at {sev} severity."
+        action = (
+            "Isolate endpoint and investigate immediately."
+            if classification == "MALICIOUS"
+            else "Review event and monitor for recurrence."
+        )
+    elif rule in _SUSPICIOUS_RULES or sev == "MEDIUM":
+        classification = "SUSPICIOUS"
+        confidence = 65
+        threat_type = "Anomalous Browsing Behaviour"
+        explanation = reason or f"Rule {rule} matched with medium confidence."
+        action = "Review flagged URL and correlate with other host telemetry."
+    else:
+        classification = "BENIGN"
+        confidence = 80
+        threat_type = "None"
+        explanation = reason or "Normal browsing activity within baseline parameters."
+        action = "No action required."
+
+    return {
+        "classification": classification,
+        "confidence": confidence,
+        "threat_type": threat_type,
+        "explanation": explanation,
+        "recommended_action": action,
+        "source": "rule_engine",
+    }
 
 
 def _build_client():
-    """Build OpenAI client. Returns None if no key configured."""
+    """Build LLM client. Returns (client, provider) or (None, 'none')."""
+    client, provider = build_llm_client()
+    if client is None:
+        print(f"{Fore.YELLOW}[LLM] No GROQ_API_KEY configured — using rule-based classification.{Style.RESET_ALL}")
+        return None, "none"
+    labels = {"groq": "Groq", "ollama": "Ollama", "openai": "OpenAI"}
+    print(f"{Fore.CYAN}[LLM] Using {labels.get(provider, provider)} ({active_llm_model()}){Style.RESET_ALL}")
+    return client, provider
+
+
+def _parse_llm_json(text: str) -> Dict:
+    text = text.strip()
+    if "```" in text:
+        text = re.sub(r"```(?:json)?\n?", "", text).strip().rstrip("`")
     try:
-        from openai import OpenAI
-    except ImportError:
-        print(f"{Fore.RED}[LLM] openai not installed. Run: pip install openai{Style.RESET_ALL}")
-        return None
-
-    if config.USE_OLLAMA:
-        print(f"{Fore.CYAN}[LLM] Using Ollama @ {config.OLLAMA_BASE_URL}{Style.RESET_ALL}")
-        return OpenAI(api_key="ollama", base_url=config.OLLAMA_BASE_URL)
-
-    if not config.OPENAI_API_KEY:
-        print(f"{Fore.YELLOW}[LLM] No OPENAI_API_KEY in .env — skipping AI classification.{Style.RESET_ALL}")
-        print(f"{Fore.YELLOW}[LLM] Add OPENAI_API_KEY=sk-... to your .env file.{Style.RESET_ALL}")
-        return None
-
-    from openai import OpenAI
-    return OpenAI(api_key=config.OPENAI_API_KEY)
-
-
-def _active_model() -> str:
-    return config.OLLAMA_MODEL if config.USE_OLLAMA else config.LLM_MODEL
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{[^{}]*\}", text, re.DOTALL)
+        if match:
+            return json.loads(match.group())
+        raise
 
 
 def _build_prompt(event: Dict) -> str:
@@ -57,34 +112,29 @@ Return exactly this JSON structure:
 }}"""
 
 
-def classify_event(client, event: Dict) -> Dict:
+def classify_event(client, event: Dict, provider: str = "groq") -> Dict:
     """Classify a single event with retry on rate limit."""
     for attempt in range(3):
         try:
-            from openai import RateLimitError
             response = client.chat.completions.create(
-                model=_active_model(),
+                model=active_llm_model(),
                 messages=[{"role": "user", "content": _build_prompt(event)}],
                 temperature=0.1,
                 max_tokens=200,
             )
-            text = response.choices[0].message.content.strip()
-
-            # Strip markdown fences
-            if "```" in text:
-                text = re.sub(r"```(?:json)?\n?", "", text).strip().rstrip("`")
-
-            result = json.loads(text)
-
-            # Validate required fields
+            text = response.choices[0].message.content or ""
+            result = _parse_llm_json(text)
             result.setdefault("classification", "UNKNOWN")
             result.setdefault("confidence", 0)
             result.setdefault("threat_type", "Unknown")
             result.setdefault("explanation", "No explanation provided.")
             result.setdefault("recommended_action", "Manual review required.")
-
+            result["source"] = provider
             event["llm"] = result
-            print(f"{Fore.GREEN}[LLM]{Style.RESET_ALL} {result['classification']} ({result['confidence']}%) | {event['url'][:55]}")
+            print(
+                f"{Fore.GREEN}[LLM]{Style.RESET_ALL} "
+                f"{result['classification']} ({result['confidence']}%) | {event['url'][:55]}"
+            )
             return event
 
         except Exception as e:
@@ -93,88 +143,61 @@ def classify_event(client, event: Dict) -> Dict:
                 wait = 2 ** attempt
                 print(f"{Fore.YELLOW}[LLM] Rate limit — retrying in {wait}s...{Style.RESET_ALL}")
                 time.sleep(wait)
+            elif any(x in err_str.lower() for x in ("invalid_api_key", "incorrect api key", "401", "authentication", "403")):
+                print(f"{Fore.YELLOW}[LLM] {provider} auth failed — switching to rule-based engine.{Style.RESET_ALL}")
+                raise
             elif "json" in err_str.lower():
-                print(f"{Fore.YELLOW}[LLM] JSON parse error — skipping.{Style.RESET_ALL}")
+                print(f"{Fore.YELLOW}[LLM] JSON parse error — using rule engine for this event.{Style.RESET_ALL}")
                 break
-            elif "invalid_api_key" in err_str.lower() or "incorrect api key" in err_str.lower() or "401" in err_str or "authentication" in err_str.lower():
-                print(f"{Fore.RED}[LLM] Authentication failed: {err_str[:80]}{Style.RESET_ALL}")
-                raise e
             else:
-                print(f"{Fore.RED}[LLM] Error: {err_str[:80]}{Style.RESET_ALL}")
+                print(f"{Fore.YELLOW}[LLM] Error: {err_str[:80]} — using rule engine.{Style.RESET_ALL}")
                 break
 
-    # Fallback
-    sev = event.get("severity", "LOW")
-    event["llm"] = {
-        "classification":     "SUSPICIOUS" if sev in ("HIGH", "MEDIUM") else "BENIGN",
-        "confidence":         0,
-        "threat_type":        "Unclassified",
-        "explanation":        "LLM classification failed — manual review recommended.",
-        "recommended_action": "Investigate manually.",
-    }
+    event["llm"] = _rule_based_classify(event)
     return event
 
 
 def classify_all_events(events: List[Dict]) -> List[Dict]:
-    """
-    Classify all events using LLM.
-    If no API key → marks all as UNKNOWN and returns immediately (no crash).
-    """
+    """Classify all events. Groq first; falls back to rule engine on failure."""
     if not events:
         print(f"{Fore.YELLOW}[LLM] No events to classify.{Style.RESET_ALL}")
         return []
 
-    client = _build_client()
-
-    # No client = no API key — graceful degradation
+    client, provider = _build_client()
     if client is None:
-        print(f"{Fore.YELLOW}[LLM] Skipping classification — no API key.{Style.RESET_ALL}")
+        print(f"{Fore.CYAN}[LLM] Rule-based classification for {len(events)} events.{Style.RESET_ALL}")
         for e in events:
-            sev = e.get("severity", "LOW")
-            e["llm"] = {
-                "classification":     "SUSPICIOUS" if sev in ("HIGH", "MEDIUM") else "BENIGN",
-                "confidence":         0,
-                "threat_type":        "Rule-based detection only",
-                "explanation":        "Add OPENAI_API_KEY to .env for AI analysis.",
-                "recommended_action": "Review flagged events manually.",
-            }
+            e["llm"] = _rule_based_classify(e)
         return events
 
     results = []
-    api_failed = False
+    use_rules_only = False
     for i, e in enumerate(events):
-        if api_failed:
-            sev = e.get("severity", "LOW")
-            e["llm"] = {
-                "classification":     "SUSPICIOUS" if sev in ("HIGH", "MEDIUM") else "BENIGN",
-                "confidence":         0,
-                "threat_type":        "Rule-based detection only (API key invalid)",
-                "explanation":        "LLM classification skipped due to authentication failure.",
-                "recommended_action": "Review flagged events manually.",
-            }
+        if use_rules_only:
+            e["llm"] = _rule_based_classify(e)
             results.append(e)
             continue
-
         try:
-            results.append(classify_event(client, e))
-        except Exception as ex:
-            print(f"{Fore.RED}[LLM] Disabling AI classification due to API key error: {str(ex)[:80]}{Style.RESET_ALL}")
-            api_failed = True
-            sev = e.get("severity", "LOW")
-            e["llm"] = {
-                "classification":     "SUSPICIOUS" if sev in ("HIGH", "MEDIUM") else "BENIGN",
-                "confidence":         0,
-                "threat_type":        "Rule-based detection only (API key invalid)",
-                "explanation":        "LLM classification failed — manual review recommended.",
-                "recommended_action": "Investigate manually.",
-            }
+            results.append(classify_event(client, e, provider))
+        except Exception:
+            use_rules_only = True
+            e["llm"] = _rule_based_classify(e)
             results.append(e)
 
-        if not api_failed and i < len(events) - 1:
-            time.sleep(0.3)  # rate limiting
+        if not use_rules_only and i < len(events) - 1:
+            time.sleep(0.15)  # Groq has generous limits; shorter delay
 
-    classified  = sum(1 for r in results if r.get("llm", {}).get("classification") != "UNKNOWN")
-    malicious   = sum(1 for r in results if r.get("llm", {}).get("classification") == "MALICIOUS")
-    suspicious  = sum(1 for r in results if r.get("llm", {}).get("classification") == "SUSPICIOUS")
-    print(f"{Fore.CYAN}[LLM]{Style.RESET_ALL} Done: {classified}/{len(results)} classified | MALICIOUS:{malicious} SUSPICIOUS:{suspicious}")
+    if use_rules_only:
+        for e in events[len(results):]:
+            e["llm"] = _rule_based_classify(e)
+            results.append(e)
+
+    classified = sum(1 for r in results if r.get("llm", {}).get("classification") != "UNKNOWN")
+    malicious = sum(1 for r in results if r.get("llm", {}).get("classification") == "MALICIOUS")
+    suspicious = sum(1 for r in results if r.get("llm", {}).get("classification") == "SUSPICIOUS")
+    engine = "rule_engine" if use_rules_only else provider
+    print(
+        f"{Fore.CYAN}[LLM]{Style.RESET_ALL} Done ({engine}): "
+        f"{classified}/{len(results)} classified | MALICIOUS:{malicious} SUSPICIOUS:{suspicious}"
+    )
     return results

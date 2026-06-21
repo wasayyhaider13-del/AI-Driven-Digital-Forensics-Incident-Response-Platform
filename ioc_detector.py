@@ -14,6 +14,7 @@ Detection categories:
 """
 
 import os
+import sys
 import re
 import json
 import base64
@@ -24,6 +25,13 @@ from urllib.parse import urlparse, unquote
 from colorama import Fore, Style
 
 import config
+
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
 
 # ── Rule definitions ───────────────────────────────────────────────────────────
 
@@ -200,7 +208,7 @@ def _save_flagged_log(flagged: List[Dict]) -> None:
                  "events": serialisable},
                 fh, indent=2, ensure_ascii=False,
             )
-        print(f"{Fore.GREEN}[IOC]{Style.RESET_ALL} Flagged log → {log_path}")
+        print(f"{Fore.GREEN}[IOC]{Style.RESET_ALL} Flagged log -> {log_path}")
     except IOError as exc:
         print(f"{Fore.RED}[IOC ERROR]{Style.RESET_ALL} Could not write log: {exc}")
 

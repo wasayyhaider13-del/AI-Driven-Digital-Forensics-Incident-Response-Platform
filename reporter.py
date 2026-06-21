@@ -159,30 +159,32 @@ def _generate_html(events: List[Dict], alerts: List[Dict],
 
 def _generate_pdf(events: List[Dict], alerts: List[Dict],
                   path: str, score: int, label: str) -> None:
-    if not _HAS_FPDF:
-        print("[REPORTER] Skipping PDF — fpdf2 not installed.")
-        return
     """
     Generate a PDF report using fpdf2.
 
-    NOTE: fpdf2 uses ln=1 (integer) for line breaks.
+    NOTE: fpdf2 requires ln=True on cell() calls to advance to the next line,
+    otherwise every cell overwrites the same position.
     """
+    if not _HAS_FPDF:
+        print("[REPORTER] Skipping PDF — fpdf2 not installed.")
+        return
+
     pdf = FPDF()
     pdf.add_page()
 
     # ── Title ──
     pdf.set_font("Helvetica", "B", 16)
-    pdf.cell(0, 10, "DFIR Sentinel - Incident Report",)
+    pdf.cell(0, 10, "DFIR Sentinel - Incident Report", ln=True)
 
     pdf.set_font("Helvetica", "", 10)
-    pdf.cell(0, 7, f"Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC",)
-    pdf.cell(0, 7, f"Risk Score: {score} / 100  ({label})", )
-    pdf.cell(0, 7, f"Total Events: {len(events)}   Alerts Sent: {len(alerts)}",)
+    pdf.cell(0, 7, f"Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} UTC", ln=True)
+    pdf.cell(0, 7, f"Risk Score: {score} / 100  ({label})", ln=True)
+    pdf.cell(0, 7, f"Total Events: {len(events)}   Alerts Sent: {len(alerts)}", ln=True)
     pdf.ln(4)
 
     # ── Flagged Events ──
     pdf.set_font("Helvetica", "B", 12)
-    pdf.cell(0, 8, "Flagged Events", )
+    pdf.cell(0, 8, "Flagged Events", ln=True)
     pdf.set_font("Helvetica", "", 8)
 
     if events:
@@ -193,7 +195,7 @@ def _generate_pdf(events: List[Dict], alerts: List[Dict],
         pdf.cell(80, 7,  "URL",            border=1, fill=True)
         pdf.cell(20, 7,  "Severity",       border=1, fill=True)
         pdf.cell(30, 7,  "Rule",           border=1, fill=True)
-        pdf.cell(30, 7,  "Classification", border=1, fill=True)
+        pdf.cell(30, 7,  "Classification", border=1, fill=True, ln=True)
         pdf.set_text_color(0, 0, 0)
 
         for e in events[:50]:   # cap at 50 rows for PDF readability
@@ -211,15 +213,15 @@ def _generate_pdf(events: List[Dict], alerts: List[Dict],
             pdf.cell(80, 6, url, border=1, fill=True)
             pdf.cell(20, 6, sev, border=1, fill=True)
             pdf.cell(30, 6, rl,  border=1, fill=True)
-            pdf.cell(30, 6, cls, border=1,fill=True)
+            pdf.cell(30, 6, cls, border=1, fill=True, ln=True)
     else:
-        pdf.cell(0, 7, "No flagged events.", )
+        pdf.cell(0, 7, "No flagged events.", ln=True)
 
     pdf.ln(6)
 
     # ── Alert History ──
     pdf.set_font("Helvetica", "B", 12)
-    pdf.cell(0, 8, "Alert History", )
+    pdf.cell(0, 8, "Alert History", ln=True)
     pdf.set_font("Helvetica", "", 8)
 
     if alerts:
@@ -228,17 +230,17 @@ def _generate_pdf(events: List[Dict], alerts: List[Dict],
         pdf.cell(45, 7, "Sent At",        border=1, fill=True)
         pdf.cell(90, 7, "URL",            border=1, fill=True)
         pdf.cell(25, 7, "Severity",       border=1, fill=True)
-        pdf.cell(30, 7, "Classification", border=1,  fill=True)
+        pdf.cell(30, 7, "Classification", border=1, fill=True, ln=True)
         pdf.set_text_color(0, 0, 0)
 
         for a in alerts[:30]:
             pdf.set_fill_color(255, 255, 255)
-            pdf.cell(45, 6, str(a.get("sent_at", ""))[:22],      border=1, fill=True)
-            pdf.cell(90, 6, str(a.get("url", ""))[:50],          border=1, fill=True)
-            pdf.cell(25, 6, str(a.get("severity", "")),           border=1, fill=True)
-            pdf.cell(30, 6, str(a.get("classification", "N/A")),  border=1,  fill=True)
+            pdf.cell(45, 6, str(a.get("sent_at", ""))[:22],     border=1, fill=True)
+            pdf.cell(90, 6, str(a.get("url", ""))[:50],         border=1, fill=True)
+            pdf.cell(25, 6, str(a.get("severity", "")),          border=1, fill=True)
+            pdf.cell(30, 6, str(a.get("classification", "N/A")), border=1, fill=True, ln=True)
     else:
-        pdf.cell(0, 7, "No alerts sent.",)
+        pdf.cell(0, 7, "No alerts sent.", ln=True)
 
     pdf.output(path)
 

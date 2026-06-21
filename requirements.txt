@@ -13,3 +13,8 @@ openai
 python-dotenv
 yara-python
 geoip2
+schedule
+fpdf2
+colorama
+watchdog
+openpyxl

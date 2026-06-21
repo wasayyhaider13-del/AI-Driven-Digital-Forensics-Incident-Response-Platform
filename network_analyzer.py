@@ -12,12 +12,20 @@ Usage:
 """
 
 import os
+import sys
 import csv
 import shutil
 import subprocess
 import platform
 import datetime
 from typing import List, Dict, Optional
+
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
 
 OUTPUT_FILE = "logs/network_data.csv"
 os.makedirs("logs", exist_ok=True)
@@ -79,7 +87,7 @@ def _get_default_interface() -> str:
 
 # ── Live capture ───────────────────────────────────────────────────────────────
 
-def capture_traffic(duration: int = 10, interface: str = NotImplemented) -> bool:
+def capture_traffic(duration: int = 10, interface: str = None) -> bool:
     """
     Capture live network traffic using Tshark and save to CSV.
 
@@ -95,9 +103,9 @@ def capture_traffic(duration: int = 10, interface: str = NotImplemented) -> bool
     if not tshark:
         print(
             "[NETWORK] Tshark not found.\n"
-            "  → Download from: https://www.wireshark.org/download.html\n"
-            "  → Tick 'Install TShark' during Wireshark setup.\n"
-            "  → Then restart VS Code so PATH updates take effect."
+            "  -> Download from: https://www.wireshark.org/download.html\n"
+            "  -> Tick 'Install TShark' during Wireshark setup.\n"
+            "  -> Then restart VS Code so PATH updates take effect."
         )
         return False
 
@@ -149,8 +157,8 @@ def capture_traffic(duration: int = 10, interface: str = NotImplemented) -> bool
     except PermissionError:
         print(
             "[NETWORK] Permission denied.\n"
-            "  → Windows: Run VS Code as Administrator.\n"
-            "  → Linux/Mac: Run with sudo."
+            "  -> Windows: Run VS Code as Administrator.\n"
+            "  -> Linux/Mac: Run with sudo."
         )
         return False
     except subprocess.TimeoutExpired:

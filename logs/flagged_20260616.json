@@ -1,0 +1,3266 @@
+{
+  "generated_at": "2026-06-16T07:06:42.564270Z",
+  "total_flagged": 159,
+  "events": [
+    {
+      "url": "https://www.youtube.com/watch?v=I4z5sTVZBYw",
+      "title": "InshaAllah Har Hajat Lazmi Pori Hogi || Maulana Dr Abbas Ali Khoyee - YouTube",
+      "visit_time": "2026-06-12 03:35:38",
+      "visit_time_dt": "2026-06-12T03:35:38.823328",
+      "visit_count": 1,
+      "raw_ts": 13425708938823328,
+      "browser": "Chrome",
+      "_hash": "e77f232b50f2dfe6e7b5c18adb725ea5dd55f8e10eb658bf3543018016345f92",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:35 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:35 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/o/oauth2/v2/auth?client_id=626581754197-v82pavblj7tgk6ap9ouqbi9lv821l6qo.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.kimi.com/google-callback&response_type=id_token&scope=email%20profile&nonce=yywgq44vh38",
+      "title": "Sign in - Google Accounts",
+      "visit_time": "2026-06-12 04:51:18",
+      "visit_time_dt": "2026-06-12T04:51:18.177705",
+      "visit_count": 1,
+      "raw_ts": 13425713478177705,
+      "browser": "Chrome",
+      "_hash": "99235739f5f17484c61ba2a87bc23ac86133145008cb00b95aa7351a402b4aca",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:51 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:51 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/accountchooser?client_id=626581754197-v82pavblj7tgk6ap9ouqbi9lv821l6qo.apps.googleusercontent.com&nonce=yywgq44vh38&redirect_uri=https%3A%2F%2Fwww.kimi.com%2Fgoogle-callback&response_type=id_token&scope=email+profile&dsh=S-1758920034%3A1781239878238006&o2v=2&service=lso&flowName=GeneralOAuthFlow&opparams=%253F&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAM1N82p6DDfEsxh-w8l-ASCQFfW9Si9tDKcwmxeb4_1qtrTIN_rSbDKvtcRdK0Ueyam15ziqjTYSv0TptcyXEXe6idgBlKVdPWj0L_XhScRUFQA3lvymLNXbKjMJcCV8ipOQysmkVGT9uEXAw8k5Fe0v5kKv8pZ2-NGwjVh_2KadTqQJK9k0nXXCcRIHUlEO5xZrSpOblLYnnsQeKC076lWfnAgmWAIJy9sV-otJ4aDZoNj-YGinmoKMyHPL7gEUHreBpLB49gj_tppeCVpKWrlz9zR_VdaoR-fnbSY5jV6mlMb9MpK2LcdKt1fI34A17Ba0nzgsV4hpJx-KoPCXgn2r38eD9cjcRQXYsm9c6u2pyH8B_jQmVjHNqfqaJxzoDzwkNS3EB4HdH04xYlWgPucZJ04KPra1uClXJfYthYF1d3-l7h848uNhdtAI8g1TZArKCJh5QV8PIeIpG7yn8W1YSzL-A%26flowName%3DGeneralOAuthFlow%26as%3DS-1758920034%253A1781239878238006%26client_id%3D626581754197-v82pavblj7tgk6ap9ouqbi9lv821l6qo.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fwww.kimi.com",
+      "title": "Sign in - Google Accounts",
+      "visit_time": "2026-06-12 04:51:18",
+      "visit_time_dt": "2026-06-12T04:51:18.177705",
+      "visit_count": 1,
+      "raw_ts": 13425713478177705,
+      "browser": "Chrome",
+      "_hash": "00b2b1d4ee5a4af92b424653d05b567dc67094fd0cba8eed0a407e51ac15397a",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:51 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:51 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://chatgpt.com/c/6a2b8e93-5b14-83ee-bafd-397c52eaa242",
+      "title": "Quiz Answer Defects",
+      "visit_time": "2026-06-12 04:56:56",
+      "visit_time_dt": "2026-06-12T04:56:56.604299",
+      "visit_count": 2,
+      "raw_ts": 13425713816604299,
+      "browser": "Chrome",
+      "_hash": "97ccd2fc73aedc9074e2295d9e6739a9129319d0531ba4851ddf35260019b6ac",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:56 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:56 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8JgPp0pm2Dk",
+      "title": "Powerful Tasbeeh of Hazrat Abbas (AS) ✨ Solve Problems Instantly | Bab-ul-Hawaij Amal - YouTube",
+      "visit_time": "2026-06-12 15:15:21",
+      "visit_time_dt": "2026-06-12T15:15:21.143893",
+      "visit_count": 1,
+      "raw_ts": 13425750921143893,
+      "browser": "Chrome",
+      "_hash": "412bb7e0c266fcc75abe7ff554b2b9f2e2043be86d142487293ebd1e16c140c8",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'rat' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'rat' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-Q3hR9pNWQ8",
+      "title": "कॉलेज की सबसे अमीर लड़की को हुआ कैंटीन वाले लड़के से प्यार - YouTube",
+      "visit_time": "2026-06-13 00:25:19",
+      "visit_time_dt": "2026-06-13T00:25:19.292938",
+      "visit_count": 1,
+      "raw_ts": 13425783919292938,
+      "browser": "Chrome",
+      "_hash": "9b8c5ddf0f46414818dafd17f15d40e622cc127486e42d08c4b1ae244afc24de",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:25 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:25 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xJ3A-j1QR0E",
+      "title": "कॉलेज की सबसे अमीर लड़की को हुआ कैंटीन वाले लड़के से प्यार - YouTube",
+      "visit_time": "2026-06-13 00:47:05",
+      "visit_time_dt": "2026-06-13T00:47:05.737175",
+      "visit_count": 2,
+      "raw_ts": 13425785225737175,
+      "browser": "Chrome",
+      "_hash": "14235bf53511ec98288ba3d05453efa6784ea1f21af51bd650169d359edd4b42",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:47 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:47 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mDDPP0PrJPs",
+      "title": "ہر مشکل کا فوری حل | حضرت زہراء (س) کا آزمودہ توسل | مشکلات سے نجات کا طریقہ - YouTube",
+      "visit_time": "2026-06-13 00:47:34",
+      "visit_time_dt": "2026-06-13T00:47:34.907664",
+      "visit_count": 1,
+      "raw_ts": 13425785254907664,
+      "browser": "Chrome",
+      "_hash": "32162d8a1a0e85810885ce8145f9a08be0d8d4aafc8e97a49cc4eee5afa89365",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:47 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:47 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gYeev6gZtrQ",
+      "title": "\"जिसकी किताबें फाड़ी गईं, उसी ने इतिहास लिख दिया!\" | #movie #motivation #film - YouTube",
+      "visit_time": "2026-06-13 01:01:45",
+      "visit_time_dt": "2026-06-13T01:01:45.413564",
+      "visit_count": 1,
+      "raw_ts": 13425786105413564,
+      "browser": "Chrome",
+      "_hash": "5e55ba1339113cbfe9f64fbfab389c91a1701ff0ebb5a28eaafc35fe739a4d02",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 01:01 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 01:01 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1Uze6snDsYc",
+      "title": "मैनेजर करता रहा कर्मचारियों का मानसिक उत्पीड़न जब CEO को पता चला वह कर्मचारी बन कर पहुचा फिर जो हुआ😱 - YouTube",
+      "visit_time": "2026-06-13 01:16:24",
+      "visit_time_dt": "2026-06-13T01:16:24.954203",
+      "visit_count": 2,
+      "raw_ts": 13425786984954203,
+      "browser": "Chrome",
+      "_hash": "8d9f8114ec99a3bf0b87d19d20b2d5b55c307d22d960a55188c0e3edcc066751",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 01:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 01:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=opLY-T3Wv5M",
+      "title": "तेरा Case हम लड़ेंगे | Big Brother Scene (HD) | Sunny Deol - YouTube",
+      "visit_time": "2026-06-13 01:40:40",
+      "visit_time_dt": "2026-06-13T01:40:40.298928",
+      "visit_count": 1,
+      "raw_ts": 13425788440298928,
+      "browser": "Chrome",
+      "_hash": "abdd8c6b30f0c7a3b279619205257c7e427ef15c1dec68ddd13ce292829d71e8",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 01:40 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 01:40 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jbJeamKvkHI",
+      "title": "खूँखार जाट BIG BROTHER का बदला | SUNNY DEOL ACTION MOVIE HD | PRIYANKA CHOPRA - YouTube",
+      "visit_time": "2026-06-13 01:55:45",
+      "visit_time_dt": "2026-06-13T01:55:45.587615",
+      "visit_count": 2,
+      "raw_ts": 13425789345587615,
+      "browser": "Chrome",
+      "_hash": "e770f9a45611896221d12ff02102dba0fc2fac4cee2040d5201ed599999b5016",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 01:55 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 01:55 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/accountchooser?access_type=offline&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&display=popup&enable_granular_consent=true&gis_params=GBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&gsiwebsdk=gis_attributes&include_granted_scopes=true&origin=https%3A%2F%2Fclaude.ai&prompt=consent&redirect_uri=gis_transform&response_mode=form_post&response_type=code&scope=openid+profile+email&dsh=S-1154897132%3A1781390989008184&o2v=1&service=lso&flowName=GeneralOAuthFlow&opparams=%253Fresponse_mode%253Dform_post%2526enable_granular_consent%253Dtrue%2526gis_params%253DGBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&app_domain=https%3A%2F%2Fclaude.ai",
+      "title": "Sign in - Google Accounts",
+      "visit_time": "2026-06-13 22:49:49",
+      "visit_time_dt": "2026-06-13T22:49:49.008298",
+      "visit_count": 1,
+      "raw_ts": 13425864589008298,
+      "browser": "Chrome",
+      "_hash": "3305a8c37309b0c8eab3b286f4536ff82c6986f84463d36ea1e9d7998c038dd3",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/challenge/pwd?TL=ADCchmYimCEAwKaJI0msfsBQMGFqlzng01RxAS-9MDSB5IAAFdvLi2qTmhYxdRf4&access_type=offline&app_domain=https%3A%2F%2Fclaude.ai&cid=2&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&display=popup&dsh=S-1154897132%3A1781390989008184&flowName=GeneralOAuthFlow&gsiwebsdk=gis_attributes&include_granted_scopes=true&o2v=1&opparams=%253Fresponse_mode%253Dform_post%2526enable_granular_consent%253Dtrue%2526gis_params%253DGBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&origin=https%3A%2F%2Fclaude.ai&prompt=consent&redirect_uri=gis_transform&response_type=code&scope=openid%20profile%20email&service=lso",
+      "title": "Welcome",
+      "visit_time": "2026-06-13 22:49:57",
+      "visit_time_dt": "2026-06-13T22:49:57.295855",
+      "visit_count": 1,
+      "raw_ts": 13425864597295855,
+      "browser": "Chrome",
+      "_hash": "6b33e683765a9939b7c57ff513b5cfc2a843aeb1b3f21c6d4337eb0d5590b8c2",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/challenge/selection?TL=ADCchmYimCEAwKaJI0msfsBQMGFqlzng01RxAS-9MDSB5IAAFdvLi2qTmhYxdRf4&access_type=offline&app_domain=https%3A%2F%2Fclaude.ai&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&display=popup&dsh=S-1154897132%3A1781390989008184&flowName=GeneralOAuthFlow&gsiwebsdk=gis_attributes&include_granted_scopes=true&lid=1&o2v=1&opparams=%253Fresponse_mode%253Dform_post%2526enable_granular_consent%253Dtrue%2526gis_params%253DGBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&origin=https%3A%2F%2Fclaude.ai&prompt=consent&redirect_uri=gis_transform&response_type=code&scope=openid%20profile%20email&service=lso",
+      "title": "Welcome",
+      "visit_time": "2026-06-13 22:50:03",
+      "visit_time_dt": "2026-06-13T22:50:03.664397",
+      "visit_count": 1,
+      "raw_ts": 13425864603664397,
+      "browser": "Chrome",
+      "_hash": "4a7aa1a9df771de229243e17e403307472bc76bccbffcd8b8cdba04b6a4a2574",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/challenge/pk/error?TL=ADCchmYimCEAwKaJI0msfsBQMGFqlzng01RxAS-9MDSB5IAAFdvLi2qTmhYxdRf4&access_type=offline&app_domain=https%3A%2F%2Fclaude.ai&cid=1&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&display=popup&dsh=S-1154897132%3A1781390989008184&flowName=GeneralOAuthFlow&gsiwebsdk=gis_attributes&include_granted_scopes=true&o2v=1&opparams=%253Fresponse_mode%253Dform_post%2526enable_granular_consent%253Dtrue%2526gis_params%253DGBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&origin=https%3A%2F%2Fclaude.ai&prompt=consent&redirect_uri=gis_transform&response_type=code&scope=openid%20profile%20email&service=lso",
+      "title": "Something went wrong",
+      "visit_time": "2026-06-13 22:53:48",
+      "visit_time_dt": "2026-06-13T22:53:48.286262",
+      "visit_count": 1,
+      "raw_ts": 13425864828286262,
+      "browser": "Chrome",
+      "_hash": "2c424aa2d2eb4d3baa7d9a65c858a6a274453977300f463d1beabc037d29525f",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/v3/signin/challenge/pk/presend?TL=ADCchmYimCEAwKaJI0msfsBQMGFqlzng01RxAS-9MDSB5IAAFdvLi2qTmhYxdRf4&access_type=offline&app_domain=https%3A%2F%2Fclaude.ai&cid=1&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&display=popup&dsh=S-1154897132%3A1781390989008184&flowName=GeneralOAuthFlow&gsiwebsdk=gis_attributes&include_granted_scopes=true&o2v=1&opparams=%253Fresponse_mode%253Dform_post%2526enable_granular_consent%253Dtrue%2526gis_params%253DGBMqK3BTaDVqRnZBVmN4UWhrZ1hYVXZtdytMTUlvWTA4djV3dG42czJlT2drbWs4AUIKYXV0aDQ5OTEzMmgB&origin=https%3A%2F%2Fclaude.ai&prompt=consent&redirect_uri=gis_transform&response_type=code&scope=openid%20profile%20email&service=lso",
+      "title": "Use your passkey to confirm it’s really you",
+      "visit_time": "2026-06-13 22:53:50",
+      "visit_time_dt": "2026-06-13T22:53:50.655978",
+      "visit_count": 2,
+      "raw_ts": 13425864830655978,
+      "browser": "Chrome",
+      "_hash": "e943342bda58e2093600c635f4f7468f323f263fe021bc5ab6db6803c8963bf5",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/CheckCookie?continue=https://accounts.google.com/signin/oauth/consent?authuser%3Dunknown%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent%23&service=lso&flowName=GeneralOAuthFlow&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&redirect_uri=gis_transform&scope=openid+profile+email&o2v=1&chtml=LoginDoneHtml&gidl=EgIIAA",
+      "title": "Redirecting",
+      "visit_time": "2026-06-13 22:54:12",
+      "visit_time_dt": "2026-06-13T22:54:12.254562",
+      "visit_count": 1,
+      "raw_ts": 13425864852254562,
+      "browser": "Chrome",
+      "_hash": "6403610769f66dedf8163283f1b0e2b29fd5550b84c09ea0766dd29612c2cb28",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2csS8otyrtkJ8HIbMvd4hRJoLZlqNMYf5vGCTCRLFHXS2vC227eC985jSNIZIEe9gBE0vAW9QWcQ/FrW8EhoatZN8IJniPDzQhVb6gmKOpQ7kQFgNoxvtT6wOQOvO5YvOVFi7my629D5/5ChYV%2BWyCOxcHubQKvkhSzZulv2ZKx/PMvn6OPj94vlkr7IVvgpMK5m2p8aHwVEspv3KCPwxhlG%2BWZMDrViAKjuPEjOXIBsUYzEAhrA/QTBI0WusoH36J6w/DqjYA7W0Xwn7jgAlClfMBauCSqjb7uWIHlok6poQKGhkCM120BRlI5e4McZSi0VaLcUkDBg5sUDp%2BNAkepgwiAtARFFijF6eiKRDwAoYaN0nMo5tGvk32tVYcix/5aO8Xqv2QLvd1qsITZN9z1oR7MZP6w7dUPcZFdzKedVWxBKMJ4W9I5JnzeNl7ClVxgtoOep3Tio6r/Frcp0lUpUQO/Mbg6IHnP2LGYApaWO0bEpJH9CnjW3LHaY7T6F/WnLtwvj4IcN8TQsa7xiGQ2XHtSCIMxY29B4p/dDf8dwv44LXiaw2tfsG9VWVHWbm4v70M332Up9C4MXlTVuAQl5NG2mQSx9hObAowEfZ/EdUOMCtTe2U/Q06xt4Qku0m5eOdFOopa90SaY7pDs%2BO2/0I5nVVRZZldxavA1I1%2BOO6QBybTv1RbhqIiBVLX%2B2nHt4CXnn1SEFNv0SAoPLTpccIuQWlngiayC4UhYX1OlKSc3ML3TUkQx%2BI8ENRCVCN5ckLE42fiUWsIJTH0fiI/JmVzcOTF3VpAV0kpuIt9Pk1UtRIydCMwaTM/Hsprz/PrrYTBotTEkNA/FdATrSthwhrs9APnlg8YAHQMJn1wrPliD46M4RROz9xgW%2BIpgpW3AJ/rFLdBOUT3HzXHSHbW3RnptnKtXt3cxLIj4dJZrekEfmAWeCzr7bwa32AaOKqL430xDxmmwllgI3ll06LuqNQgoc3cMgxS%2BxEiw5jv53YnVJd3SwiGwa4gvJJSBN%2BZRe5u3dUcD65LKBbzbUtghQtcAO81muDkTbtGSNuUXu57PXVi17r9pvlcfD6uD5PuvHEet9ocuFTmZAB1ZF5/oZ8INCB97ND40NZj%2BEmcXZhGc8wRI/MA3qMapxWuHYN8gn9S0nCMtZuhxAtgDNdNcB%2B0unJuUW9i%2BIbLwV3gtNElPa1GzRR6BZH6vEbWIPmzWX4av8N1D3nW%2B1riZr2cFLQGtIYz1A65Dwr2kYf1RT7gjug9I3VX9BM7y1oEswconIVjJ3pk2WgLdbPElEAHgcgCtrHkMcmJ8pj4UAJIbxOq3Tb/ggbQxvP0WcQgdJWDoiYslb0U2gBGqMl6R0WD8isk4pPDj1yTid9bkUHZqx4UuufVZ2f9VeBEBZQCxNnb9MyzamufE/bFnw6Hq/DdETMRSRSKrPWi89HqZ8yOhBTBmp7YxBcuIcrPFJRp3HyC4ZqnY7FZOxd8UejHTQhGVF8MZQDaB/8JROGvGjhzPC3Dvai35Xgx1ksupYC4%2BQkajqXZxnh5bpUsjIknKBUCqXgt0FVni6XQ7m5bmHlDQ2jYJtjmXe9vEBwdDo3GfLlEl3j7uSbstV772XuqUO9hPQYnmb3njLwdBgR1zJbYo/P6qNmICTCyT1cPiMNzkcuMhTxhK%2BRuggje0HxzfTbx6TTgov5ZT8jkXKKma20hOyBd6olhEe9Xu4L5s2aDMNXBEnb2a4QQx9kPmklKt3NRbqqSC8iqXc/vsUtWWoljJxhTXp28xzSurWIMX70VaMknwnD99OgJuD1dCMOscl1ww%2B52%2BYGzgBys00%2BNvwxaG%2BrfiAyUg23YpfWmbkTziYoSnqEm8LB5B3CHtKJBcG/hIYn5iugFc1RYEk4cfTC6SOVVD13tVgv5ALFM86c6xyhrVSwSNqGzAhBW4yNvYdzIiF2mRvsejdUZPZJXRuM5epxIn2nijiaHtPecCjAzslFsWF/mnwo53SHVa9OjL6UAA3UN/0vOTUblZiBehBGtCCtWaZ/YmKwAlqYQ1EA%2Bl2jClyKnXw/gOp90KsIeII05DiCusn1NVed/hzVfkKMQrDm4qJz7fXqq6KF2XLfPaLbOA/6r2%2BfCNLYzFTZu/VOtJem9zkLmGkVIk6mjov926C629JyRtfx1b8%2BgWcn7gs54ViwrWB6eGjU7xWeVz2gzidLCtOGA77JnhNiVIt7%2BpI1uYPgv0lLpxDTE%2BHL%2BUqi0/lpygWHF/CPMVDuKL5vub6B5wAmBuBCAtURlP6tiCTJnkpJFdUHl2czPVlquEhryyVOGkYt3iggwxGGa1akl2Nyt3RWFCY7mejY9q%2Bj0eWKCW4B7iM9IaeGTgKZeAaXcIC2SmlXfW3pm92eE%2By76okltnqwcayYdh6Ij9S6OPmPQNRzpDA/hF4mwM6mENCM9DRMeY6F8UleSkOMOlSxFjzTc3ovvvW7oZ/jhTLrLFR%2BfXZjMn54MMzDeTW%2BZVI/l1KJRILqZRjfDpXRR09rPzx1jIJtJslts3DUSj76Nz/hxfza69EvBcYG0zyJUAPqZzaYCCIO3NrHfoG3/7kI3OjYUs3lS/54G27YEk3%2B6cT5ieyaMsxNSKMLTbyWlXMp1YG37tI3QluLRv1l1Wd1FRYQVpbUxfoLDfddhcsXsO6XqkQNNiYPl9KuD%2BJgD9S5vYrjhl%2B&continue=https://accounts.google.com/signin/oauth/consent?authuser%3D0%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132:1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D/signin/oauth/consent%23&tcc=1&dbus=PK",
+      "title": "Redirecting",
+      "visit_time": "2026-06-13 22:54:12",
+      "visit_time_dt": "2026-06-13T22:54:12.254562",
+      "visit_count": 1,
+      "raw_ts": 13425864852254562,
+      "browser": "Chrome",
+      "_hash": "7ce37a388f02f2b4529281d3e4e3671a924e0e713745c0626b496ffb49f22a0f",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com.pk/accounts/SetSID?ssdc=1&sidt=ALWU2cuYEM46piOtDGaXLYq5squBwqXeTXGseQxe5LC5Tcq6O%2B08E30XiSd4yeWzzZ9Imac8qdSFsFiTl2uAPF1IzbFQBSUgFRgV6K1oYPHidrMhxv0kSIQpz8duShpjlNtxWd6mz5i7bZEN74PE3cXST%2BwGmH9mF52Zu6rPOxdspQbKbjVb78nsto1yXPKyuQFFWHPhIDFvL31yqBsBu4Y8wgW5Qx2z1PDz2mpdo%2BH6rG8suEGHSZpZRc%2B5GBdJoyvFglo2Xcyyz8S1tvn6EZ5bM/1/brQxmTl7%2B5jrvsWgx6sR9ABLOEQFvRDOScBqGo3s8JCPEoTZYMDRrJ6YcZXxcvXaZR6hf/uNm8ezMsyb3gNePECJRfrG07/SirM7UjZg3H%2BuY1ctkoSoqr03yCZMS3cZETI3yIcrrv5kZK1Lx/QjY93px2klc9ksJEnie8tdR8bEebAjxLCXIkuKuUYcB3jJdCcb2Ta3kTHERjN8e6XxJMW6IPZw3SuzGQIrhDXYGmDBLh8cK%2BK%2BNHjWsdOVgn1EMNdRx6IhWJCfkEUrmfpECRIJgp4yhAqri23jgTARGrFxOgsRZt4YGIq85avIa7zbyY2kNbt33KTwaalEage/cXr2peklL18aHpqnsxMgNJxbA3%2BJBybP31%2BOxp6uuM62ro1rn%2Bk0Dy34Fw5gSIj8JJ16nIfCJNIqLKrxnrEKF3p4oduv6V7aSEU6lBySS2I3QcVoPekdEZoDpMynzN3zAGQbH41T/HN3/g9QszHMPGM4MmdNsd4Zb3gI68fQcZmpRWPZS8EbS5kynBGIZ5286mrTnxngCRaQkgBSnRcOkyjs1sH6wTZyHolgZuV/3g3LsPcJr51WkbB3B7lh5/zYE78OuA6LA6J75JO1QOe7KKt4jCtvJghVUw4CxorwnTT187ZZ%2Bn3h2e8UioeJ6zyeVY9jRN/FOorZultq81wEolPt2kqpKzXIEHO69%2BX0HJHPuUd0GwHV4trBmH9gKdU%2BUKq6pDl9CVFHmg/6Go6dNXoIWL/8Iv26yaNuu2Zus/eLlYSzZ/Xathhyz4fMzSago%2BDe1cwyF9%2BiHha30y/uOOeK2daEsoE96acIGQ7Rmx/UsDGzyPimwO0SaC03geX%2B23jtDrz%2BBgvINDrsbQFSn2xxdgNY%2BdXoJGou2XitqrKEC8AaYdgZ6vEponggEfFiEqVksRMgLUOO1cB1sdqyunZa/O3YvHTvzPf0U6/x4nYzC/osyD02ZkVMkEuy2PyZMFIBqPmPBw%2B0rqvR9YBt59H63jES9ipb5Jezwu7QOaWRHkAJhTy%2B%2BjpmIUVKxry/aN1vjIBmThbTwOrq6I9cukjwYJA3uJMgrBUqj6kf70P0%2Bec8gubt6WPhrnxGuVvBTcGwkOffmRmjTMHORIdEDuAOadsvvDKLtODzLfTq/J59rFZ6W47eJpSlVWAiNHHezlv0DuhfNfV2lOi6UCy27NO4HIRDo0e92zcetqAdDJRZspmfbZIq275PsVsh/LaQR/fH98hKlsJKoEd3vxwk4mlu6Sv00lEzqZK/k45Gh2iPdA8jXu%2BRF/e0NJWoEP6a2pXuo9Lqqc6Q6r9m6bBF35gdeNZQtQGRyda/KqjAHD5pOW%2B07JsBja9SfH9WVpZNjeGq70bAO8CtZBC%2BLGfiLqxFpvvKUuJrZHMBZjB4rUF7pr2rxp/I1OoQEgxax%2BE7D1vh2nGkMM7XLk5FWhJZoU7QHgdDosanDqA2oibscy1IMluUVsjG2X1wYkpHF6GBGJyWBV40cLArwVAQqWBmjUWXk8hWaakZQBfjiLW3yHX4YyGf552poetbN/zcGgQJRc4TYyfhgMR66AL2Na0tDRF5Vymi7MXHu%2BXWkY7VYN6x9SYoGrB5ghD9obAS5NKNpYJ0NdTIjhxAhLNzu6QnQdduw0ytiTgt1fIWGjTtI5K5XYWV%2BNg3IQ78TndvhqvozUMO9EuNdJSwjG9BJbbcjMESW%2BtvbU/Ywpcliw1W/38hVUChPLH5uNUdyXQMrFEz6KebrkTd2pzFdG18A/Zi619Gs4cAbcevMPGJdqExpZI8alW/DjIQ2fcnUs%2Bc19rgdTxMQFMzl2jyQPRIxf1LDj/rjk9sFj8VmTQNcFHBuZqLjh5VB4D2hItgFbRaHLSVIF83d4LtEPTD93RKu17PKrCVmHaiYVybA0pIKEmtxLV2XR2eAgiEDy9/au5nBExJFCfJj78uP%2Bvk5UnQyxZxg5CmKPejqSaP2Y%2BbhZ9DQrCkmGfaZdzJOSuFlj7ovw1V0raOv4XfqvdYYp/a%2BwV7DChcHhSL4FdGn%2Bufe3W2bmiCnMOj58Tf0SON8lJaP6tSinuI8cAlsH6v6FmfLGjOSbEYNu%2BqVpy8KwEfUAJNy8akmFGRFBl8%2B5tA3s5lcsUKLQjtO48TkZzRc3LJkQAiTA91KDYL3KTWmwpoFp8BWeNoxlhRtKzoEIL3iZUcPfGsOG6eW5o1VLyzvMqYRYMBkTFolSrvQmQ/ziULUuyWGYiJzI5UzlaUWak7Lreib968vzdRVCOiZ%2BrvEtW%2BdJj4NSwheYrdLJrAe4yYDiIIN4YddTcDAQpwpWv%2BtLpF1cmrxZQfC6CfLQjLkzRz7scCXqTJJjvCWWMxJ2trSxjzsRJmingcEv5%2B4TFN%2BQp31G%2BvBisUjF9VD30AEZ%2Bqj5axXJCunpoxdVQFuWAfVT1ToiZb1SHhSQ%3D%3D&continue=https://accounts.google.com/signin/oauth/consent?authuser%3D0%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132:1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D/signin/oauth/consent%23&tcc=1",
+      "title": "Redirecting",
+      "visit_time": "2026-06-13 22:54:12",
+      "visit_time_dt": "2026-06-13T22:54:12.254562",
+      "visit_count": 1,
+      "raw_ts": 13425864852254562,
+      "browser": "Chrome",
+      "_hash": "b615a1ff69a167b137c060d4fee9051dd49a21ae3805660d1f041823b1dc16ac",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/signin/oauth/consent?authuser=0&part=AJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA&flowName=GeneralOAuthFlow&as=S-1154897132:1781390989008184&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&requestPath=/signin/oauth/consent#",
+      "title": "Sign in – Google accounts",
+      "visit_time": "2026-06-13 22:54:16",
+      "visit_time_dt": "2026-06-13T22:54:16.653990",
+      "visit_count": 1,
+      "raw_ts": 13425864856653990,
+      "browser": "Chrome",
+      "_hash": "38088fec5e1508a0e15ac202144c3324331905f76da2eb6b1cd04f916dafe317",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/ServiceLogin?rart=ANgoxccmm24ZjPnbouZg4CmTOStCT7Zq3cjFs46aQr4TvheCAfcUKBU7WWwPfznsgENR4Tsmga824oGMe6ji1heiSu7jmcTh1-EjTOXNLbdNEl27wr3o82Y&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3D0%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent&authuser=0",
+      "title": "Sign in – Google accounts",
+      "visit_time": "2026-06-13 22:54:16",
+      "visit_time_dt": "2026-06-13T22:54:16.653990",
+      "visit_count": 1,
+      "raw_ts": 13425864856653990,
+      "browser": "Chrome",
+      "_hash": "4d573d7d072b01aa45938dc64957b854f491a716f7893bdaa0249e33c6b44ab8",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/InteractiveLogin?authuser=0&continue=https://accounts.google.com/signin/oauth/consent?authuser%3D0%26part%3DAJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA%26flowName%3DGeneralOAuthFlow%26as%3DS-1154897132%253A1781390989008184%26client_id%3D1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com%26requestPath%3D%252Fsignin%252Foauth%252Fconsent&rart=ANgoxccmm24ZjPnbouZg4CmTOStCT7Zq3cjFs46aQr4TvheCAfcUKBU7WWwPfznsgENR4Tsmga824oGMe6ji1heiSu7jmcTh1-EjTOXNLbdNEl27wr3o82Y&dsh=S-216889452:1781391256196863",
+      "title": "Sign in – Google accounts",
+      "visit_time": "2026-06-13 22:54:16",
+      "visit_time_dt": "2026-06-13T22:54:16.653990",
+      "visit_count": 1,
+      "raw_ts": 13425864856653990,
+      "browser": "Chrome",
+      "_hash": "8ae32c89ffd7c59121424a3bc1a6f5aa6dbff7503492ceed038f5cc7583ac9cd",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/signin/oauth/consent?authuser=0&part=AJi8hAN1flCVOacUesepxwWtK5E52UtW4YsgCD_xLxGhepBLjMFg-S6-oj5gtJPEvwGgRQDMFimRkYD2k3-4dPafqxaAmQ3y-2SC8ZIKKXzq22GcA2SrUpHT3z68QSIJFElwCXzSDRxfvN_sHA-E8QvkTjr9mV90QbC0ZrQNCcl_cMKf7FTD_tWC3RvFmT7JypFMA5GvePEdgc2SdN-KqiOgsovaMLhdSlTksJB1kSdlcKXlZuiUS7FdZQflYdjpR6ztP1BLBsYymrsTHgJx-lcdr3kB3d_UHrbKn1y3zhoMFjhKnJbCw2fwPQAvbZU15HtBqnYr1c7VY85xFnajGj5KgfEdUZf1Bn_YhK3Cp3bB3UnGsmtKbk065r98IfS83vdlhm8krrHfCGItY5utu-gjnGwhuYaKVAoSlQ-gYgcZoeo1fR-3-hNYTOgc4A7ebUEsXUQvtg5aL9XcMqDI3zWu90IUQ9ApaA&flowName=GeneralOAuthFlow&as=S-1154897132%3A1781390989008184&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&requestPath=%2Fsignin%2Foauth%2Fconsent&pli=1&rapt=AEjHL4PuPWbAGp-lsmV14CdvLDSutqEKnKY6ZNjOjnJUieZfj92bq3qYZLW5mEXg2JZoekTVGhQ8I3I8Rx9z5LkBImMt-ybUpoyJb-B9EeHmb4vDbXd4jXs",
+      "title": "Sign in – Google accounts",
+      "visit_time": "2026-06-13 22:54:16",
+      "visit_time_dt": "2026-06-13T22:54:16.653990",
+      "visit_count": 1,
+      "raw_ts": 13425864856653990,
+      "browser": "Chrome",
+      "_hash": "259c37eb4d059d68354c627e72749025af1e96e60e0f36853901820314b0a8ae",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/signin/oauth/id?authuser=0&part=AJi8hAOsBMN2CItwbV5mheuKRi8i2VvUBTHDnb13RX9cnHVLHC2pDKHuQvJ3mn3ecveuapBKuv8rebPFRJByStFN4Y2q-BHWClG3snbPNHPhJVPs-BGV5TFZTa6PMEUo4BdnehDFCsnfWLNgTJRrTjtPqTNW7qAs6nS9NZuWXwM9xazm-uBNLAL62toj5AbWT_f1SkdrsUpYMlnkykrJKaJpHPDvhOMe5tDf0aYAobKy5DxLruKqI1pzzrbpbMsOrQpJBDYwcrZ6xNUd8lyPo7MscrW_Gxs8QyOcTQO-thYtrxS_J8Urr9WWk0si9tJ2eFm4SvD5jna44ZhZzQ5WgnqO1vPtk7fUYc2IlEcU4fCqptQNGX8lmmXlpYrplu9RdOyVVgf5DvAMESg_Sg8AtmTAw2xo0AxlO6_JpCGnZJjlPsKS2sm1KZSsN7MTrb_Ka8I6OnrDsVJNSUfOrejQHdHTkPq0BdRyq8FwATWBYVPsK4__VKkw_zSwus_KEr-6nqSTGJUacQlSp2ESqpMVkvJqHRUw_8Z1pxB2zbzvvQCk-zIelFTD1hBRvjFDTCugs9TqVLAZmPa064_q8vUwTrgyyfXvMS2I3LGk1vvTAjQPW3VQaDAn1FiriBfFtj3UEyINOH-QKCxveAPGG5-KwPKvub8W76M0rfpki75FKnU9yWOvWrsWnWZVLMzWwHmMWWUmc981iAQHVGCa8dM74XZSuYBUoXxx71hlXSCiHUMEFYw9lDCqf9OA2_tm2cnGnPOF7v_o6iUIZ4LFI5XhI3AH8i3J6-Nus20mI-IhfYZEOsb_Gb5AL2ARqaaw2JR68LqwK1Qxn33rjAVVvs7RRk9rhFH4AuETEyjw-Ar6x8DuBcf08REA7dR5wBrm1szDKuOAWx2jrYqOoyNOaiXTfKAKoxgAdyOrWwyIuAvdt7tFnOSLDn7G997uhka6FrUUqiqMc0IMLh5KLh8V-4hV5R3UlKNjA0upnA&flowName=GeneralOAuthFlow&as=S-1154897132%3A1781390989008184&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&rapt=AEjHL4PuPWbAGp-lsmV14CdvLDSutqEKnKY6ZNjOjnJUieZfj92bq3qYZLW5mEXg2JZoekTVGhQ8I3I8Rx9z5LkBImMt-ybUpoyJb-B9EeHmb4vDbXd4jXs#",
+      "title": "Sign in – Google accounts",
+      "visit_time": "2026-06-13 22:54:16",
+      "visit_time_dt": "2026-06-13T22:54:16.653990",
+      "visit_count": 1,
+      "raw_ts": 13425864856653990,
+      "browser": "Chrome",
+      "_hash": "cff007b5c4d38e44ac0f5d90a5cdfe2baf98d0a3464381ea4b7e4848ae673c5d",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'c2' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'c2' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://accounts.google.com/signin/oauth/consent?as=S-1154897132%3A1781390989008184&authuser=0&client_id=1062961139910-l2m55cb9h51u5cuc9c56eb3fevouidh9.apps.googleusercontent.com&flowName=GeneralOAuthFlow&part=AJi8hAO_ZDyYIqRau7W4EBAPbGi4KuVjjIMn8HNRGMju0mJT6gZIvm_O0G3q1xsK6PB5TEoVFLy2pBa09SyZeqLzykme358cnCjmk9sPEX9LzmxlUfWnSNTSILCaql7rmp5g1Sn2Oc5xlJoD225l80ZQdOBJsaHIOv4Qct59QWTx04yfiqm-oc8Gl_-c96qCzIIiVUEYmDuflo0xLaP6v6K1QJ7-YuN_G_292KoedvLlr-OZr9CVaNSa8GPuk-2uMBcHDaFPghsoPYfeEpLePhDowhlJzUM0SaCnDhcZuxJB838fHZCm2Lcj5j-kvvMAHSE8uU_WL6btxPzXkDS7hCsmoBLp-Od0EQu9nftjcjtjWskahnXEG7HKjDHSjtEJuFRj3hDjgUqISgu_r3r5cHacQeHnAxLoRqmx7IqhnTMOHlx1Bgzv9kGKfF5tAUfhK-Sa_auWK4YnmfnZCqmtjHh2Il1XStCq4KLft2Rbg1F9nL5BesvgU07zz9-QTTGj17lpcYvP3mFE4iJdP51Qr4ST7sArFuk2TuauSypg-I6mH3tRmrZ-4nb54MrT8mO6CrA7LkHbLROzW_HHqQc8Uut0v5VBZphp_ciDGajqyBdKgjIk0F657_tGIC4OJCiSgMr9CAuwMRvqpw4FsUMRiaF6l5OiohCufVQ9gBJ6dxWFfmbaWlcyexJ2LzvG70ZVcd6XKcQtha3yF0TOfR_kLZHjaSlTkLL-NmkwpwBj4rivlBlNHEhzrtIpin8dfTez7GEp58cwY9bgkvofdUCrz6kPofxYQ-gLvcuoaVuKqDc8zi50cTTpd6fbYKglDGC5QFPnbqLvVXxWyxu52LftgE872T1FmkSslMs1Kdq-TKHf_tXXHtOcMQC3ueTw3D26_23K2QipzOS_hebc3Q90v5LG387DlWF9p1jQa0lBjoavTyZ3srmODYVpMsf1GfT9x2v7iEQrvrBZxjE7sKQulwajhi0dh13RhP8G6z5Q8ZCuZsWnMScgIyk&rapt=AEjHL4PuPWbAGp-lsmV14CdvLDSutqEKnKY6ZNjOjnJUieZfj92bq3qYZLW5mEXg2JZoekTVGhQ8I3I8Rx9z5LkBImMt-ybUpoyJb-B9EeHmb4vDbXd4jXs&xsrf=AH3GJxwRZaoRqhKIax-vxaQyByMr%3A1781391257088",
+      "title": "",
+      "visit_time": "2026-06-13 22:54:22",
+      "visit_time_dt": "2026-06-13T22:54:22.424796",
+      "visit_count": 1,
+      "raw_ts": 13425864862424796,
+      "browser": "Chrome",
+      "_hash": "d05e07e1443d15ecea2f2988e96a58010edd1b532dbdc844276cb75f95e84920",
+      "severity": "LOW",
+      "reason": "Hex-encoded string detected in URL — possible obfuscation",
+      "matched_rule": "HEX_PATTERN",
+      "all_matches": [
+        {
+          "severity": "LOW",
+          "reason": "Hex-encoded string detected in URL — possible obfuscation",
+          "rule": "HEX_PATTERN"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=thoi68yem2U",
+      "title": "(135) 💥 MIKE BANNING SAVES THE WORLD 💥 | Best of Olympus & London Has Fallen | ‪@ActionReload‬ - YouTube",
+      "visit_time": "2026-06-14 02:37:17",
+      "visit_time_dt": "2026-06-14T02:37:17.433360",
+      "visit_count": 1,
+      "raw_ts": 13425878237433360,
+      "browser": "Chrome",
+      "_hash": "d895c9006338f548d4bd48e562895dfebada4688eee9744f633d31583c806cad",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 02:37 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 02:37 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5sqyUKD4WKQ",
+      "title": "(135) Ajay Devgan New Action Blockbuster Full Movie | Bollywood Drama & Action Movie | Abhishek Bachchan - YouTube",
+      "visit_time": "2026-06-14 02:53:20",
+      "visit_time_dt": "2026-06-14T02:53:20.550194",
+      "visit_count": 1,
+      "raw_ts": 13425879200550194,
+      "browser": "Chrome",
+      "_hash": "9f3a8c8647620db42c1163e8d7298c4c27db9d327032e2fb07bb2dd6c27a4cae",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 02:53 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 02:53 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mVFud_JuZgI",
+      "title": "(135) SATYA (2026) Full Action Movie | Ajay Devgn | Latest Bollywood Superhit Full Action Movies 2026 - YouTube",
+      "visit_time": "2026-06-14 02:56:20",
+      "visit_time_dt": "2026-06-14T02:56:20.536120",
+      "visit_count": 1,
+      "raw_ts": 13425879380536120,
+      "browser": "Chrome",
+      "_hash": "8e3efe96c58235f56a161b530e338ecd523c5929dcda72b62d16e287bfdeaa04",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 02:56 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 02:56 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cNiXeelOtsA",
+      "title": "(135) DURGA Full Movie | Salman Khan | Saif Ali Khan | Deepika Padukone | Latest Bollywood Full Movie 2026 - YouTube",
+      "visit_time": "2026-06-14 02:58:22",
+      "visit_time_dt": "2026-06-14T02:58:22.760786",
+      "visit_count": 1,
+      "raw_ts": 13425879502760786,
+      "browser": "Chrome",
+      "_hash": "f020133427201643025479bcce49582f2e356975a629feb0a257ef72736f3bca",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 02:58 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 02:58 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/F8XOuP_U-cU",
+      "title": "(135) Baji Mariyam Nawaz Ki Zuban Phisal Gai 🤣😅😂 - YouTube",
+      "visit_time": "2026-06-14 03:03:47",
+      "visit_time_dt": "2026-06-14T03:03:47.699989",
+      "visit_count": 2,
+      "raw_ts": 13425879827699989,
+      "browser": "Chrome",
+      "_hash": "39e8067d6901b57815aff90889df304ec77d19689f8845f32860f88a8e0c3236",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:03 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:03 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/cY8UchwUsBU",
+      "title": "(135) usne haka me apne raste tm apne raste pher 3 saal bad dobara molaqat hue#shorts #viral #short - YouTube",
+      "visit_time": "2026-06-14 03:04:02",
+      "visit_time_dt": "2026-06-14T03:04:02.087250",
+      "visit_count": 4,
+      "raw_ts": 13425879842087250,
+      "browser": "Chrome",
+      "_hash": "065b5fbe15652318b784bc1d8dadfda229e7a0146e74e5dfeba2ccf1a7ec122d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/BidJM6n3254",
+      "title": "(135) 汽车脱困方法，斯令现场演示，只为教你汽车脱困不求人！ #用车技巧 #每天一个用车知识 - YouTube",
+      "visit_time": "2026-06-14 03:04:12",
+      "visit_time_dt": "2026-06-14T03:04:12.090558",
+      "visit_count": 4,
+      "raw_ts": 13425879852090558,
+      "browser": "Chrome",
+      "_hash": "a0efd4dc10e7e401b3785817b1e745f9b61769856b0f57f0c0b53f98ab7ce631",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/XNgKJ6MpT1A",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:04:16",
+      "visit_time_dt": "2026-06-14T03:04:16.745746",
+      "visit_count": 2,
+      "raw_ts": 13425879856745746,
+      "browser": "Chrome",
+      "_hash": "47e934a52ba847e1af4e82aab7ef9fbe872ec5053274e6886b4d79a820107812",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/sqaVjtGOM3w",
+      "title": "(135) Sad mourning procession in memory of Karbala#trending #shortvideo #ytshorts #islamicvideo #reels - YouTube",
+      "visit_time": "2026-06-14 03:04:39",
+      "visit_time_dt": "2026-06-14T03:04:39.786321",
+      "visit_count": 2,
+      "raw_ts": 13425879879786321,
+      "browser": "Chrome",
+      "_hash": "2e534f86649d35bf48fd9661381f1177001539f8970bb0ee21c1adbc3ec797bb",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:04 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/T3WcAvWLEfI",
+      "title": "(135) This was beyond their wildest dreams - YouTube",
+      "visit_time": "2026-06-14 03:06:51",
+      "visit_time_dt": "2026-06-14T03:06:51.604480",
+      "visit_count": 2,
+      "raw_ts": 13425880011604480,
+      "browser": "Chrome",
+      "_hash": "98a4fd41b3f63bf586c2e9759b5bac390625187f8f20ee0b70f122b4d4986cbb",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:06 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:06 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/g2bSrazbRRs",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:06:53",
+      "visit_time_dt": "2026-06-14T03:06:53.236813",
+      "visit_count": 2,
+      "raw_ts": 13425880013236813,
+      "browser": "Chrome",
+      "_hash": "008dcfe46cf8d5345c2a45dc90f9a4c4ee1826791d51c8c45849a78ea656a738",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:06 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:06 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/3DqaonHMuZ8",
+      "title": "(135) 20 years experience of making grandma happy 🤣☝️ - YouTube",
+      "visit_time": "2026-06-14 03:07:29",
+      "visit_time_dt": "2026-06-14T03:07:29.267260",
+      "visit_count": 2,
+      "raw_ts": 13425880049267260,
+      "browser": "Chrome",
+      "_hash": "4bc32b848a03b2a8e5f8bb080edb2336da15b96b8c81bed233e5964e070d96ab",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/2bFEoekmMnk",
+      "title": "(135) #imrankhan - YouTube",
+      "visit_time": "2026-06-14 03:07:36",
+      "visit_time_dt": "2026-06-14T03:07:36.358565",
+      "visit_count": 2,
+      "raw_ts": 13425880056358565,
+      "browser": "Chrome",
+      "_hash": "b6c36bfd036bdb52544157c3812b5740fb5ef4e82b05cc8127c0b642da7a12c5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/3c5zwe1dQpo",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:07:38",
+      "visit_time_dt": "2026-06-14T03:07:38.082975",
+      "visit_count": 2,
+      "raw_ts": 13425880058082975,
+      "browser": "Chrome",
+      "_hash": "b1ec864b412d5d7cdf0c95f7a42dc7e889995012582b1c70f082ee78da71cb28",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/aTcrq7Skmv4",
+      "title": "(135) Bruce Lee Reads His Opponent Like aBook 2. #kungfu #brucelee #martialarts#ViralShorts - YouTube",
+      "visit_time": "2026-06-14 03:07:57",
+      "visit_time_dt": "2026-06-14T03:07:57.752877",
+      "visit_count": 2,
+      "raw_ts": 13425880077752877,
+      "browser": "Chrome",
+      "_hash": "2c8a3f46dc1d93d14a0a806cca18aaf8c0fbf18f740af1f95c2be33d677ce6a5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:07 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/D8i4_LZbKCc",
+      "title": "(135) Tiger Sir 😎 Akshay Fun Moment 😲 Kajol Shah Rukh Khan Shocked 😏 Reaction New Viral Shorts - YouTube",
+      "visit_time": "2026-06-14 03:08:03",
+      "visit_time_dt": "2026-06-14T03:08:03.149508",
+      "visit_count": 2,
+      "raw_ts": 13425880083149508,
+      "browser": "Chrome",
+      "_hash": "975f47e6c0668f8ddf3752e3e6301002efe076e8e682d1cb04f80a55ef816e04",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/tLYnfEXME90",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:08:05",
+      "visit_time_dt": "2026-06-14T03:08:05.063263",
+      "visit_count": 2,
+      "raw_ts": 13425880085063263,
+      "browser": "Chrome",
+      "_hash": "c1ae5ab9285b7b35dd5931ecbf2cb40f3a7e522bea4ee23200165a5c54d91855",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/lyt7dGiPEX4",
+      "title": "(135) Türkiye’de beatbox şakası 😂😂 #servetselçik - YouTube",
+      "visit_time": "2026-06-14 03:08:18",
+      "visit_time_dt": "2026-06-14T03:08:18.578054",
+      "visit_count": 2,
+      "raw_ts": 13425880098578054,
+      "browser": "Chrome",
+      "_hash": "81599f5aaef85666ec6004dacdc360357119c35e35b50598d0630b8457adae0c",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Fa5o-MR5STg",
+      "title": "(135) funny - YouTube",
+      "visit_time": "2026-06-14 03:08:25",
+      "visit_time_dt": "2026-06-14T03:08:25.266427",
+      "visit_count": 2,
+      "raw_ts": 13425880105266427,
+      "browser": "Chrome",
+      "_hash": "dad32c41054b571523a3632d275f4e32e0f89abbfe60b3a34c28f4de13bc7e9d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:08 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/oYQ2HpfCkPA",
+      "title": "(135) Give me a minute. Funny family #couple #comedy - YouTube",
+      "visit_time": "2026-06-14 03:09:24",
+      "visit_time_dt": "2026-06-14T03:09:24.995259",
+      "visit_count": 2,
+      "raw_ts": 13425880164995259,
+      "browser": "Chrome",
+      "_hash": "b7a63e06a9836386ef866be7d44f3339136a24fb9d16c2433abff66bd43cc6e3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:09 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:09 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/kJPYO__4jJo",
+      "title": "(135) 初めて犬に文句を言われた赤ちゃん、どうしていいか分からず固まってしまう。。。#dog #baby #cute #funny #shorts #shortvideo #赤ちゃん #トイプードル - YouTube",
+      "visit_time": "2026-06-14 03:09:57",
+      "visit_time_dt": "2026-06-14T03:09:57.141981",
+      "visit_count": 2,
+      "raw_ts": 13425880197141981,
+      "browser": "Chrome",
+      "_hash": "c1c1122e706b471e3f36bfed38253cf72c4e99798a1c763f68c0e788c49441ce",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:09 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:09 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/RFbchPxJUyM",
+      "title": "(135) Allah hu Akbar 💚🕋🤲🙏#motivation - YouTube",
+      "visit_time": "2026-06-14 03:10:13",
+      "visit_time_dt": "2026-06-14T03:10:13.293181",
+      "visit_count": 2,
+      "raw_ts": 13425880213293181,
+      "browser": "Chrome",
+      "_hash": "71c0105a68294d1dfbb1211c46f20b4dccd30b127dfd088279c836eba08d19bc",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9WHE_FRPNpE",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:10:15",
+      "visit_time_dt": "2026-06-14T03:10:15.406840",
+      "visit_count": 2,
+      "raw_ts": 13425880215406840,
+      "browser": "Chrome",
+      "_hash": "840f6714226efb7c7c89c3380ae45eccaf735df9e2d83245a1b3fdcc7ec636cb",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/WTh2zAFzeOM",
+      "title": "(135) Köpek yemek ona kalsın diye numara yapıyor. 😂 smart dogie🐶 funny animals🐾😂cute 🥰cartoon 🐕 - YouTube",
+      "visit_time": "2026-06-14 03:10:33",
+      "visit_time_dt": "2026-06-14T03:10:33.694211",
+      "visit_count": 2,
+      "raw_ts": 13425880233694211,
+      "browser": "Chrome",
+      "_hash": "e171e44d7104d3e1e384c7b89bb2f577fd564fbbc8ef00fd51f51967d6746041",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/rEzTHrOGH5I",
+      "title": "(135) Rambo, you're making a serious mistake. You just pointed a gun at a federal agent.#Rambo #FightScene - YouTube",
+      "visit_time": "2026-06-14 03:10:50",
+      "visit_time_dt": "2026-06-14T03:10:50.778232",
+      "visit_count": 2,
+      "raw_ts": 13425880250778232,
+      "browser": "Chrome",
+      "_hash": "9b13ab15ade0134085e92d60b664edb7bf7e781c4d0e60d3b062a86105880f61",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9p3ECks3v_8",
+      "title": "(135) Indian Airoplane Sky 🥵☠️ Oho Kon Ho Sakta ? - YouTube",
+      "visit_time": "2026-06-14 03:10:58",
+      "visit_time_dt": "2026-06-14T03:10:58.275540",
+      "visit_count": 2,
+      "raw_ts": 13425880258275540,
+      "browser": "Chrome",
+      "_hash": "a779d696e4e0db2187a3ed5e958719b28188506e432515509ce710d90b6caa2d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/6puICJFnoZE",
+      "title": "(135) I put a smile on her face🌹🥰 #fyp #smile #kindness #viralvideo #viralvideos #lovely #dance #music - YouTube",
+      "visit_time": "2026-06-14 03:11:15",
+      "visit_time_dt": "2026-06-14T03:11:15.321917",
+      "visit_count": 2,
+      "raw_ts": 13425880275321917,
+      "browser": "Chrome",
+      "_hash": "a0b338a6128eeef0b8e687b91e0daab33b13ed78ef66b7d912fd093797dfe6a0",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/zqALd8rE5J8",
+      "title": "(135) Respect is important - YouTube",
+      "visit_time": "2026-06-14 03:11:38",
+      "visit_time_dt": "2026-06-14T03:11:38.159905",
+      "visit_count": 2,
+      "raw_ts": 13425880298159905,
+      "browser": "Chrome",
+      "_hash": "4297e13d69ff23557152daedde70a6b1e4db6a52bdea4d9bcee8263d5e5c66e1",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/KVgH9dUBqZo",
+      "title": "(135) Green or Pink?☠️ - YouTube",
+      "visit_time": "2026-06-14 03:11:55",
+      "visit_time_dt": "2026-06-14T03:11:55.425750",
+      "visit_count": 2,
+      "raw_ts": 13425880315425750,
+      "browser": "Chrome",
+      "_hash": "aff75dc9144e368660cf56f811205ea230a3c621100c6bea0f80ec8e52df7c98",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Qgtq2mRVG_o",
+      "title": "(135) 🕋💔❣️❤️♥️🕋❤️❣️💔❣️❤️🕋 - YouTube",
+      "visit_time": "2026-06-14 03:11:57",
+      "visit_time_dt": "2026-06-14T03:11:57.949153",
+      "visit_count": 2,
+      "raw_ts": 13425880317949153,
+      "browser": "Chrome",
+      "_hash": "0ba66cc167da235af2252d7392ba739828a58b49054cccadf40d89f4f685069c",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/_2Q_L-p01c4",
+      "title": "(135) Anatoly Prank on Bodybuilder🤣💪 #anatolyprank #anatolygym #bodybuildinglifestyle #anatoly king - YouTube",
+      "visit_time": "2026-06-14 03:12:10",
+      "visit_time_dt": "2026-06-14T03:12:10.772485",
+      "visit_count": 2,
+      "raw_ts": 13425880330772485,
+      "browser": "Chrome",
+      "_hash": "0ea98d39aff55253a66f6a06359b30970b9b66ec78b2881e9a73e887b228f599",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:12 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:12 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/TTuTRxPzJcc",
+      "title": "(135) Ice Cream in Her Mouth and a Giant Bike Back on Its Wheels #girlrider #motorcycle #adventurebike - YouTube",
+      "visit_time": "2026-06-14 03:12:39",
+      "visit_time_dt": "2026-06-14T03:12:39.904956",
+      "visit_count": 2,
+      "raw_ts": 13425880359904956,
+      "browser": "Chrome",
+      "_hash": "6e6e552405875c66cfa9e21c190ee72312054cb3324ce3d6205aff8eb602dc3e",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:12 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:12 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/gc1b0CYMyNs",
+      "title": "(135) Dog#breaveDog#shotsvideo #trendig - YouTube",
+      "visit_time": "2026-06-14 03:13:02",
+      "visit_time_dt": "2026-06-14T03:13:02.764532",
+      "visit_count": 2,
+      "raw_ts": 13425880382764532,
+      "browser": "Chrome",
+      "_hash": "cf7c242cdea850fc4bd30e7b4fb67c9c13c6c293f82eee25aa1576495d3050f9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/OXDtysItpGE",
+      "title": "(135) Traditional Orthodox wedding in Georgia ☦ Хвала 📽:joseph_placido #orthodox #orthodoxwedding - YouTube",
+      "visit_time": "2026-06-14 03:13:06",
+      "visit_time_dt": "2026-06-14T03:13:06.021311",
+      "visit_count": 2,
+      "raw_ts": 13425880386021311,
+      "browser": "Chrome",
+      "_hash": "aecc94286cedc2689c41ed5534fc4197002f09c8f05fa032c7ced1be7cee5ea8",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/bF1gh2RXUeQ",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:13:08",
+      "visit_time_dt": "2026-06-14T03:13:08.168126",
+      "visit_count": 2,
+      "raw_ts": 13425880388168126,
+      "browser": "Chrome",
+      "_hash": "d29881e278dd610a2cfae13a2670c378cf998df11436d966b6efe5203cb1e6fb",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/3HlAm7qyT04",
+      "title": "(135) Türkiye’de görme engelli şakası 😅😅 #funny #servetselçik - YouTube",
+      "visit_time": "2026-06-14 03:13:24",
+      "visit_time_dt": "2026-06-14T03:13:24.428293",
+      "visit_count": 2,
+      "raw_ts": 13425880404428293,
+      "browser": "Chrome",
+      "_hash": "361d6fb5a262da1f587dfd82702e696166a6de47d0ea0938050f80840e20d992",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/2hTvOGej_C0",
+      "title": "(135) إذا كتب الله السلامة لعبده هيأ له من أسباب النجاة ما يفوق كل توقع😲☝️🤲#لايك #اكسبلور #editing #song - YouTube",
+      "visit_time": "2026-06-14 03:13:26",
+      "visit_time_dt": "2026-06-14T03:13:26.116995",
+      "visit_count": 2,
+      "raw_ts": 13425880406116995,
+      "browser": "Chrome",
+      "_hash": "1a6dc81362787834435c310b4fb0dae1a793f85698692d5e2da7b59985ddfb91",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/YScajo5lcZY",
+      "title": "(135) so cutie baby.. #shortvideo #cutiepie - YouTube",
+      "visit_time": "2026-06-14 03:13:45",
+      "visit_time_dt": "2026-06-14T03:13:45.374326",
+      "visit_count": 2,
+      "raw_ts": 13425880425374326,
+      "browser": "Chrome",
+      "_hash": "b3799b885cb07ece53be8522002fad407d7b9f950b639f4e73c60f3b572c2020",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:13 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/yGuv4yfyY-k",
+      "title": "(135) What lesson do you learn from here 😁 #funny #youtubeshorts - YouTube",
+      "visit_time": "2026-06-14 03:14:13",
+      "visit_time_dt": "2026-06-14T03:14:13.022669",
+      "visit_count": 2,
+      "raw_ts": 13425880453022669,
+      "browser": "Chrome",
+      "_hash": "35e71c707d6f1228f814c86e769ed902bbc0acda10ec3e1382a6e78ffc92edda",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/H1QbGUmAtN0",
+      "title": "(135) Top Learning ep554Toolsfor Tech 🔥Enthusiasts# shorts #shortsfeed #viralshorts🔥🙏 - YouTube",
+      "visit_time": "2026-06-14 03:14:29",
+      "visit_time_dt": "2026-06-14T03:14:29.651930",
+      "visit_count": 2,
+      "raw_ts": 13425880469651930,
+      "browser": "Chrome",
+      "_hash": "54502ee54e86ba2e0e4fb39bae931676355a3b64ab2f2ec427b165eb19906bde",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/aa7Pq1EWe8w",
+      "title": "(135) #beautiful #howtolearnmadaniqaidaeasily #unfrezzmyaccount #duet #love #quranrecitation #quran #love - YouTube",
+      "visit_time": "2026-06-14 03:14:51",
+      "visit_time_dt": "2026-06-14T03:14:51.110345",
+      "visit_count": 2,
+      "raw_ts": 13425880491110345,
+      "browser": "Chrome",
+      "_hash": "aa07ad894404cfad0787350b90024058e6bfd33a8eebcfafea305f90ec80fbe4",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:14 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/SXz7dU15zLM",
+      "title": "(135) “Got a Gift… But Lost One Sandal 😂” #funny #comedy #shorts #shortsvideo #lol - YouTube",
+      "visit_time": "2026-06-14 03:15:15",
+      "visit_time_dt": "2026-06-14T03:15:15.436889",
+      "visit_count": 4,
+      "raw_ts": 13425880515436889,
+      "browser": "Chrome",
+      "_hash": "e5946c21908700eaf3022c38c04a882837e27d38a7b5a32c6cdd7860ad4b1c7e",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/0ZanWZWhupA",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:15:18",
+      "visit_time_dt": "2026-06-14T03:15:18.682598",
+      "visit_count": 2,
+      "raw_ts": 13425880518682598,
+      "browser": "Chrome",
+      "_hash": "a1e28a5e063ea64e2b0725a030bbe95c182520d5044183e63fd96ab2dc691995",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/ZxMqFTkmYBQ",
+      "title": "(135) Hayrına biri çorap alsın şu adama😳 - YouTube",
+      "visit_time": "2026-06-14 03:15:50",
+      "visit_time_dt": "2026-06-14T03:15:50.082176",
+      "visit_count": 2,
+      "raw_ts": 13425880550082176,
+      "browser": "Chrome",
+      "_hash": "7bf455273911afffb2c46857ae8b4ec3cf38f6719a86687e61732120728533af",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:15 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/QNueZslAD0c",
+      "title": "(135) #aesthetic - YouTube",
+      "visit_time": "2026-06-14 03:16:06",
+      "visit_time_dt": "2026-06-14T03:16:06.283956",
+      "visit_count": 2,
+      "raw_ts": 13425880566283956,
+      "browser": "Chrome",
+      "_hash": "554debd3a36d2baeea8d03f1a6070e6be7edace9ed012223276feb93ce029651",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/0grGOYcha6M",
+      "title": "(135) همیشه یکی واسطه میشه #duet #foryou #beautiful #love #قرآن #شعر #explore #viral - YouTube",
+      "visit_time": "2026-06-14 03:16:08",
+      "visit_time_dt": "2026-06-14T03:16:08.438850",
+      "visit_count": 2,
+      "raw_ts": 13425880568438850,
+      "browser": "Chrome",
+      "_hash": "24f5cbcc1b572ed612e3763791a7ded826f3c5a4eb0f9d227c675675b1617343",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/AJ5CSNH3txc",
+      "title": "(135) Allah Tala ke madad 😭 #ytshorts​ #news​ #prayer​ #today​#trending​#emotional​#youtubeshorts​#shorts​ - YouTube",
+      "visit_time": "2026-06-14 03:16:14",
+      "visit_time_dt": "2026-06-14T03:16:14.560562",
+      "visit_count": 2,
+      "raw_ts": 13425880574560562,
+      "browser": "Chrome",
+      "_hash": "e5833bc513e80ff13cf3271d6c65f0fc8aa10790609e3cec466d08cebc7c54d5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/8OEmmeaf224",
+      "title": "(135) Rude Line Cutter Got a Lesson #NamHuynhOfficial #martialarts #selfdefense - YouTube",
+      "visit_time": "2026-06-14 03:16:31",
+      "visit_time_dt": "2026-06-14T03:16:31.125937",
+      "visit_count": 2,
+      "raw_ts": 13425880591125937,
+      "browser": "Chrome",
+      "_hash": "e1dbda40433c0e0d40f3a3bf989c10b607d566820e1a553786425a7022f6adfb",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/7K06PvMqqfk",
+      "title": "(135) DK- We Knew What to Do… And Did It Right #DuchaKind #Kindness #respect - YouTube",
+      "visit_time": "2026-06-14 03:16:51",
+      "visit_time_dt": "2026-06-14T03:16:51.088283",
+      "visit_count": 2,
+      "raw_ts": 13425880611088283,
+      "browser": "Chrome",
+      "_hash": "273c2b6720660852a39efe3a07fbc391bd965350c0ea4a67c14acd76dd020c25",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Iq8UoSAPWgA",
+      "title": "(135) Foi pimenta 🌶️ #caraperawatanbonsai #winatabonsai #humor #warubonsai #comedia #comedy #memes #cuteba - YouTube",
+      "visit_time": "2026-06-14 03:17:31",
+      "visit_time_dt": "2026-06-14T03:17:31.046339",
+      "visit_count": 2,
+      "raw_ts": 13425880651046339,
+      "browser": "Chrome",
+      "_hash": "fda16e3871c7120837bd6c8ae65c4c479380ac6f2e0fef0f6b3e8c7ded7612d5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/tZ5zqcDAqa0",
+      "title": "(135) indangnya keluaaar - YouTube",
+      "visit_time": "2026-06-14 03:17:33",
+      "visit_time_dt": "2026-06-14T03:17:33.889243",
+      "visit_count": 2,
+      "raw_ts": 13425880653889243,
+      "browser": "Chrome",
+      "_hash": "e0969cbdb4adcf18e738aa4bcba4bfc00a4ea396664f8a859dfe056376f06746",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/ds4k9IHVSlQ",
+      "title": "(135) Poetry #sadurdugazal #poetry #urdupoetry #shorts #shortvideo #shots #viralvideo #urdupoetry - YouTube",
+      "visit_time": "2026-06-14 03:17:41",
+      "visit_time_dt": "2026-06-14T03:17:41.713446",
+      "visit_count": 2,
+      "raw_ts": 13425880661713446,
+      "browser": "Chrome",
+      "_hash": "8d18ddc9100029429cb86533ab8c9b8e4c572af7f2d581d25e95b20234935cce",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:17 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/at1B8RVyDxc",
+      "title": "(135) #shorts #funny - YouTube",
+      "visit_time": "2026-06-14 03:18:03",
+      "visit_time_dt": "2026-06-14T03:18:03.962663",
+      "visit_count": 2,
+      "raw_ts": 13425880683962663,
+      "browser": "Chrome",
+      "_hash": "4d5bdcf0fb6ffd892832ddc09af3ead2778ed0cdfc784a9fc3d8552c63023fd3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:18 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:18 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/BWnFeC00Byo",
+      "title": "(135) Suamiku tidur siapa ya #comedy - YouTube",
+      "visit_time": "2026-06-14 03:18:50",
+      "visit_time_dt": "2026-06-14T03:18:50.222574",
+      "visit_count": 2,
+      "raw_ts": 13425880730222574,
+      "browser": "Chrome",
+      "_hash": "26078ce3d7cdcb12e621dedcbf663665a9cc039aedd5372ef90a38fe182ed062",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:18 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:18 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/K9muybsTQC4",
+      "title": "(135) SEMPRE VAI TER ALGUÉM MAIOR QUE VOCÊ! NÃO ADIANTA! #maromba #viral - YouTube",
+      "visit_time": "2026-06-14 03:19:21",
+      "visit_time_dt": "2026-06-14T03:19:21.909459",
+      "visit_count": 2,
+      "raw_ts": 13425880761909459,
+      "browser": "Chrome",
+      "_hash": "dd6e90542410aa703b8a5f266504383208252404533d1dd0da5963eb6f6c3774",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Zt5QOMNZDQU",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:19:23",
+      "visit_time_dt": "2026-06-14T03:19:23.528142",
+      "visit_count": 2,
+      "raw_ts": 13425880763528142,
+      "browser": "Chrome",
+      "_hash": "0c597b44de9091e084d25873d8fb6025feccbf6c7cb5373b0e276a69ff7f1ff9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/lYBtKfXBEM8",
+      "title": "(135) ￼ Tallah prank #comedyforever #comedy #comedymove #funny #comedyvidoes #love #comedyfilms #prank - YouTube",
+      "visit_time": "2026-06-14 03:19:48",
+      "visit_time_dt": "2026-06-14T03:19:48.371870",
+      "visit_count": 2,
+      "raw_ts": 13425880788371870,
+      "browser": "Chrome",
+      "_hash": "eecb5d1a7a7ba3e23c1e011dbd58563ff263c7c8e0431c1cc685c686b340d6c5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:19 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/_farHowiD7A",
+      "title": "(135) #creator - YouTube",
+      "visit_time": "2026-06-14 03:20:24",
+      "visit_time_dt": "2026-06-14T03:20:24.809664",
+      "visit_count": 2,
+      "raw_ts": 13425880824809664,
+      "browser": "Chrome",
+      "_hash": "3aa3f011a2fc00581608620d11f667efe7fd0175776ee0aaff51fcf85eff65f9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:20 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:20 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/HARbSuwYg4Q",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:20:31",
+      "visit_time_dt": "2026-06-14T03:20:31.999413",
+      "visit_count": 2,
+      "raw_ts": 13425880831999413,
+      "browser": "Chrome",
+      "_hash": "ee18299827cd89028bbdfeddfb0ea9474ed6311260c9ba490e45b09ce9e3f5b1",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:20 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:20 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9FIv-iMvmbg",
+      "title": "(135) Sadaka vereni ALLAH CC. daha iyi korur. #keşfet #respect - YouTube",
+      "visit_time": "2026-06-14 03:21:05",
+      "visit_time_dt": "2026-06-14T03:21:05.615228",
+      "visit_count": 2,
+      "raw_ts": 13425880865615228,
+      "browser": "Chrome",
+      "_hash": "4cead5668ccbf8c09007457667b50dc01db6934379fd895fd0c365c2edddab8a",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:21 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:21 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/QXBGLeEQHfQ",
+      "title": "(135) Two cops took a disabled veteran's cane, but the life-changing surprise. #shorts #kindness - YouTube",
+      "visit_time": "2026-06-14 03:21:26",
+      "visit_time_dt": "2026-06-14T03:21:26.166422",
+      "visit_count": 2,
+      "raw_ts": 13425880886166422,
+      "browser": "Chrome",
+      "_hash": "636de3b08627eafbc649fc81f3d6f6a687936a3a201ace10c68b1aef531706de",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:21 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:21 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9Fva2xrlfSs",
+      "title": "(135) True Generation | Headlights feat. KIDDO(Slowed)#shorts #edit - YouTube",
+      "visit_time": "2026-06-14 03:22:27",
+      "visit_time_dt": "2026-06-14T03:22:27.562315",
+      "visit_count": 2,
+      "raw_ts": 13425880947562315,
+      "browser": "Chrome",
+      "_hash": "9a5e92d02ef57103a54afe8ec61bb6061c800a85e7ad4b74f0e7cc721c64312f",
+      "severity": "HIGH",
+      "reason": "Suspicious keyword 'rat' found in URL/title",
+      "matched_rule": "KEYWORD_MATCH",
+      "all_matches": [
+        {
+          "severity": "HIGH",
+          "reason": "Suspicious keyword 'rat' found in URL/title",
+          "rule": "KEYWORD_MATCH"
+        },
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:22 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/xfPEL3tRz34",
+      "title": "(135) Türkiye’de beatbox şakası 🤣🤣 #servetselçik - YouTube",
+      "visit_time": "2026-06-14 03:22:31",
+      "visit_time_dt": "2026-06-14T03:22:31.411552",
+      "visit_count": 2,
+      "raw_ts": 13425880951411552,
+      "browser": "Chrome",
+      "_hash": "dc4d3cb884f2096bfd0dba0738dc8b48c387d2a3371b70e037fb1a00473c601c",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:22 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:22 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/qFl9kLpMT6k",
+      "title": "(135) He spat first—then learned one cold sentence can hit harder than any punch Wrong stop, son.#oldman - YouTube",
+      "visit_time": "2026-06-14 03:22:48",
+      "visit_time_dt": "2026-06-14T03:22:48.409378",
+      "visit_count": 2,
+      "raw_ts": 13425880968409378,
+      "browser": "Chrome",
+      "_hash": "24346367c9a16ec27e86b8facfbe64e6ffd68243308a02840012603568923189",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:22 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:22 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/XbH94x3RR0M",
+      "title": "(135) Public reaction R15 V4 💥👀 girl riding 😍🎉 #publicreaction #r15 #viralshorts #shorts #ytshorts - YouTube",
+      "visit_time": "2026-06-14 03:23:00",
+      "visit_time_dt": "2026-06-14T03:23:00.700959",
+      "visit_count": 2,
+      "raw_ts": 13425880980700959,
+      "browser": "Chrome",
+      "_hash": "6ec52a2319cf35d2c19f4bbd1595d31430305ca4bf1db53b272f586ff44e6339",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/w2TBAwwIuUI",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:23:02",
+      "visit_time_dt": "2026-06-14T03:23:02.367379",
+      "visit_count": 2,
+      "raw_ts": 13425880982367379,
+      "browser": "Chrome",
+      "_hash": "0b0aff55991a99717f705b32496555350efe644a15036956c88ede7bba5fe916",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/l2s2-Snb_2M",
+      "title": "(135) Chọc gái bị oan [BEN EAGLE] #kungfu #martialarts #action #entertainment #comedy - YouTube",
+      "visit_time": "2026-06-14 03:23:25",
+      "visit_time_dt": "2026-06-14T03:23:25.689898",
+      "visit_count": 2,
+      "raw_ts": 13425881005689898,
+      "browser": "Chrome",
+      "_hash": "e4c1bb12e661ebd1d4fcd2cd646a8edc359c1d77a604411967384b3f6d5ce674",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/AIvzFEfs9JI",
+      "title": "(135) Top Learning Toolsfor Tech🔥🙏🏼Enthusiasts#shorts🔥🔥🙏🏼 - YouTube",
+      "visit_time": "2026-06-14 03:23:29",
+      "visit_time_dt": "2026-06-14T03:23:29.438202",
+      "visit_count": 2,
+      "raw_ts": 13425881009438202,
+      "browser": "Chrome",
+      "_hash": "69969f6658e30a919a489b370b14218c361790ca5e9ee63d5b476bae0aaecfb2",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/KjsRBDufPxU",
+      "title": "(135) Best Pet Grooming Brush for Removing Loose Hair & Shedding - YouTube",
+      "visit_time": "2026-06-14 03:23:57",
+      "visit_time_dt": "2026-06-14T03:23:57.976718",
+      "visit_count": 2,
+      "raw_ts": 13425881037976718,
+      "browser": "Chrome",
+      "_hash": "b24846a0a927835a6b93756b0ef8adaf77da066e807208d194a5d0e0badf24a6",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/JaPPBD_Jty8",
+      "title": "(135) No words just laugh #funny #prank #comedyforever #reels #comedy #prankvideo #shorts - YouTube",
+      "visit_time": "2026-06-14 03:24:28",
+      "visit_time_dt": "2026-06-14T03:24:28.077230",
+      "visit_count": 2,
+      "raw_ts": 13425881068077230,
+      "browser": "Chrome",
+      "_hash": "bff91592f7fc2da36f89c236090e10f007201bbcc7d2974a07bb5a112d747ea8",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/lz07wnJm7fQ",
+      "title": "(135) #🤣🤣Shorts😆 #YouTubeShorts #ViralShorts #TrendingNow #FunnyVideo #ComedyShorts #DesiComedy # - YouTube",
+      "visit_time": "2026-06-14 03:24:39",
+      "visit_time_dt": "2026-06-14T03:24:39.908269",
+      "visit_count": 2,
+      "raw_ts": 13425881079908269,
+      "browser": "Chrome",
+      "_hash": "80839e494203493b1657a96ffd8653ccfaa3c71e5f0a17b7892e2f8d5ee0d40c",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/RK3nJUoGxGc",
+      "title": "(135) 🤔 - YouTube",
+      "visit_time": "2026-06-14 03:24:49",
+      "visit_time_dt": "2026-06-14T03:24:49.713720",
+      "visit_count": 2,
+      "raw_ts": 13425881089713720,
+      "browser": "Chrome",
+      "_hash": "acd7bfb97083be7ce3ddc043353b5901ce65043f5aa7217312ee4b6b521e12e0",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:24 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Y6BGfMHMzmE",
+      "title": "(135) jesus 😭🤡😱#oraçãoforte#god#fé#oração#... - YouTube",
+      "visit_time": "2026-06-14 03:25:06",
+      "visit_time_dt": "2026-06-14T03:25:06.359341",
+      "visit_count": 2,
+      "raw_ts": 13425881106359341,
+      "browser": "Chrome",
+      "_hash": "a7693e511e39b1f67a34820f850e2d8f1b9c1e71d19fc68ce6bc6f51b0593d64",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/5OlifKm3SjM",
+      "title": "(135) She Waited 9 Months For This Moment #baby - YouTube",
+      "visit_time": "2026-06-14 03:25:22",
+      "visit_time_dt": "2026-06-14T03:25:22.907961",
+      "visit_count": 2,
+      "raw_ts": 13425881122907961,
+      "browser": "Chrome",
+      "_hash": "7842ced9c397e25e7bbdc14f3c46315a1c62a32e4d40341ba9553ba38df092e8",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/g-6XTMCRuR4",
+      "title": "(135) Suasana dijalan - YouTube",
+      "visit_time": "2026-06-14 03:25:42",
+      "visit_time_dt": "2026-06-14T03:25:42.688252",
+      "visit_count": 2,
+      "raw_ts": 13425881142688252,
+      "browser": "Chrome",
+      "_hash": "5271a7dd3c3ef1976fa3a36c4fe82554f906181f4f3bdbb6fbbdfc2441e1688f",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/4_890SVdlHo",
+      "title": "(135) เขินนะเนี้ย #funny #manbee - YouTube",
+      "visit_time": "2026-06-14 03:26:04",
+      "visit_time_dt": "2026-06-14T03:26:04.765065",
+      "visit_count": 2,
+      "raw_ts": 13425881164765065,
+      "browser": "Chrome",
+      "_hash": "868b9a5d838480a1261fc47c0a1616a9871d84c504742e1548f21d3bd61388a7",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/JHbSfV987yE",
+      "title": "(135) This Genius Trick Lets You Monitor Your Doors Easily 👈🏻 - YouTube",
+      "visit_time": "2026-06-14 03:26:27",
+      "visit_time_dt": "2026-06-14T03:26:27.307168",
+      "visit_count": 2,
+      "raw_ts": 13425881187307168,
+      "browser": "Chrome",
+      "_hash": "3322ef3e10708f7a9acf2dad728d8f82ee35158e8fc7063d4cf3070740adc43d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/cSVKwblAMe0",
+      "title": "(135) पुलिस वाला ही निकला गद्दार😱Wood working withart handcraft idea/home madereal telent/skill-art - YouTube",
+      "visit_time": "2026-06-14 03:26:31",
+      "visit_time_dt": "2026-06-14T03:26:31.183294",
+      "visit_count": 2,
+      "raw_ts": 13425881191183294,
+      "browser": "Chrome",
+      "_hash": "2a5ed15068d6b3d508cf70c93b1e8a6093d232a44a09dd4412f1cc8bce9935e4",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/g2i7gEBWhks",
+      "title": "(135) Wait for it last funny 😄 moments #funny #viralvideo #youtubeshorts - YouTube",
+      "visit_time": "2026-06-14 03:26:57",
+      "visit_time_dt": "2026-06-14T03:26:57.375513",
+      "visit_count": 2,
+      "raw_ts": 13425881217375513,
+      "browser": "Chrome",
+      "_hash": "6c0f6627d4f19cf0b853ef6d373556754b8104ac48443f0cfc30ca4b867ff7c8",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:26 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/OxtlNRuOoiM",
+      "title": "(135) #liriklagu - YouTube",
+      "visit_time": "2026-06-14 03:27:00",
+      "visit_time_dt": "2026-06-14T03:27:00.308657",
+      "visit_count": 2,
+      "raw_ts": 13425881220308657,
+      "browser": "Chrome",
+      "_hash": "d19fed151d3c341469f7ba2b7abb2f290517a18a4111d13790848ca02c8913f4",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:27 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:27 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/PzvdGmyoW1o",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:27:06",
+      "visit_time_dt": "2026-06-14T03:27:06.434979",
+      "visit_count": 2,
+      "raw_ts": 13425881226434979,
+      "browser": "Chrome",
+      "_hash": "e8261b10a2afa09c1dbc0f3ceeff75d65ae3b7d3beae0f6c94e5856961d6d5ea",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:27 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:27 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/uJrBPjaJe40",
+      "title": "(135) A Simple Act of Kindness Changed a Life Forever 🙏💖#humanitylesson#shortsfeeds#viralshort#emotional# - YouTube",
+      "visit_time": "2026-06-14 03:28:10",
+      "visit_time_dt": "2026-06-14T03:28:10.661383",
+      "visit_count": 2,
+      "raw_ts": 13425881290661383,
+      "browser": "Chrome",
+      "_hash": "2fa4c3a5763a2ff849316e62b3a4dd0ac958db6db2667db75e2cd6d737846669",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/IsW1PM3L_uY",
+      "title": "(135) DADDYYY! I FOUND YOU!\" - The most heartwarming homecoming. #militaryreunion #militaryhomecoming #sol - YouTube",
+      "visit_time": "2026-06-14 03:28:27",
+      "visit_time_dt": "2026-06-14T03:28:27.138503",
+      "visit_count": 2,
+      "raw_ts": 13425881307138503,
+      "browser": "Chrome",
+      "_hash": "b00a2a3f445bdfeb7bb2a0df8bafec827fff33f8b3a42737c6e290b93157ee6d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/j3qt6C4CblY",
+      "title": "(135) 一只很可爱的三花，挺愿意和别人互动的 #cat #喵哥是萌新 #cute #貓咪日常 #funny - YouTube",
+      "visit_time": "2026-06-14 03:28:50",
+      "visit_time_dt": "2026-06-14T03:28:50.213334",
+      "visit_count": 2,
+      "raw_ts": 13425881330213334,
+      "browser": "Chrome",
+      "_hash": "601034a640546db70a1c9daa57497287e07033b9e1b8dd591ecad891c4df5878",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:28 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/DltzfIKsDyA",
+      "title": "(135) Pure respect beyond words ❤️ A young child salutes a soldier, and the soldier salutes back #Heart - YouTube",
+      "visit_time": "2026-06-14 03:29:09",
+      "visit_time_dt": "2026-06-14T03:29:09.141439",
+      "visit_count": 2,
+      "raw_ts": 13425881349141439,
+      "browser": "Chrome",
+      "_hash": "692e921d9db77e1bd7e2e045c2d2da65965b33e43983bbf2ece808fed5c29869",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:29 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:29 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/OVJ_UTl1_Mk",
+      "title": "(135) Con mồi thực sự [BEN EAGLE] #kungfu #martialarts #action #entertainment #comedy - YouTube",
+      "visit_time": "2026-06-14 03:30:05",
+      "visit_time_dt": "2026-06-14T03:30:05.056402",
+      "visit_count": 2,
+      "raw_ts": 13425881405056402,
+      "browser": "Chrome",
+      "_hash": "07e960480ca72231bb132dd4d7e2858c5d421e955edd497524d0b6dd2731ba45",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:30 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:30 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/PzZs9rn-3Y8",
+      "title": "(135) Cute little animals #dog#kucing#baby - YouTube",
+      "visit_time": "2026-06-14 03:30:20",
+      "visit_time_dt": "2026-06-14T03:30:20.335649",
+      "visit_count": 2,
+      "raw_ts": 13425881420335649,
+      "browser": "Chrome",
+      "_hash": "f78cf106b96a05c21e0200d7067b4b132b3d30e6c8e12e036d29c7653e5db8e7",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:30 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:30 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/y_b1PxiQFLE",
+      "title": "(135) They mocked a hungry old veteran, but wait until his guards walk in with a lifechanging surprise - YouTube",
+      "visit_time": "2026-06-14 03:31:09",
+      "visit_time_dt": "2026-06-14T03:31:09.632136",
+      "visit_count": 2,
+      "raw_ts": 13425881469632136,
+      "browser": "Chrome",
+      "_hash": "223aeeca00ee902e949f03b9ae8639b6d967ee5d882e480261425cc831005e69",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/R1NmCVRHw4E",
+      "title": "(135) Baby’s food gone 😂😂 #duet #funny #viralreels #comedy - YouTube",
+      "visit_time": "2026-06-14 03:31:28",
+      "visit_time_dt": "2026-06-14T03:31:28.284537",
+      "visit_count": 2,
+      "raw_ts": 13425881488284537,
+      "browser": "Chrome",
+      "_hash": "f3ec9322c761fcd845c93c3f231069e03f7b05f61fdc1f6c4b09debe6b0e7a04",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/DdX-wAkLRRE",
+      "title": "(135) #funny #comedy #cute #cutebaby #baby - YouTube",
+      "visit_time": "2026-06-14 03:31:37",
+      "visit_time_dt": "2026-06-14T03:31:37.485853",
+      "visit_count": 2,
+      "raw_ts": 13425881497485853,
+      "browser": "Chrome",
+      "_hash": "7e263a745a4051513c1fc44e209f13007953fc4f7ebc6cc773d38e8ca0cdc752",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:31 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Sh3dHWbKaKg",
+      "title": "(135) biraz şaka yapmak iyidir - YouTube",
+      "visit_time": "2026-06-14 03:32:11",
+      "visit_time_dt": "2026-06-14T03:32:11.565217",
+      "visit_count": 2,
+      "raw_ts": 13425881531565217,
+      "browser": "Chrome",
+      "_hash": "6f10223d9ffa3cbadca84f526a6f1ad447ed4207edc7d7905aadf4c0f321227d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/e80VBVl9O70",
+      "title": "(135) #egzonibrahimi #salawatnabi #funny - YouTube",
+      "visit_time": "2026-06-14 03:32:13",
+      "visit_time_dt": "2026-06-14T03:32:13.752167",
+      "visit_count": 2,
+      "raw_ts": 13425881533752167,
+      "browser": "Chrome",
+      "_hash": "1f7c1eabe9ff5ec44665cc8afad89f09b41b65928d5ad887664a7a361ea40410",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/0LH-vZsdjn8",
+      "title": "(135) \"DADDY!\" The Moment a Whole Stadium Melted 🥺❤️ #shorts - YouTube",
+      "visit_time": "2026-06-14 03:32:25",
+      "visit_time_dt": "2026-06-14T03:32:25.102920",
+      "visit_count": 2,
+      "raw_ts": 13425881545102920,
+      "browser": "Chrome",
+      "_hash": "7be3d3b29ea80bb5957c6d38344a5b98df04e673295d7b2b6db47d1d2b74c0d9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/y7FGLMQYRXU",
+      "title": "(135) Shalat atau bertasbih dengan cara masing-masing #shalat #tasbih #lifewithalquran10 - YouTube",
+      "visit_time": "2026-06-14 03:32:42",
+      "visit_time_dt": "2026-06-14T03:32:42.122582",
+      "visit_count": 2,
+      "raw_ts": 13425881562122582,
+      "browser": "Chrome",
+      "_hash": "a8787e8e4a40ffd1f40f9aa54b0f43d016d69c42dbf6619591dff0bd2dd671a3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/BOio4PvYTcc",
+      "title": "(135) Trump face was gone wrong #funny #americe #trump #comedy #ai #trending #shorts #viral #spiderman - YouTube",
+      "visit_time": "2026-06-14 03:32:58",
+      "visit_time_dt": "2026-06-14T03:32:58.671792",
+      "visit_count": 2,
+      "raw_ts": 13425881578671792,
+      "browser": "Chrome",
+      "_hash": "b4fd0d871131540c181019b5a4e63f8acce2dba681d0dd96323f26e21ad31196",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:32 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/8m_DwvS31c0",
+      "title": "(135) Rudeness Has Consequences #NamHuynhOfficial #martialarts #selfdefense - YouTube",
+      "visit_time": "2026-06-14 03:33:18",
+      "visit_time_dt": "2026-06-14T03:33:18.996337",
+      "visit_count": 2,
+      "raw_ts": 13425881598996337,
+      "browser": "Chrome",
+      "_hash": "0ffaf803beb8e127152abbb19688ddc1d741372da9d3523bfc815c59c7468971",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/tye5QTgCDVE",
+      "title": "(135) लड़के ने देखा लुक लड़की का ❌😱Wood working withart handcraft idea/home madereal telent/skill-art - YouTube",
+      "visit_time": "2026-06-14 03:33:44",
+      "visit_time_dt": "2026-06-14T03:33:44.367531",
+      "visit_count": 2,
+      "raw_ts": 13425881624367531,
+      "browser": "Chrome",
+      "_hash": "b9dae0ba15f254ca28a7528e395c23e4a196ebc346797d0d1cbbddbc5e2f26d5",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/diYsVYBFENA",
+      "title": "(135) Amigos #cumplicidade #empatia #parceria #homem #mulher - O homem tem demonstrado que é muito amigo.. - YouTube",
+      "visit_time": "2026-06-14 03:33:51",
+      "visit_time_dt": "2026-06-14T03:33:51.322631",
+      "visit_count": 2,
+      "raw_ts": 13425881631322631,
+      "browser": "Chrome",
+      "_hash": "fc06ced208eb164a9cf18bd0696e0b762556ec115b049bfac35494a846947082",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:33 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Jxt8t4qBkF8",
+      "title": "(135) نم مستودعاً الله نفسك،فمن كان في معية الله لايضره شيء.👍🏻#تصاميم#عبارات#حالات#متابعه#لايك#اكسبلاور101 - YouTube",
+      "visit_time": "2026-06-14 03:34:02",
+      "visit_time_dt": "2026-06-14T03:34:02.476512",
+      "visit_count": 2,
+      "raw_ts": 13425881642476512,
+      "browser": "Chrome",
+      "_hash": "22043a50c354228289c0a20c7896c28d8e5a55bfa359e4935e9ec613c1384815",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/hTAnVh13Oi0",
+      "title": "(135) #funny #trending #comedy #shorts #shortsfeed #viral #viralvideo - YouTube",
+      "visit_time": "2026-06-14 03:34:09",
+      "visit_time_dt": "2026-06-14T03:34:09.455253",
+      "visit_count": 2,
+      "raw_ts": 13425881649455253,
+      "browser": "Chrome",
+      "_hash": "abfed2445c379d0cfa91842e9aa566863127d87ee9f57604fc89449be5ab17cc",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/C6hGIh7FCV4",
+      "title": "(135) They thought he was just another poor kid…until they saw the photograph. 🥺 - YouTube",
+      "visit_time": "2026-06-14 03:34:30",
+      "visit_time_dt": "2026-06-14T03:34:30.924658",
+      "visit_count": 2,
+      "raw_ts": 13425881670924658,
+      "browser": "Chrome",
+      "_hash": "bbe3b7ca63e758346052ca2eed7dcecd4bc0068a7f9c769f60d657a31fa77821",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/TVHX1rgI49g",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:34:33",
+      "visit_time_dt": "2026-06-14T03:34:33.056681",
+      "visit_count": 2,
+      "raw_ts": 13425881673056681,
+      "browser": "Chrome",
+      "_hash": "f7b13508d030c95c8b8aeb1dab8ba60f6af8f4c2f80b2ec445998cdb2d2ff4d6",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/pHL3XmWVEG4",
+      "title": "(135) A 1-year-old baby learning to swim can understand the teacher😎 #babyswimming #babylife #learning - YouTube",
+      "visit_time": "2026-06-14 03:34:42",
+      "visit_time_dt": "2026-06-14T03:34:42.523236",
+      "visit_count": 2,
+      "raw_ts": 13425881682523236,
+      "browser": "Chrome",
+      "_hash": "b6fca36d7ecc8e61003fd6f92715e1ab341226ebc3d2382cfe96aa90ab9432c7",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/zLtChBCBdIo",
+      "title": "(135) Cấp cao không thèm chấp [BEN EAGLE] #kungfu #martialarts #action #entertainment #comedy - YouTube",
+      "visit_time": "2026-06-14 03:34:52",
+      "visit_time_dt": "2026-06-14T03:34:52.271423",
+      "visit_count": 2,
+      "raw_ts": 13425881692271423,
+      "browser": "Chrome",
+      "_hash": "4f2e0b897c900444a4a3950c0fd1000f81deb04fe69e6c299eb24ed4ca82566a",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/pfOTliCZDDk",
+      "title": "(135) YouTube",
+      "visit_time": "2026-06-14 03:34:53",
+      "visit_time_dt": "2026-06-14T03:34:53.951542",
+      "visit_count": 2,
+      "raw_ts": 13425881693951542,
+      "browser": "Chrome",
+      "_hash": "d737e647de579589f21d06d5092149296f127da4cab2ce943efe11c124f7064e",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9VzMUX-szOg",
+      "title": "(135) #狗是人类最忠诚的朋友 #万物皆有灵性 #萌宠 - YouTube",
+      "visit_time": "2026-06-14 03:34:54",
+      "visit_time_dt": "2026-06-14T03:34:54.214309",
+      "visit_count": 1,
+      "raw_ts": 13425881694214309,
+      "browser": "Chrome",
+      "_hash": "197b1753730c912de4522a2fdb1e6e465117cf40e5d74f8aa32b774a71d1dba3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:34 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.google.com/search?q=api+keys&oq=api+keys&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGEHSAQg5NjYwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
+      "title": "api keys - Google Search",
+      "visit_time": "2026-06-15 00:23:18",
+      "visit_time_dt": "2026-06-15T00:23:18.336756",
+      "visit_count": 3,
+      "raw_ts": 13425956598336756,
+      "browser": "Chrome",
+      "_hash": "46ade7588211745f9456494b6eb16b5143e9420957a3bc5f073bf3f6236bc1f7",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XtK8Y1ex4K8",
+      "title": "Naam Shabana [4K] - Biggest SPY Thriller Full Movie | Taapsee Pannu, Akshay Kumar, Manoj Bajpayee - YouTube",
+      "visit_time": "2026-06-15 00:23:24",
+      "visit_time_dt": "2026-06-15T00:23:24.208600",
+      "visit_count": 1,
+      "raw_ts": 13425956604208600,
+      "browser": "Chrome",
+      "_hash": "d160961eac8ca4bc5c729ffcbb8abe36c0456f89d0af2b7324ada758c6aee211",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:23 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:23 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dZ3MgxROEM0",
+      "title": "(135) POLICE (2026) Full Movie | Ajay Devgn | Alia Bhatt | Latest Bollywood Superhit Full Action Movies - YouTube",
+      "visit_time": "2026-06-15 02:44:09",
+      "visit_time_dt": "2026-06-15T02:44:09.050402",
+      "visit_count": 1,
+      "raw_ts": 13425965049050402,
+      "browser": "Chrome",
+      "_hash": "b104227090ffe20a4c49587ed3005beb82096f79b043838b1aee555e6cfa6a6e",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 02:44 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 02:44 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ccb6OyvgNls",
+      "title": "(135) MISSION NAKAAB | Akshay Kumar & Rakul Preet Singh | New Bollywood Action Movie 2026 - YouTube",
+      "visit_time": "2026-06-15 03:25:49",
+      "visit_time_dt": "2026-06-15T03:25:49.522668",
+      "visit_count": 1,
+      "raw_ts": 13425967549522668,
+      "browser": "Chrome",
+      "_hash": "728f236a65d845393ea4d363a9ad9f7f470797ae93c3b6804fb658865bdf8273",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:25 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=n5YBGGYYhwo",
+      "title": "(135) Amitabh Bachchan & Ajay Devgan | Sky Crossing (2026) |New Blockbuster Bollywood Action Full HD Movie - YouTube",
+      "visit_time": "2026-06-15 03:48:53",
+      "visit_time_dt": "2026-06-15T03:48:53.668824",
+      "visit_count": 1,
+      "raw_ts": 13425968933668824,
+      "browser": "Chrome",
+      "_hash": "7d7722c07901efb8c927cb250bf3a5e93f82e523ce9a8093967d21109a521712",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:48 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:48 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "file:///C:/Users/786%20COMPUTERS/Documents/Here%20is%20a%20detailed.pdf",
+      "title": "Here is a detailed.pdf",
+      "visit_time": "2026-06-15 18:15:45",
+      "visit_time_dt": "2026-06-15T18:15:45.306574",
+      "visit_count": 1,
+      "raw_ts": 13426020945306574,
+      "browser": "Chrome",
+      "_hash": "6f072e5382c12552b0d5dcdfb94a7562d25fa8f9d0045785685032b6bf9d7154",
+      "severity": "MEDIUM",
+      "reason": "URL targets dangerous file type: '.pdf'",
+      "matched_rule": "DOWNLOAD_DETECTED",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "URL targets dangerous file type: '.pdf'",
+          "rule": "DOWNLOAD_DETECTED"
+        }
+      ]
+    },
+    {
+      "url": "file:///C:/Users/786%20COMPUTERS/Documents/Part%202.pdf",
+      "title": "Part 2.pdf",
+      "visit_time": "2026-06-15 18:21:59",
+      "visit_time_dt": "2026-06-15T18:21:59.801943",
+      "visit_count": 1,
+      "raw_ts": 13426021319801943,
+      "browser": "Chrome",
+      "_hash": "36993458301fff4b591a074f0a539844be63bc450463f9b7e6a6ff27c096c900",
+      "severity": "MEDIUM",
+      "reason": "URL targets dangerous file type: '.pdf'",
+      "matched_rule": "DOWNLOAD_DETECTED",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "URL targets dangerous file type: '.pdf'",
+          "rule": "DOWNLOAD_DETECTED"
+        }
+      ]
+    },
+    {
+      "url": "file:///C:/Users/786%20COMPUTERS/Documents/part%201.pdf",
+      "title": "part 1.pdf",
+      "visit_time": "2026-06-15 18:24:07",
+      "visit_time_dt": "2026-06-15T18:24:07.803811",
+      "visit_count": 1,
+      "raw_ts": 13426021447803811,
+      "browser": "Chrome",
+      "_hash": "c76e3a21894f4b837ec20fa2664da9ef5ea9445e06838357186e744fa0b8923c",
+      "severity": "MEDIUM",
+      "reason": "URL targets dangerous file type: '.pdf'",
+      "matched_rule": "DOWNLOAD_DETECTED",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "URL targets dangerous file type: '.pdf'",
+          "rule": "DOWNLOAD_DETECTED"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=248622",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment 3",
+      "visit_time": "2026-06-16 00:05:49",
+      "visit_time_dt": "2026-06-16T00:05:49.528975",
+      "visit_count": 1,
+      "raw_ts": 13426041949528975,
+      "browser": "Chrome",
+      "_hash": "f61bb75c1d781b87aa228f3517a26bcdc52fccd0311d23dc800e3e3e02a9aa09",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:05 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:05 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251088",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment",
+      "visit_time": "2026-06-16 00:10:19",
+      "visit_time_dt": "2026-06-16T00:10:19.698032",
+      "visit_count": 2,
+      "raw_ts": 13426042219698032,
+      "browser": "Chrome",
+      "_hash": "60ea0b654be3e959a46583de2132b086f86cd7fecd5d18649705f3457621285f",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251088&action=editsubmission",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment - Edit submission",
+      "visit_time": "2026-06-16 00:10:23",
+      "visit_time_dt": "2026-06-16T00:10:23.819270",
+      "visit_count": 1,
+      "raw_ts": 13426042223819270,
+      "browser": "Chrome",
+      "_hash": "8f066f40a7a18ea9896863a5bcc8c61e39b927c296e4c2c7c5b3a71b2deb76d3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:10 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:10 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251088&action=view",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment",
+      "visit_time": "2026-06-16 00:11:54",
+      "visit_time_dt": "2026-06-16T00:11:54.070698",
+      "visit_count": 1,
+      "raw_ts": 13426042314070698,
+      "browser": "Chrome",
+      "_hash": "92418b911fb8b04f81319020e515ce5684dfa3f812b33b48deae044a23808322",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251087",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment",
+      "visit_time": "2026-06-16 00:16:07",
+      "visit_time_dt": "2026-06-16T00:16:07.167077",
+      "visit_count": 1,
+      "raw_ts": 13426042567167077,
+      "browser": "Chrome",
+      "_hash": "6bd62e03f8c111e2f9c8c2c150a68df7207b86e4db043db8a87d3df79a1ee0a1",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:16 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:16 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251087&action=view",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment",
+      "visit_time": "2026-06-16 00:17:25",
+      "visit_time_dt": "2026-06-16T00:17:25.164494",
+      "visit_count": 1,
+      "raw_ts": 13426042645164494,
+      "browser": "Chrome",
+      "_hash": "389adc3d9bb5fdb41e20057b114342c49a8709212f862d3e68b7b48a1e3740e3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 00:17 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 00:17 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=251087&action=editsubmission",
+      "title": "CS-3103L-CS-252-BS-CS-6E: Assignment - Edit submission",
+      "visit_time": "2026-06-16 03:39:42",
+      "visit_time_dt": "2026-06-16T03:39:42.461848",
+      "visit_count": 2,
+      "raw_ts": 13426054782461848,
+      "browser": "Chrome",
+      "_hash": "63567813ec953ef3e780917d82bb6c8a4fdd2eb69265819e8fd0bb4d0fbb58c3",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:39 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:39 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/?redirect=0",
+      "title": "DSU Learning Management System",
+      "visit_time": "2026-06-16 03:40:51",
+      "visit_time_dt": "2026-06-16T03:40:51.119506",
+      "visit_count": 18,
+      "raw_ts": 13426054851119506,
+      "browser": "Chrome",
+      "_hash": "285475872c16365fa7ba5571016c1939ca0504a3d1eb74f559c7bb71bd46aff4",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:40 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:40 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://chat.openai.com/",
+      "title": "ChatGPT",
+      "visit_time": "2026-06-16 03:49:20",
+      "visit_time_dt": "2026-06-16T03:49:20.671616",
+      "visit_count": 42,
+      "raw_ts": 13426055360671616,
+      "browser": "Chrome",
+      "_hash": "bbe9c1441d7f81c2fa567e63bda00ae1766f9be682ca63d9353c22e83b0e97d2",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:49 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:49 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://chatgpt.com/",
+      "title": "ChatGPT",
+      "visit_time": "2026-06-16 03:49:20",
+      "visit_time_dt": "2026-06-16T03:49:20.671616",
+      "visit_count": 74,
+      "raw_ts": 13426055360671616,
+      "browser": "Chrome",
+      "_hash": "a54491e2f4f7578ea69249dee022c8fb597c9ea064c992f6f925c1a3e300df93",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 03:49 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 03:49 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kimi.com/",
+      "title": "Kimi AI with K2.6 | Better Coding, Smarter Agents",
+      "visit_time": "2026-06-16 04:11:21",
+      "visit_time_dt": "2026-06-16T04:11:21.559255",
+      "visit_count": 15,
+      "raw_ts": 13426056681559255,
+      "browser": "Chrome",
+      "_hash": "2c2529d8e061f0869dc03d6cac85dce616253e85b5e84d40cdba73da58d5c09d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://chatgpt.com/c/6a2ddc57-7b1c-83ee-8845-f0a1734ae2d5",
+      "title": "Project Completion Prompt",
+      "visit_time": "2026-06-16 04:11:40",
+      "visit_time_dt": "2026-06-16T04:11:40.044860",
+      "visit_count": 2,
+      "raw_ts": 13426056700044860,
+      "browser": "Chrome",
+      "_hash": "8344ca9ee65d5804bc1cce8fe385b2a3bdfb5662e6514b91802c67c847975ca6",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:11 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:11 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://www.kimi.com/chat/19ecea06-dda2-8c5d-8000-0979cf952438?chat_enter_method=home",
+      "title": "VS Code Paper Solutions - Kimi",
+      "visit_time": "2026-06-16 04:12:54",
+      "visit_time_dt": "2026-06-16T04:12:54.647420",
+      "visit_count": 2,
+      "raw_ts": 13426056774647420,
+      "browser": "Chrome",
+      "_hash": "a5205272d9b57d5cec2a33bfae9f0d6c8fcec68ec75f2db247ce83ac00897073",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:12 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:12 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/assign/view.php?id=252723",
+      "title": "Error",
+      "visit_time": "2026-06-16 04:44:57",
+      "visit_time_dt": "2026-06-16T04:44:57.511423",
+      "visit_count": 1,
+      "raw_ts": 13426058697511423,
+      "browser": "Chrome",
+      "_hash": "461afef69b379a3b508f7cc4fa9d3609f035118909b88683339048b810dce31d",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:44 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:44 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/my/",
+      "title": "Dashboard",
+      "visit_time": "2026-06-16 04:45:03",
+      "visit_time_dt": "2026-06-16T04:45:03.876908",
+      "visit_count": 57,
+      "raw_ts": 13426058703876908,
+      "browser": "Chrome",
+      "_hash": "97bd3fc16ca3e7d7487919f9ea4fb445f184fdb18d147aa83ea9e039c22a91f9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:45 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:45 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/course/view.php?id=9932",
+      "title": "Course: Artificial Intelligence Lab(BS-CS-6E)",
+      "visit_time": "2026-06-16 04:45:14",
+      "visit_time_dt": "2026-06-16T04:45:14.174866",
+      "visit_count": 27,
+      "raw_ts": 13426058714174866,
+      "browser": "Chrome",
+      "_hash": "68d224b0f171ef49044e19e34a0cccfebe61ebc7fb36b0a3a670c5a069b7bdf9",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:45 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:45 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "file:///C:/Users/786%20COMPUTERS/Desktop/cs231061%20AI_lab%20final/wasay%20haider%20cs231061%20Final_Exam.pdf",
+      "title": "wasay haider cs231061 Final_Exam.pdf",
+      "visit_time": "2026-06-16 04:50:57",
+      "visit_time_dt": "2026-06-16T04:50:57.165284",
+      "visit_count": 2,
+      "raw_ts": 13426059057165284,
+      "browser": "Chrome",
+      "_hash": "fc786485675f19bd92d58b93b1bc691df3de0cc5938e79475efd3a58dff0e3a2",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:50 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:50 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        },
+        {
+          "severity": "MEDIUM",
+          "reason": "URL targets dangerous file type: '.pdf'",
+          "rule": "DOWNLOAD_DETECTED"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/turnitintooltwo/view.php?id=252730&do=submitpaper&view_context=box_solid",
+      "title": "",
+      "visit_time": "2026-06-16 04:52:39",
+      "visit_time_dt": "2026-06-16T04:52:39.429009",
+      "visit_count": 1,
+      "raw_ts": 13426059159429009,
+      "browser": "Chrome",
+      "_hash": "02a534d2de7e2222fc5ca4edc278b3e75f582fc1d1747fbe38b0a1db2c8b3b24",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:52 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:52 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    },
+    {
+      "url": "https://lms.dsu.edu.pk/mod/turnitintooltwo/view.php?id=252730&do=submission_success&view_context=box_solid",
+      "title": "",
+      "visit_time": "2026-06-16 04:52:39",
+      "visit_time_dt": "2026-06-16T04:52:39.429009",
+      "visit_count": 1,
+      "raw_ts": 13426059159429009,
+      "browser": "Chrome",
+      "_hash": "0db2e64883b9a8a06d7ee4b027e2ad59e5f9aa1e8793d8264b32b2a5801ff1db",
+      "severity": "MEDIUM",
+      "reason": "Off-hours activity at 04:52 UTC (window: 00:00–05:00 UTC)",
+      "matched_rule": "OFF_HOURS_ACCESS",
+      "all_matches": [
+        {
+          "severity": "MEDIUM",
+          "reason": "Off-hours activity at 04:52 UTC (window: 00:00–05:00 UTC)",
+          "rule": "OFF_HOURS_ACCESS"
+        }
+      ]
+    }
+  ]
+}
